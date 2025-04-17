@@ -1,0 +1,41 @@
+{
+  "title": "迪拜狮子礼品卡",
+  "gameSelection": "游戏选择",
+  "giftCardDetails": "礼品卡详情",
+  "serialNumber": "序列号",
+  "cvv": "CVV",
+  "expirationDate": "有效期",
+  "tiktokAccount": "抖音账号",
+  "tiktokUsername": "抖音用户名",
+  "pay": "支付",
+  "paymentSuccess": "支付成功 - {{amount}} USD",
+  "paymentFailed": "支付失败 - 礼品卡无法兑换",
+  "purchaseCard": {
+    "title": "还没有迪拜狮子礼品卡？",
+    "description": "现在从Ar-pay购买",
+    "button": "购买礼品卡"
+  },
+  "footer": {
+    "companyName": "© 2025 迪拜狮子游戏。保留所有权利。",
+    "disclaimer": "所有商标均为其在阿联酋和其他国家/地区各自所有者的财产。",
+    "links": {
+      "privacy": "隐私政策",
+      "terms": "使用条款",
+      "refund": "退款政策"
+    }
+  },
+  "navigation": {
+    "backToHome": "返回首页"
+  },
+  "errors": {
+    "serialNumberRequired": "需要序列号",
+    "serialNumberLength": "序列号必须为16位数字",
+    "cvvRequired": "需要CVV",
+    "cvvLength": "CVV必须为3位数字",
+    "tiktokRequired": "需要抖音用户名",
+    "invalidTiktok": "抖音用户名格式无效",
+    "searchGames": "搜索游戏...",
+    "noGamesFound": "未找到游戏",
+    "enterTiktokUsername": "输入您的抖音用户名"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "title": "Lion Dubai Gift Card",
+  "gameSelection": "Game Selection",
+  "giftCardDetails": "Gift Card Details",
+  "serialNumber": "Serial Number",
+  "cvv": "CVV",
+  "expirationDate": "Expiration Date",
+  "tiktokAccount": "TikTok Account",
+  "tiktokUsername": "TikTok Username",
+  "pay": "Pay",
+  "paymentSuccess": "Payment Successfully Captured - USD {{amount}}",
+  "paymentFailed": "Payment Failed - Gift Card is not redeemable",
+  "purchaseCard": {
+    "title": "Don't have Lion Dubai Gift Card?",
+    "description": "Purchase now from Ar-pay",
+    "button": "Buy Gift Card"
+  },
+  "footer": {
+    "companyName": "© 2025 Lion Dubai Games. All rights reserved.",
+    "disclaimer": "All trademarks are property of their respective owners in the UAE and other countries.",
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms & Conditions",
+      "refund": "Refund Policy"
+    }
+  },
+  "navigation": {
+    "backToHome": "Back to Home"
+  },
+  "errors": {
+    "serialNumberRequired": "Serial number is required",
+    "serialNumberLength": "Serial number must be 16 digits",
+    "cvvRequired": "CVV is required",
+    "cvvLength": "CVV must be 3 digits",
+    "tiktokRequired": "TikTok username is required",
+    "invalidTiktok": "Invalid TikTok username format",
+    "searchGames": "Search games...",
+    "noGamesFound": "No games found",
+    "enterTiktokUsername": "Enter your TikTok username"
+  }
+}

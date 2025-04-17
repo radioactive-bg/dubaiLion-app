@@ -1,0 +1,41 @@
+{
+  "title": "Подарочная карта Lion Dubai",
+  "gameSelection": "Выбор игры",
+  "giftCardDetails": "Детали подарочной карты",
+  "serialNumber": "Серийный номер",
+  "cvv": "CVV",
+  "expirationDate": "Срок действия",
+  "tiktokAccount": "Аккаунт TikTok",
+  "tiktokUsername": "Имя пользователя TikTok",
+  "pay": "Оплатить",
+  "paymentSuccess": "Платеж успешно проведен - {{amount}} USD",
+  "paymentFailed": "Платеж не прошел - Подарочная карта не может быть использована",
+  "purchaseCard": {
+    "title": "У вас нет подарочной карты Lion Dubai?",
+    "description": "Купить сейчас на Ar-pay",
+    "button": "Купить подарочную карту"
+  },
+  "footer": {
+    "companyName": "© 2025 Lion Dubai Games. Все права защищены.",
+    "disclaimer": "Все товарные знаки являются собственностью их владельцев в ОАЭ и других странах.",
+    "links": {
+      "privacy": "Политика конфиденциальности",
+      "terms": "Условия использования",
+      "refund": "Политика возврата"
+    }
+  },
+  "navigation": {
+    "backToHome": "Вернуться на главную"
+  },
+  "errors": {
+    "serialNumberRequired": "Требуется серийный номер",
+    "serialNumberLength": "Серийный номер должен содержать 16 цифр",
+    "cvvRequired": "Требуется CVV",
+    "cvvLength": "CVV должен содержать 3 цифры",
+    "tiktokRequired": "Требуется имя пользователя TikTok",
+    "invalidTiktok": "Неверный формат имени пользователя TikTok",
+    "searchGames": "Поиск игр...",
+    "noGamesFound": "Игры не найдены",
+    "enterTiktokUsername": "Введите ваше имя пользователя TikTok"
+  }
+}

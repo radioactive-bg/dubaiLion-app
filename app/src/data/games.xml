@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<games>
+  <game id="1">
+    <name>Unknown Mech Battle Game</name>
+    <description>
+      <intro>Enter a world of advanced mechanical warfare where pilots control sophisticated battle mechs in high-stakes arena combat. This game features:</intro>
+      <features>
+        <feature>Deep Customization System: Modify your mech's armor, weapons, and core systems</feature>
+        <feature>Strategic Combat: Real-time battles requiring tactical positioning and resource management</feature>
+        <feature>Progressive Advancement: Unlock new mech chassis and advanced weaponry as you climb the ranks</feature>
+        <feature>Multiplayer Arenas: Challenge other pilots in various combat scenarios</feature>
+        <feature>Dynamic Weather System: Adapt your strategy to changing battlefield conditions</feature>
+      </features>
+    </description>
+    <media>
+      <item type="image">
+        <url>https://images.unsplash.com/photo-1635322966219-b75ed372eb01?auto=format&amp;fit=crop&amp;q=80&amp;w=1920</url>
+        <caption>Advanced Mech Combat Arena</caption>
+      </item>
+      <item type="image">
+        <url>https://images.unsplash.com/photo-1614728263952-84ea256f9679?auto=format&amp;fit=crop&amp;q=80&amp;w=1920</url>
+        <caption>Mech Customization Bay</caption>
+      </item>
+      <item type="image">
+        <url>https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&amp;fit=crop&amp;q=80&amp;w=1920</url>
+        <caption>Futuristic Battle Environment</caption>
+      </item>
+    </media>
+    <translations>
+      <ar>
+        <name>لعبة معارك الروبوتات المجهولة</name>
+        <description>
+          <intro>ادخل عالم الحروب الميكانيكية المتقدمة حيث يتحكم الطيارون في روبوتات قتالية متطورة في معارك عالية المخاطر. تتميز هذه اللعبة بـ:</intro>
+          <features>
+            <feature>نظام تخصيص عميق: عدل درع الروبوت وأسلحته وأنظمته الأساسية</feature>
+            <feature>قتال استراتيجي: معارك في الوقت الفعلي تتطلب تموضعًا تكتيكيًا وإدارة للموارد</feature>
+            <feature>تقدم تدريجي: افتح هياكل روبوتات جديدة وأسلحة متقدمة مع ارتقائك في المراتب</feature>
+            <feature>ساحات متعددة اللاعبين: تحدى الطيارين الآخرين في سيناريوهات قتالية متنوعة</feature>
+            <feature>نظام طقس ديناميكي: كيّف استراتيجيتك مع ظروف ساحة المعركة المتغيرة</feature>
+          </features>
+        </description>
+      </ar>
+      <de>
+        <name>Unbekanntes Mech-Kampfspiel</name>
+        <description>
+          <intro>Tauchen Sie ein in eine Welt der fortschrittlichen mechanischen Kriegsführung, in der Piloten hochentwickelte Kampfmechs in riskanten Arena-Kämpfen steuern. Dieses Spiel bietet:</intro>
+          <features>
+            <feature>Tiefgehendes Anpassungssystem: Modifizieren Sie die Panzerung, Waffen und Kernsysteme Ihres Mechs</feature>
+            <feature>Strategischer Kampf: Echtzeit-Schlachten, die taktische Positionierung und Ressourcenmanagement erfordern</feature>
+            <feature>Progressive Weiterentwicklung: Schalten Sie neue Mech-Chassis und fortschrittliche Waffen frei</feature>
+            <feature>Mehrspieler-Arenen: Fordern Sie andere Piloten in verschiedenen Kampfszenarien heraus</feature>
+            <feature>Dynamisches Wettersystem: Passen Sie Ihre Strategie an wechselnde Schlachtfeldbedingungen an</feature>
+          </features>
+        </description>
+      </de>
+      <fr>
+        <name>Jeu de Combat Mech Inconnu</name>
+        <description>
+          <intro>Entrez dans un monde de guerre mécanique avancée où les pilotes contrôlent des mechs de combat sophistiqués dans des combats d'arène à haut risque. Ce jeu propose :</intro>
+          <features>
+            <feature>Système de personnalisation approfondi : Modifiez l'armure, les armes et les systèmes de base de votre mech</feature>
+            <feature>Combat stratégique : Batailles en temps réel nécessitant positionnement tactique et gestion des ressources</feature>
+            <feature>Progression évolutive : Débloquez de nouveaux châssis de mech et armement avancé</feature>
+            <feature>Arènes multijoueurs : Défiez d'autres pilotes dans divers scénarios de combat</feature>
+            <feature>Système météo dynamique : Adaptez votre stratégie aux conditions changeantes du champ de bataille</feature>
+          </features>
+        </description>
+      </fr>
+      <ru>
+        <name>Неизвестная игра боевых мехов</name>
+        <description>
+          <intro>Войдите в мир продвинутой механической войны, где пилоты управляют сложными боевыми мехами в рискованных аренных сражениях. Особенности игры:</intro>
+          <features>
+            <feature>Глубокая система настройки: Модифицируйте броню, оружие и основные системы вашего меха</feature>
+            <feature>Стратегический бой: Сражения в реальном времени, требующие тактического позиционирования</feature>
+            <feature>Прогрессивное развитие: Разблокируйте новые шасси мехов и продвинутое вооружение</feature>
+            <feature>Многопользовательские арены: Бросьте вызов другим пилотам в различных боевых сценариях</feature>
+            <feature>Динамическая система погоды: Адаптируйте стратегию к меняющимся условиям поля боя</feature>
+          </features>
+        </description>
+      </ru>
+      <zh>
+        <name>未知机甲战斗游戏</name>
+        <description>
+          <intro>进入一个先进机械战争的世界，飞行员在高风险的竞技场战斗中控制着复杂的战斗机甲。游戏特色：</intro>
+          <features>
+            <feature>深度定制系统：修改机甲的装甲、武器和核心系统</feature>
+            <feature>战略战斗：需要战术定位和资源管理的实时战斗</feature>
+            <feature>渐进式进阶：随着排名提升解锁新的机甲底盘和先进武器</feature>
+            <feature>多人竞技场：在各种战斗场景中挑战其他飞行员</feature>
+            <feature>动态天气系统：根据不断变化的战场条件调整策略</feature>
+          </features>
+        </description>
+      </zh>
+      <vi>
+        <name>Trò Chơi Chiến Đấu Robot Bí Ẩn</name>
+        <description>
+          <intro>Bước vào thế giới chiến tranh cơ khí tiên tiến nơi các phi công điều khiển những robot chiến đấu tinh vi trong các trận chiến đấu trường căng thẳng. Trò chơi có các tính năng:</intro>
+          <features>
+            <feature>Hệ thống tùy chỉnh sâu: Điều chỉnh giáp, vũ khí và hệ thống cốt lõi của robot</feature>
+            <feature>Chiến đấu chiến lược: Các trận chiến thời gian thực đòi hỏi định vị chiến thuật</feature>
+            <feature>Tiến triển dần dần: Mở khóa khung gầm robot mới và vũ khí tiên tiến</feature>
+            <feature>Đấu trường nhiều người chơi: Thách đấu các phi công khác trong nhiều kịch bản chiến đấu</feature>
+            <feature>Hệ thống thời tiết năng động: Điều chỉnh chiến lược theo điều kiện chiến trường</feature>
+          </features>
+        </description>
+      </vi>
+    </translations>
+  </game>
+  <!-- Add similar translation structure for other games -->
+</games>

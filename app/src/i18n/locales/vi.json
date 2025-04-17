@@ -1,0 +1,41 @@
+{
+  "title": "Thẻ Quà Tặng Lion Dubai",
+  "gameSelection": "Lựa Chọn Trò Chơi",
+  "giftCardDetails": "Chi Tiết Thẻ Quà Tặng",
+  "serialNumber": "Số Sê-ri",
+  "cvv": "Mã CVV",
+  "expirationDate": "Ngày Hết Hạn",
+  "tiktokAccount": "Tài Khoản TikTok",
+  "tiktokUsername": "Tên Người Dùng TikTok",
+  "pay": "Thanh Toán",
+  "paymentSuccess": "Thanh toán thành công - {{amount}} USD",
+  "paymentFailed": "Thanh toán thất bại - Thẻ quà tặng không thể đổi",
+  "purchaseCard": {
+    "title": "Bạn chưa có Thẻ Quà Tặng Lion Dubai?",
+    "description": "Mua ngay từ Ar-pay",
+    "button": "Mua Thẻ Quà Tặng"
+  },
+  "footer": {
+    "companyName": "© 2025 Lion Dubai Games. Bảo lưu mọi quyền.",
+    "disclaimer": "Tất cả các thương hiệu đều là tài sản của chủ sở hữu tương ứng tại UAE và các quốc gia khác.",
+    "links": {
+      "privacy": "Chính Sách Bảo Mật",
+      "terms": "Điều Khoản Sử Dụng",
+      "refund": "Chính Sách Hoàn Tiền"
+    }
+  },
+  "navigation": {
+    "backToHome": "Trở về Trang Chủ"
+  },
+  "errors": {
+    "serialNumberRequired": "Yêu cầu số sê-ri",
+    "serialNumberLength": "Số sê-ri phải có 16 chữ số",
+    "cvvRequired": "Yêu cầu mã CVV",
+    "cvvLength": "Mã CVV phải có 3 chữ số",
+    "tiktokRequired": "Yêu cầu tên người dùng TikTok",
+    "invalidTiktok": "Định dạng tên người dùng TikTok không hợp lệ",
+    "searchGames": "Tìm kiếm trò chơi...",
+    "noGamesFound": "Không tìm thấy trò chơi",
+    "enterTiktokUsername": "Nhập tên người dùng TikTok của bạn"
+  }
+}

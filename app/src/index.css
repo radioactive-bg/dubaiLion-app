@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* RTL Support */
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Swiper Navigation RTL Support */
+.rtl .swiper-button-next,
+.rtl .swiper-button-prev {
+  transform: scaleX(-1);
+}
+
+/* Input Fields RTL Support */
+.rtl input[type="text"],
+.rtl input[type="number"] {
+  text-align: right;
+}
+
+/* Keep specific inputs LTR */
+.rtl input[type="text"].ltr-input,
+.rtl input[data-ltr="true"] {
+  direction: ltr;
+  text-align: left;
+}
+
+/* RTL List Styles */
+.rtl ul, 
+.rtl ol {
+  padding-right: 1.5rem;
+  padding-left: 0;
+}
+
+/* RTL Margins */
+.rtl .ml-auto {
+  margin-right: auto !important;
+  margin-left: 0 !important;
+}
+
+.rtl .mr-auto {
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+
+/* RTL Flexbox */
+.rtl .space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+}
+
+.rtl .space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 1;
+}
+
+/* RTL Grid */
+.rtl .grid {
+  direction: rtl;
+}
+
+/* RTL Icons */
+.rtl .transform-flip {
+  transform: scaleX(-1);
+}
+
+/* RTL Shadows */
+.rtl .shadow-lg {
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+/* RTL Borders */
+.rtl .border-l {
+  border-right-width: 1px;
+  border-left-width: 0px;
+}
+
+.rtl .border-r {
+  border-left-width: 1px;
+  border-right-width: 0px;
+}
+
+/* RTL Text Alignment in Flexbox */
+.rtl .items-start {
+  align-items: flex-start;
+}
+
+.rtl .justify-start {
+  justify-content: flex-start;
+}
+
+/* RTL Dropdown Positioning */
+.rtl .dropdown-menu {
+  right: 0;
+  left: auto;
+}

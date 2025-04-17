@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  # Production application
+  app:
+    build:
+      context: .
+      args:
+        - VITE_API_URL=${PROD_API_URL:-https://api.liondubai.net}
+    environment:
+      - VITE_API_URL=${PROD_API_URL:-https://api.liondubai.net}
+
+  # Staging application
+  staging:
+    build:
+      context: .
+      args:
+        - VITE_API_URL=${STAGING_API_URL:-https://api.staging.liondubai.net}
+    environment:
+      - VITE_API_URL=${STAGING_API_URL:-https://api.staging.liondubai.net}
+

@@ -1,41 +1,72 @@
 {
-  "title": "迪拜狮子礼品卡",
-  "gameSelection": "游戏选择",
-  "giftCardDetails": "礼品卡详情",
-  "serialNumber": "序列号",
-  "cvv": "CVV",
-  "expirationDate": "有效期",
-  "tiktokAccount": "抖音账号",
-  "tiktokUsername": "抖音用户名",
-  "pay": "支付",
-  "paymentSuccess": "支付成功 - {{amount}} USD",
-  "paymentFailed": "支付失败 - 礼品卡无法兑换",
-  "purchaseCard": {
-    "title": "还没有迪拜狮子礼品卡？",
-    "description": "现在从Ar-pay购买",
-    "button": "购买礼品卡"
+  "header": {
+    "home": "首页",
+    "games": "游戏",
+    "redeem": "兑换",
+    "contact": "联系我们"
   },
-  "footer": {
-    "companyName": "© 2025 迪拜狮子游戏。保留所有权利。",
-    "disclaimer": "所有商标均为其在阿联酋和其他国家/地区各自所有者的财产。",
-    "links": {
-      "privacy": "隐私政策",
-      "terms": "使用条款",
-      "refund": "退款政策"
+  "hero": {
+    "title": "兑换您的游戏卡",
+    "subtitle": "使用我们的高级礼品卡解锁独家游戏和内容",
+    "exploreGames": "探索游戏",
+    "redeemCard": "兑换卡片"
+  },
+  "games": {
+    "title": "探索我们的游戏库",
+    "subtitle": "发现可用我们的高级礼品卡兑换的最新最佳游戏",
+    "platforms": {
+      "pc": "电脑",
+      "playstation": "PlayStation",
+      "xbox": "Xbox",
+      "nintendo": "任天堂",
+      "mobile": "手机"
     }
   },
-  "navigation": {
-    "backToHome": "返回首页"
+  "redeem": {
+    "title": "兑换您的卡片",
+    "subtitle": "在下方输入您的卡片详情以兑换游戏礼品卡",
+    "form": {
+      "tiktokUsername": "TikTok用户名",
+      "tiktokUsernamePlaceholder": "@您的用户名",
+      "cardNumber": "卡片序列号",
+      "cardNumberPlaceholder": "输入卡片序列号",
+      "cvv": "卡片CVV",
+      "cvvPlaceholder": "输入CVV",
+      "submit": "兑换卡片",
+      "processing": "处理中..."
+    },
+    "validation": {
+      "tiktokRequired": "需要TikTok用户名",
+      "cardNumberRequired": "需要卡片序列号",
+      "cardNumberInvalid": "请输入有效的卡号（仅限数字）",
+      "cvvRequired": "需要CVV",
+      "cvvInvalid": "请输入有效的CVV（仅限数字）"
+    },
+    "success": "卡片兑换成功！",
+    "error": "卡片兑换失败。请重试。",
+    "generalError": "发生错误。请稍后重试。"
   },
-  "errors": {
-    "serialNumberRequired": "需要序列号",
-    "serialNumberLength": "序列号必须为16位数字",
-    "cvvRequired": "需要CVV",
-    "cvvLength": "CVV必须为3位数字",
-    "tiktokRequired": "需要抖音用户名",
-    "invalidTiktok": "抖音用户名格式无效",
-    "searchGames": "搜索游戏...",
-    "noGamesFound": "未找到游戏",
-    "enterTiktokUsername": "输入您的抖音用户名"
+  "contact": {
+    "title": "与我们联系",
+    "subtitle": "在社交媒体上关注我们以获取更新、促销和游戏新闻",
+    "platforms": {
+      "telegram": "Telegram",
+      "instagram": "Instagram",
+      "discord": "Discord",
+      "tiktok": "TikTok"
+    }
+  },
+  "footer": {
+    "rights": "版权所有。"
+  },
+  "language": {
+    "select": "选择语言",
+    "en": "English",
+    "ar": "العربية",
+    "de": "Deutsch",
+    "ru": "Русский",
+    "fr": "Français",
+    "zh": "中文",
+    "vi": "Tiếng Việt"
   }
 }

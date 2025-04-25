@@ -1,41 +1,72 @@
 {
-  "title": "Подарочная карта Lion Dubai",
-  "gameSelection": "Выбор игры",
-  "giftCardDetails": "Детали подарочной карты",
-  "serialNumber": "Серийный номер",
-  "cvv": "CVV",
-  "expirationDate": "Срок действия",
-  "tiktokAccount": "Аккаунт TikTok",
-  "tiktokUsername": "Имя пользователя TikTok",
-  "pay": "Оплатить",
-  "paymentSuccess": "Платеж успешно проведен - {{amount}} USD",
-  "paymentFailed": "Платеж не прошел - Подарочная карта не может быть использована",
-  "purchaseCard": {
-    "title": "У вас нет подарочной карты Lion Dubai?",
-    "description": "Купить сейчас на Ar-pay",
-    "button": "Купить подарочную карту"
+  "header": {
+    "home": "Главная",
+    "games": "Игры",
+    "redeem": "Активировать",
+    "contact": "Контакты"
   },
-  "footer": {
-    "companyName": "© 2025 Lion Dubai Games. Все права защищены.",
-    "disclaimer": "Все товарные знаки являются собственностью их владельцев в ОАЭ и других странах.",
-    "links": {
-      "privacy": "Политика конфиденциальности",
-      "terms": "Условия использования",
-      "refund": "Политика возврата"
+  "hero": {
+    "title": "Активируйте ваши игровые карты",
+    "subtitle": "Разблокируйте эксклюзивные игры и контент с нашими премиум подарочными картами",
+    "exploreGames": "Исследовать игры",
+    "redeemCard": "Активировать карту"
+  },
+  "games": {
+    "title": "Исследуйте нашу библиотеку игр",
+    "subtitle": "Откройте для себя новейшие и лучшие игры, доступные для активации с нашими премиум подарочными картами",
+    "platforms": {
+      "pc": "ПК",
+      "playstation": "PlayStation",
+      "xbox": "Xbox",
+      "nintendo": "Nintendo",
+      "mobile": "Мобильные"
     }
   },
-  "navigation": {
-    "backToHome": "Вернуться на главную"
+  "redeem": {
+    "title": "Активируйте вашу карту",
+    "subtitle": "Введите данные вашей карты ниже, чтобы активировать игровую подарочную карту",
+    "form": {
+      "tiktokUsername": "Имя пользователя TikTok",
+      "tiktokUsernamePlaceholder": "@вашеимя",
+      "cardNumber": "Серийный номер карты",
+      "cardNumberPlaceholder": "Введите серийный номер карты",
+      "cvv": "CVV карты",
+      "cvvPlaceholder": "Введите CVV",
+      "submit": "Активировать карту",
+      "processing": "Обработка..."
+    },
+    "validation": {
+      "tiktokRequired": "Требуется имя пользователя TikTok",
+      "cardNumberRequired": "Требуется серийный номер карты",
+      "cardNumberInvalid": "Пожалуйста, введите действительный номер карты (только цифры)",
+      "cvvRequired": "Требуется CVV",
+      "cvvInvalid": "Пожалуйста, введите действительный CVV (только цифры)"
+    },
+    "success": "Карта успешно активирована!",
+    "error": "Не удалось активировать карту. Пожалуйста, попробуйте снова.",
+    "generalError": "Произошла ошибка. Пожалуйста, попробуйте позже."
   },
-  "errors": {
-    "serialNumberRequired": "Требуется серийный номер",
-    "serialNumberLength": "Серийный номер должен содержать 16 цифр",
-    "cvvRequired": "Требуется CVV",
-    "cvvLength": "CVV должен содержать 3 цифры",
-    "tiktokRequired": "Требуется имя пользователя TikTok",
-    "invalidTiktok": "Неверный формат имени пользователя TikTok",
-    "searchGames": "Поиск игр...",
-    "noGamesFound": "Игры не найдены",
-    "enterTiktokUsername": "Введите ваше имя пользователя TikTok"
+  "contact": {
+    "title": "Свяжитесь с нами",
+    "subtitle": "Подписывайтесь на нас в социальных сетях для получения обновлений, акций и игровых новостей",
+    "platforms": {
+      "telegram": "Telegram",
+      "instagram": "Instagram",
+      "discord": "Discord",
+      "tiktok": "TikTok"
+    }
+  },
+  "footer": {
+    "rights": "Все права защищены."
+  },
+  "language": {
+    "select": "Выберите язык",
+    "en": "English",
+    "ar": "العربية",
+    "de": "Deutsch",
+    "ru": "Русский",
+    "fr": "Français",
+    "zh": "中文",
+    "vi": "Tiếng Việt"
   }
 }

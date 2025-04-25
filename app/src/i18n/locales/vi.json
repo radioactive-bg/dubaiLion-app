@@ -1,41 +1,72 @@
 {
-  "title": "Thẻ Quà Tặng Lion Dubai",
-  "gameSelection": "Lựa Chọn Trò Chơi",
-  "giftCardDetails": "Chi Tiết Thẻ Quà Tặng",
-  "serialNumber": "Số Sê-ri",
-  "cvv": "Mã CVV",
-  "expirationDate": "Ngày Hết Hạn",
-  "tiktokAccount": "Tài Khoản TikTok",
-  "tiktokUsername": "Tên Người Dùng TikTok",
-  "pay": "Thanh Toán",
-  "paymentSuccess": "Thanh toán thành công - {{amount}} USD",
-  "paymentFailed": "Thanh toán thất bại - Thẻ quà tặng không thể đổi",
-  "purchaseCard": {
-    "title": "Bạn chưa có Thẻ Quà Tặng Lion Dubai?",
-    "description": "Mua ngay từ Ar-pay",
-    "button": "Mua Thẻ Quà Tặng"
+  "header": {
+    "home": "Trang chủ",
+    "games": "Trò chơi",
+    "redeem": "Đổi thẻ",
+    "contact": "Liên hệ"
   },
-  "footer": {
-    "companyName": "© 2025 Lion Dubai Games. Bảo lưu mọi quyền.",
-    "disclaimer": "Tất cả các thương hiệu đều là tài sản của chủ sở hữu tương ứng tại UAE và các quốc gia khác.",
-    "links": {
-      "privacy": "Chính Sách Bảo Mật",
-      "terms": "Điều Khoản Sử Dụng",
-      "refund": "Chính Sách Hoàn Tiền"
+  "hero": {
+    "title": "Đổi thẻ game của bạn",
+    "subtitle": "Mở khóa các trò chơi và nội dung độc quyền với thẻ quà tặng cao cấp của chúng tôi",
+    "exploreGames": "Khám phá trò chơi",
+    "redeemCard": "Đổi thẻ"
+  },
+  "games": {
+    "title": "Khám phá thư viện trò chơi của chúng tôi",
+    "subtitle": "Khám phá những trò chơi mới nhất và hay nhất có sẵn để đổi thẻ với thẻ quà tặng cao cấp của chúng tôi",
+    "platforms": {
+      "pc": "PC",
+      "playstation": "PlayStation",
+      "xbox": "Xbox",
+      "nintendo": "Nintendo",
+      "mobile": "Di động"
     }
   },
-  "navigation": {
-    "backToHome": "Trở về Trang Chủ"
+  "redeem": {
+    "title": "Đổi thẻ của bạn",
+    "subtitle": "Nhập chi tiết thẻ của bạn bên dưới để đổi thẻ quà tặng game",
+    "form": {
+      "tiktokUsername": "Tên người dùng TikTok",
+      "tiktokUsernamePlaceholder": "@tênbạn",
+      "cardNumber": "Số seri thẻ",
+      "cardNumberPlaceholder": "Nhập số seri thẻ",
+      "cvv": "CVV thẻ",
+      "cvvPlaceholder": "Nhập CVV",
+      "submit": "Đổi thẻ",
+      "processing": "Đang xử lý..."
+    },
+    "validation": {
+      "tiktokRequired": "Cần tên người dùng TikTok",
+      "cardNumberRequired": "Cần số seri thẻ",
+      "cardNumberInvalid": "Vui lòng nhập số thẻ hợp lệ (chỉ số)",
+      "cvvRequired": "Cần CVV",
+      "cvvInvalid": "Vui lòng nhập CVV hợp lệ (chỉ số)"
+    },
+    "success": "Đổi thẻ thành công!",
+    "error": "Không thể đổi thẻ. Vui lòng thử lại.",
+    "generalError": "Đã xảy ra lỗi. Vui lòng thử lại sau."
   },
-  "errors": {
-    "serialNumberRequired": "Yêu cầu số sê-ri",
-    "serialNumberLength": "Số sê-ri phải có 16 chữ số",
-    "cvvRequired": "Yêu cầu mã CVV",
-    "cvvLength": "Mã CVV phải có 3 chữ số",
-    "tiktokRequired": "Yêu cầu tên người dùng TikTok",
-    "invalidTiktok": "Định dạng tên người dùng TikTok không hợp lệ",
-    "searchGames": "Tìm kiếm trò chơi...",
-    "noGamesFound": "Không tìm thấy trò chơi",
-    "enterTiktokUsername": "Nhập tên người dùng TikTok của bạn"
+  "contact": {
+    "title": "Kết nối với chúng tôi",
+    "subtitle": "Theo dõi chúng tôi trên mạng xã hội để cập nhật, khuyến mãi và tin tức game",
+    "platforms": {
+      "telegram": "Telegram",
+      "instagram": "Instagram",
+      "discord": "Discord",
+      "tiktok": "TikTok"
+    }
+  },
+  "footer": {
+    "rights": "Đã đăng ký bản quyền."
+  },
+  "language": {
+    "select": "Chọn ngôn ngữ",
+    "en": "English",
+    "ar": "العربية",
+    "de": "Deutsch",
+    "ru": "Русский",
+    "fr": "Français",
+    "zh": "中文",
+    "vi": "Tiếng Việt"
   }
 }

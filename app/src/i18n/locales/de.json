@@ -1,41 +1,72 @@
 {
-  "title": "Lion Dubai Geschenkkarte",
-  "gameSelection": "Spielauswahl",
-  "giftCardDetails": "Geschenkkarten-Details",
-  "serialNumber": "Seriennummer",
-  "cvv": "CVV",
-  "expirationDate": "Ablaufdatum",
-  "tiktokAccount": "TikTok-Konto",
-  "tiktokUsername": "TikTok-Benutzername",
-  "pay": "Bezahlen",
-  "paymentSuccess": "Zahlung erfolgreich erfasst - USD {{amount}}",
-  "paymentFailed": "Zahlung fehlgeschlagen - Geschenkkarte nicht einlösbar",
-  "purchaseCard": {
-    "title": "Keine Lion Dubai Geschenkkarte?",
-    "description": "Jetzt bei Ar-pay kaufen",
-    "button": "Geschenkkarte kaufen"
+  "header": {
+    "home": "Startseite",
+    "games": "Spiele",
+    "redeem": "Einlösen",
+    "contact": "Kontakt"
   },
-  "footer": {
-    "companyName": "© 2025 Lion Dubai Games. Alle Rechte vorbehalten.",
-    "disclaimer": "Alle Marken sind Eigentum ihrer jeweiligen Inhaber in den VAE und anderen Ländern.",
-    "links": {
-      "privacy": "Datenschutzrichtlinie",
-      "terms": "Nutzungsbedingungen",
-      "refund": "Rückgaberecht"
+  "hero": {
+    "title": "Löse deine Gaming-Karten ein",
+    "subtitle": "Schalte exklusive Spiele und Inhalte mit unseren Premium-Geschenkkarten frei",
+    "exploreGames": "Spiele entdecken",
+    "redeemCard": "Karte einlösen"
+  },
+  "games": {
+    "title": "Entdecke unsere Spielebibliothek",
+    "subtitle": "Entdecke die neuesten und besten Spiele, die mit unseren Premium-Geschenkkarten eingelöst werden können",
+    "platforms": {
+      "pc": "PC",
+      "playstation": "PlayStation",
+      "xbox": "Xbox",
+      "nintendo": "Nintendo",
+      "mobile": "Mobil"
     }
   },
-  "navigation": {
-    "backToHome": "Zurück zur Startseite"
+  "redeem": {
+    "title": "Löse deine Karte ein",
+    "subtitle": "Gib unten deine Kartendetails ein, um deine Gaming-Geschenkkarte einzulösen",
+    "form": {
+      "tiktokUsername": "TikTok Benutzername",
+      "tiktokUsernamePlaceholder": "@deinbenutzername",
+      "cardNumber": "Karten-Seriennummer",
+      "cardNumberPlaceholder": "Seriennummer eingeben",
+      "cvv": "Karten-CVV",
+      "cvvPlaceholder": "CVV eingeben",
+      "submit": "Karte einlösen",
+      "processing": "Verarbeitung..."
+    },
+    "validation": {
+      "tiktokRequired": "TikTok Benutzername ist erforderlich",
+      "cardNumberRequired": "Seriennummer ist erforderlich",
+      "cardNumberInvalid": "Bitte gib eine gültige Kartennummer ein (nur Zahlen)",
+      "cvvRequired": "CVV ist erforderlich",
+      "cvvInvalid": "Bitte gib einen gültigen CVV-Code ein (nur Zahlen)"
+    },
+    "success": "Karte erfolgreich eingelöst!",
+    "error": "Einlösen der Karte fehlgeschlagen. Bitte versuche es erneut.",
+    "generalError": "Ein Fehler ist aufgetreten. Bitte versuche es später erneut."
   },
-  "errors": {
-    "serialNumberRequired": "Seriennummer ist erforderlich",
-    "serialNumberLength": "Seriennummer muss 16 Ziffern lang sein",
-    "cvvRequired": "CVV ist erforderlich",
-    "cvvLength": "CVV muss 3 Ziffern lang sein",
-    "tiktokRequired": "TikTok-Benutzername ist erforderlich",
-    "invalidTiktok": "Ungültiges TikTok-Benutzernamenformat",
-    "searchGames": "Spiele suchen...",
-    "noGamesFound": "Keine Spiele gefunden",
-    "enterTiktokUsername": "Geben Sie Ihren TikTok-Benutzernamen ein"
+  "contact": {
+    "title": "Verbinde dich mit uns",
+    "subtitle": "Folge uns in den sozialen Medien für Updates, Aktionen und Gaming-News",
+    "platforms": {
+      "telegram": "Telegram",
+      "instagram": "Instagram",
+      "discord": "Discord",
+      "tiktok": "TikTok"
+    }
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "language": {
+    "select": "Sprache auswählen",
+    "en": "English",
+    "ar": "العربية",
+    "de": "Deutsch",
+    "ru": "Русский",
+    "fr": "Français",
+    "zh": "中文",
+    "vi": "Tiếng Việt"
   }
 }

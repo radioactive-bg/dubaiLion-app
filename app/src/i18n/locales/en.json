@@ -1,41 +1,72 @@
 {
-  "title": "Lion Dubai Gift Card",
-  "gameSelection": "Game Selection",
-  "giftCardDetails": "Gift Card Details",
-  "serialNumber": "Serial Number",
-  "cvv": "CVV",
-  "expirationDate": "Expiration Date",
-  "tiktokAccount": "TikTok Account",
-  "tiktokUsername": "TikTok Username",
-  "pay": "Pay",
-  "paymentSuccess": "Payment Successfully Captured - USD {{amount}}",
-  "paymentFailed": "Payment Failed - Gift Card is not redeemable",
-  "purchaseCard": {
-    "title": "Don't have Lion Dubai Gift Card?",
-    "description": "Purchase now from Ar-pay",
-    "button": "Buy Gift Card"
+  "header": {
+    "home": "Home",
+    "games": "Games",
+    "redeem": "Redeem",
+    "contact": "Contact"
   },
-  "footer": {
-    "companyName": "© 2025 Lion Dubai Games. All rights reserved.",
-    "disclaimer": "All trademarks are property of their respective owners in the UAE and other countries.",
-    "links": {
-      "privacy": "Privacy Policy",
-      "terms": "Terms & Conditions",
-      "refund": "Refund Policy"
+  "hero": {
+    "title": "Redeem Your Gaming Cards",
+    "subtitle": "Unlock exclusive games and content with our premium gift cards",
+    "exploreGames": "Explore Games",
+    "redeemCard": "Redeem Card"
+  },
+  "games": {
+    "title": "Explore Our Game Library",
+    "subtitle": "Discover the latest and greatest games available for redemption with our premium gift cards",
+    "platforms": {
+      "pc": "PC",
+      "playstation": "PlayStation",
+      "xbox": "Xbox",
+      "nintendo": "Nintendo",
+      "mobile": "Mobile"
     }
   },
-  "navigation": {
-    "backToHome": "Back to Home"
+  "redeem": {
+    "title": "Redeem Your Card",
+    "subtitle": "Enter your card details below to redeem your gaming gift card",
+    "form": {
+      "tiktokUsername": "TikTok Username",
+      "tiktokUsernamePlaceholder": "@yourusername",
+      "cardNumber": "Card Serial Number",
+      "cardNumberPlaceholder": "Enter card serial number",
+      "cvv": "Card CVV",
+      "cvvPlaceholder": "Enter CVV",
+      "submit": "Redeem Card",
+      "processing": "Processing..."
+    },
+    "validation": {
+      "tiktokRequired": "TikTok username is required",
+      "cardNumberRequired": "Card serial number is required",
+      "cardNumberInvalid": "Please enter a valid card number (numbers only)",
+      "cvvRequired": "CVV is required",
+      "cvvInvalid": "Please enter a valid CVV (numbers only)"
+    },
+    "success": "Card redeemed successfully!",
+    "error": "Failed to redeem card. Please try again.",
+    "generalError": "An error occurred. Please try again later."
   },
-  "errors": {
-    "serialNumberRequired": "Serial number is required",
-    "serialNumberLength": "Serial number must be 16 digits",
-    "cvvRequired": "CVV is required",
-    "cvvLength": "CVV must be 3 digits",
-    "tiktokRequired": "TikTok username is required",
-    "invalidTiktok": "Invalid TikTok username format",
-    "searchGames": "Search games...",
-    "noGamesFound": "No games found",
-    "enterTiktokUsername": "Enter your TikTok username"
+  "contact": {
+    "title": "Connect With Us",
+    "subtitle": "Follow us on social media for updates, promotions, and gaming news",
+    "platforms": {
+      "telegram": "Telegram",
+      "instagram": "Instagram",
+      "discord": "Discord",
+      "tiktok": "TikTok"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "language": {
+    "select": "Select Language",
+    "en": "English",
+    "ar": "العربية",
+    "de": "Deutsch",
+    "ru": "Русский",
+    "fr": "Français",
+    "zh": "中文",
+    "vi": "Tiếng Việt"
   }
 }

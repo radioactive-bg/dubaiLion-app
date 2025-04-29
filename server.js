@@ -87,37 +87,43 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, "dist")));
 
 // Define routes directly without using app.route()
-app.post("/api/webhooks/zoho-forms", async (req, res) => {
+app.post("/api/webhooks/zoho-forms", function (req, res) {
   try {
     const { tiktokUsername, cardSerialNumber, cvv } = req.body;
     console.log("Received webhook request:", req.body);
 
-    const result = await redeemCard({
+    redeemCard({
       tiktokUsername,
       data: {
         number: cardSerialNumber,
         cvv,
       },
-    });
-
-    console.log("Redeem result:", result);
-    return res.status(200).json({ success: true });
+    })
+      .then((result) => {
+        console.log("Redeem result:", result);
+        res.status(200).json({ success: true });
+      })
+      .catch((err) => {
+        console.error("Webhook handler error:", err);
+        res.status(200).json({ success: false, error: err.message });
+      });
   } catch (err) {
-    console.error("Webhook handler error:", err);
-    // return 200 so Zoho marks it "delivered"
-    return res.status(200).json({ success: false, error: err.message });
+    console.error("Request processing error:", err);
+    res.status(200).json({ success: false, error: err.message });
   }
 });
 
-app.get("/api/redemptions", (req, res) => {
+app.get("/api/redemptions", function (req, res) {
   res.json(redemptionEntries);
 });
 
 // Single route for all frontend routes - placed last
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "dist", "index.html"));
+app.get("/*", function (req, res) {
+  res.sendFile(path.join(__dirname, "dist/index.html"));
 });
 
 // Start server
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`⚡️ Server listening on port ${PORT}`));
+app.listen(PORT, function () {
+  console.log(`⚡️ Server listening on port ${PORT}`);
+});

@@ -55,9 +55,10 @@ const RedeemSection: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
             <span className="text-gaming-accent">Redeem</span> Your Card
           </h2>
-          <p className="text-lg text-secondary-300 max-w-2xl mx-auto">
+
+          {/* <p className="text-lg text-secondary-300 max-w-2xl mx-auto">
             Enter your card details below to redeem your gaming gift card
-          </p>
+          </p> */}
         </motion.div>
 
         <motion.div
@@ -65,7 +66,6 @@ const RedeemSection: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="max-w-md mx-auto bg-gaming-card p-8 rounded-xl shadow-lg"
         >
           {redeemStatus && (
             <div className={`mb-6 p-4 rounded-lg ${
@@ -76,8 +76,9 @@ const RedeemSection: React.FC = () => {
               {redeemStatus.message}
             </div>
           )}
+          <iframe aria-label='Enter your card details below to redeem your gaming gift card' frameBorder="0" style={{height: '600px', width: '448px', borderRadius: '35px', padding: '20px', margin: '0px auto'}} src='https://forms.zohopublic.com/arpayhks/form/LionDubaitestform/formperma/NMUsXosjNcb_HilAO9GxScn-Aj2NqPQS4CNUPKdnSEI'></iframe>
 
-          <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+          {/* <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
             <div>
               <label htmlFor="tiktokUsername" className="block text-sm font-medium text-secondary-300 mb-1">
                 TikTok Username
@@ -158,7 +159,7 @@ const RedeemSection: React.FC = () => {
                 'Redeem Card'
               )}
             </button>
-          </form>
+          </form> */}
         </motion.div>
       </div>
     </section>

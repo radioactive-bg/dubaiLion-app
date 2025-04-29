@@ -6,7 +6,7 @@ import {
   PiInstagramLogoBold,
   PiTiktokLogoBold,
 } from "react-icons/pi";
-import { AiOutlineDiscord } from "react-icons/ai";
+import { LiaDiscord } from "react-icons/lia";
 
 const socialLinks: SocialLink[] = [
   {
@@ -39,7 +39,7 @@ const ContactSection: React.FC = () => {
       case "instagram":
         return <PiInstagramLogoBold size={32} />;
       case "discord":
-        return <AiOutlineDiscord size={32} />;
+        return <LiaDiscord size={32} />;
       case "tiktok":
         return <PiTiktokLogoBold size={32} />;
       default:

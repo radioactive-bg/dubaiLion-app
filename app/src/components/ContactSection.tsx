@@ -1,41 +1,46 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { SocialLink } from '../types';
+import React from "react";
+import { motion } from "framer-motion";
+import { SocialLink } from "../types";
+import {
+  PiTelegramLogoBold,
+  PiInstagramLogoBold,
+  PiTiktokLogoBold,
+} from "react-icons/pi";
 import { AiOutlineDiscord } from "react-icons/ai";
-import { PiTelegramLogoBold, PiInstagramLogoBold, PiTiktokLogoBold } from "react-icons/pi";
+
 const socialLinks: SocialLink[] = [
   {
-    platform: 'Telegram',
-    url: 'https://t.me/Lion_Dubai',
-    icon: 'telegram'
+    platform: "Telegram",
+    url: "https://t.me/Lion_Dubai",
+    icon: "telegram",
   },
   {
-    platform: 'Instagram',
-    url: 'https://www.instagram.com/lion_dubai_?igsh=MW16a2lveGRhYjhiZA%3D%3D&utm_source=qr',
-    icon: 'instagram'
+    platform: "Instagram",
+    url: "https://www.instagram.com/lion_dubai_?igsh=MW16a2lveGRhYjhiZA%3D%3D&utm_source=qr",
+    icon: "instagram",
   },
   {
-    platform: 'Discord',
-    url: 'https://discord.com/users/462748514519351298',
-    icon: 'discord'
+    platform: "Discord",
+    url: "https://discord.com/users/462748514519351298",
+    icon: "discord",
   },
   {
-    platform: 'TikTok',
-    url: 'https://www.tiktok.com/@lion_dubai_?_r=1&_d=eaacmmbgeejmfi&sec_uid=MS4wLjABAAAAQkG4ljVRmQHj9y7DjfO-qnwBU-BfGRu6TveWairOxjukCSv49oBR-rcFWk_L0joJ&share_author_id=7291222956894012448&sharer_language=ar&source=h5_m&u_code=eag7i3e2hf3a25&ug_btm=b8727,b0&social_share_type=4&utm_source=copy&sec_user_id=MS4wLjABAAAAQkG4ljVRmQHj9y7DjfO-qnwBU-BfGRu6TveWairOxjukCSv49oBR-rcFWk_L0joJ&tt_from=copy&utm_medium=ios&utm_campaign=client_share&enable_checksum=1&user_id=7291222956894012448&share_link_id=3035A6D3-A7AF-45A0-A3F8-1AD247F2440A&share_app_id=1233',
-    icon: 'tiktok'
-  }
+    platform: "TikTok",
+    url: "https://www.tiktok.com/@lion_dubai_?_r=1&_d=eaacmmbgeejmfi&sec_uid=MS4wLjABAAAAQkG4ljVRmQHj9y7DjfO-qnwBU-BfGRu6TveWairOxjukCSv49oBR-rcFWk_L0joJ&share_author_id=7291222956894012448&sharer_language=ar&source=h5_m&u_code=eag7i3e2hf3a25&ug_btm=b8727,b0&social_share_type=4&utm_source=copy&sec_user_id=MS4wLjABAAAAQkG4ljVRmQHj9y7DjfO-qnwBU-BfGRu6TveWairOxjukCSv49oBR-rcFWk_L0joJ&tt_from=copy&utm_medium=ios&utm_campaign=client_share&enable_checksum=1&user_id=7291222956894012448&share_link_id=3035A6D3-A7AF-45A0-A3F8-1AD247F2440A&share_app_id=1233",
+    icon: "tiktok",
+  },
 ];
 
 const ContactSection: React.FC = () => {
   const getSocialIcon = (icon: string) => {
     switch (icon) {
-      case 'telegram':
+      case "telegram":
         return <PiTelegramLogoBold size={32} />;
-      case 'instagram':
+      case "instagram":
         return <PiInstagramLogoBold size={32} />;
-      case 'discord':
+      case "discord":
         return <AiOutlineDiscord size={32} />;
-      case 'tiktok':
+      case "tiktok":
         return <PiTiktokLogoBold size={32} />;
       default:
         return null;

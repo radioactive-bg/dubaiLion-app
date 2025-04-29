@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { GitBranch as BrandTelegram, Instagram, MessageCircle, GitBranch as BrandTiktok } from 'lucide-react';
 import { SocialLink } from '../types';
-
+import { AiOutlineDiscord } from "react-icons/ai";
+import { PiTelegramLogoBold, PiInstagramLogoBold, PiTiktokLogoBold } from "react-icons/pi";
 const socialLinks: SocialLink[] = [
   {
     platform: 'Telegram',
@@ -30,13 +30,13 @@ const ContactSection: React.FC = () => {
   const getSocialIcon = (icon: string) => {
     switch (icon) {
       case 'telegram':
-        return <BrandTelegram className="h-8 w-8" />;
+        return <PiTelegramLogoBold size={32} />;
       case 'instagram':
-        return <Instagram className="h-8 w-8" />;
+        return <PiInstagramLogoBold size={32} />;
       case 'discord':
-        return <MessageCircle className="h-8 w-8" />;
+        return <AiOutlineDiscord size={32} />;
       case 'tiktok':
-        return <BrandTiktok className="h-8 w-8" />;
+        return <PiTiktokLogoBold size={32} />;
       default:
         return null;
     }
@@ -44,7 +44,7 @@ const ContactSection: React.FC = () => {
 
   return (
     <section id="contact" className="py-24 px-4 md:px-8 bg-gaming-dark">
-      <div className="container mx-auto">
+      <div className="container mx-auto ">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

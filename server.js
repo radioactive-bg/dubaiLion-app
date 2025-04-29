@@ -2,7 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import path from "path";
 import { fileURLToPath } from "url";
-import { redeemCard } from "./app/src/services/api"; // Changed extension to .js
+import { redeemCard } from "./src/services/api"; // Changed extension to .js
 
 // Get __dirname equivalent in ES modules
 const __filename = fileURLToPath(import.meta.url);

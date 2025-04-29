@@ -20,9 +20,11 @@ FROM node:20-alpine
 
 WORKDIR /app
 
-# Install Express and other dependencies
-RUN npm init -y && \
-    npm install express body-parser axios
+# Create a package.json file with all required dependencies
+RUN echo '{ "name": "dubailion-backend", "type": "module", "dependencies": { "express": "^4.18.2", "body-parser": "^1.20.2", "axios": "^1.6.2" } }' > package.json
+
+# Install dependencies
+RUN npm install
 
 # Copy frontend build from builder stage
 COPY --from=builder /app/dist /app/dist

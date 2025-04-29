@@ -78,22 +78,20 @@ const storeRedemptionData = async (data) => {
   }
 };
 
+// Initialize Express app
 const app = express();
 
-// ── Parse Zoho's urlencoded POSTs ─────────────────
+// Configure middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
-// ── Serve frontend static files ──────────────────
 app.use(express.static(path.join(__dirname, "dist")));
 
-// ── Webhook handler ───────────────────────────────
+// Define routes directly without using app.route()
 app.post("/api/webhooks/zoho-forms", async (req, res) => {
-  const { tiktokUsername, cardSerialNumber, cvv } = req.body;
-  console.log("Received webhook request:", req.body);
-
   try {
-    // Call redemption logic with the webhook data
+    const { tiktokUsername, cardSerialNumber, cvv } = req.body;
+    console.log("Received webhook request:", req.body);
+
     const result = await redeemCard({
       tiktokUsername,
       data: {
@@ -111,16 +109,15 @@ app.post("/api/webhooks/zoho-forms", async (req, res) => {
   }
 });
 
-// ── Add endpoint to retrieve redemption data (for admin purposes) ─────
 app.get("/api/redemptions", (req, res) => {
   res.json(redemptionEntries);
 });
 
-// ── Serve the frontend for all other routes ─────────
+// Single route for all frontend routes - placed last
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
 
-// ── Start server ──────────────────────────────────
+// Start server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`⚡️ Server listening on port ${PORT}`));

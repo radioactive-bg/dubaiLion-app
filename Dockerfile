@@ -22,14 +22,13 @@ WORKDIR /app
 
 # Install Express and other dependencies
 RUN npm init -y && \
-    npm install express body-parser
+    npm install express body-parser axios
 
 # Copy frontend build from builder stage
 COPY --from=builder /app/dist /app/dist
 
 # Copy server file
 COPY server.js /app/
-COPY --from=builder /app/src/services /app/src/services
 
 # Optional runtime config injection
 COPY ./env.sh /app/env.sh

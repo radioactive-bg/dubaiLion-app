@@ -15,16 +15,31 @@ COPY app/ ./
 RUN echo "Building for ${BUILD_ENV} with API URL ${VITE_API_URL}"
 RUN npm run build
 
-# Production runtime stage
-FROM nginx:alpine
+# Final stage - Node.js server
+FROM node:20-alpine
 
-COPY nginx.conf /etc/nginx/nginx.conf
-COPY --from=builder /app/dist /usr/share/nginx/html
+WORKDIR /app
+
+# Install Express and other dependencies
+RUN npm init -y && \
+    npm install express body-parser
+
+# Copy frontend build from builder stage
+COPY --from=builder /app/dist /app/dist
+
+# Copy server file
+COPY server.js /app/
+COPY --from=builder /app/src/services /app/src/services
 
 # Optional runtime config injection
-COPY ./env.sh /docker-entrypoint.d/40-env.sh
-RUN chmod +x /docker-entrypoint.d/40-env.sh
+COPY ./env.sh /app/env.sh
+RUN chmod +x /app/env.sh
+
+# Set environment variables
+ENV NODE_ENV=production
+ENV PORT=80
 
 EXPOSE 80
 
-CMD ["nginx", "-g", "daemon off;"]
+# Start Node.js server
+CMD ["node", "server.js"]

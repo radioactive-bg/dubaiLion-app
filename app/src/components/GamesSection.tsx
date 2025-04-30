@@ -1,19 +1,45 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { games } from '../data/games';
 import { useTranslation } from 'react-i18next';
 import GameCard from './GameCard';
 
+const STORAGE_KEY = 'visible_games_count';
+const INITIAL_VISIBLE_GAMES = 10;
+
 const GamesSection: React.FC = () => {
   const { t } = useTranslation();
-  const [visibleGames, setVisibleGames] = useState(10);
+  const [visibleGames, setVisibleGames] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const stored = sessionStorage.getItem(STORAGE_KEY);
+      return stored ? parseInt(stored, 10) : INITIAL_VISIBLE_GAMES;
+    }
+    return INITIAL_VISIBLE_GAMES;
+  });
+
+  useEffect(() => {
+    sessionStorage.setItem(STORAGE_KEY, visibleGames.toString());
+  }, [visibleGames]);
 
   const handleShowMore = () => {
-    setVisibleGames(prev => prev + 10);
+    setVisibleGames(visibleGames + 10);
+  };
+
+  const handleShowLess = () => {
+    const newCount = Math.max(INITIAL_VISIBLE_GAMES, visibleGames - 10);
+    setVisibleGames(newCount);
+    // Add a small delay before scrolling to allow cards to animate
+    setTimeout(() => {
+      const gamesSection = document.getElementById('games');
+      if (gamesSection) {
+        gamesSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 200); // 200ms delay to match the animation duration
   };
 
   const displayedGames = games.slice(0, visibleGames);
   const hasMoreGames = visibleGames < games.length;
+  const hasShownMore = visibleGames > INITIAL_VISIBLE_GAMES;
 
   return (
     <section id="games" className="py-24 px-4 md:px-8 bg-gaming-dark">
@@ -22,7 +48,7 @@ const GamesSection: React.FC = () => {
           initial={{ opacity: 0, y: 5 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.4 }}
+          transition={{ duration: 0.2 }}
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
@@ -39,15 +65,24 @@ const GamesSection: React.FC = () => {
           ))}
         </div>
 
-        {hasMoreGames && (
-          <div className="text-center mt-8">
+        <div className="text-center mt-8 space-x-4">
+          {hasMoreGames && (
             <button
               onClick={handleShowMore}
               className="px-6 py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg transition-colors duration-200"
             >
-Show more            </button>
-          </div>
-        )}
+              Show more
+            </button>
+          )}
+          {hasShownMore && (
+            <button
+              onClick={handleShowLess}
+              className="px-6 py-3 bg-secondary-700 hover:bg-secondary-600 text-white rounded-lg transition-colors duration-200"
+            >
+              Show less
+            </button>
+          )}
+        </div>
       </div>
     </section>
   );

@@ -32,7 +32,7 @@ const GameCard: React.FC<GameCardProps> = ({ game, index }) => {
       initial={{ opacity: 0, y: 5 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.3, delay: index * 0.1 }}
+      transition={{ duration: 0.2, delay: index * 0.05 }}
       whileHover={{ y: -5 }}
       className="bg-gaming-card rounded-xl overflow-hidden shadow-xl transform transition-all duration-300 hover:shadow-[0_0_15px_rgba(99,102,241,0.3)] cursor-pointer h-full flex flex-col"
       onClick={() => navigate(`/game/${game.id}`)}

@@ -19,10 +19,10 @@ const GameDetailsPage: React.FC = () => {
         <div className="text-center">
           <h1 className="text-2xl font-bold mb-4">Game not found</h1>
           <button
-            onClick={() => navigate('/')}
+            onClick={() => navigate(-1)}
             className="text-gaming-accent hover:text-gaming-accent/80"
           >
-            Return to home
+            Go back
           </button>
         </div>
       </div>
@@ -36,11 +36,11 @@ const GameDetailsPage: React.FC = () => {
           <motion.button
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            onClick={() => navigate('/')}
+            onClick={() => navigate(-1)}
             className="flex items-center text-gaming-accent hover:text-gaming-accent/80 mb-8"
           >
             <ArrowLeft className="h-5 w-5 mr-2" />
-            Back to Games
+            Back
           </motion.button>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -5,10 +5,10 @@ import GamesSection from "../components/GamesSection";
 import RedeemSection from "../components/RedeemSection";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
-import useScrollToTop from "../hooks/useScrollToTop";
+// import useScrollToTop from "../hooks/useScrollToTop";
 
 const HomePage: React.FC = () => {
-  useScrollToTop();
+  // useScrollToTop();
 
   return (
     <>

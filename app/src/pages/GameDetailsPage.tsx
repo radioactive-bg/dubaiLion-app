@@ -5,6 +5,7 @@ import { ArrowLeft, Monitor, Cpu, MemoryStick as Memory } from 'lucide-react';
 import { games } from '../data/games';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import RequirementItem from '../components/RequirementItem';
 
 const GameDetailsPage: React.FC = () => {
   const { id } = useParams();
@@ -77,17 +78,17 @@ const GameDetailsPage: React.FC = () => {
                       <RequirementItem
                         icon={<Monitor className="h-5 w-5" />}
                         label="OS"
-                        value="Windows 10 64-bit"
+                        value={game.systemRequirements.minimum.os}
                       />
                       <RequirementItem
                         icon={<Cpu className="h-5 w-5" />}
                         label="Processor"
-                        value="Intel Core i5-4460 or AMD FX-6300"
+                        value={game.systemRequirements.minimum.processor}
                       />
                       <RequirementItem
                         icon={<Memory className="h-5 w-5" />}
                         label="Memory"
-                        value="8 GB RAM"
+                        value={game.systemRequirements.minimum.memory}
                       />
                     </ul>
                   </div>
@@ -98,17 +99,17 @@ const GameDetailsPage: React.FC = () => {
                       <RequirementItem
                         icon={<Monitor className="h-5 w-5" />}
                         label="OS"
-                        value="Windows 10/11 64-bit"
+                        value={game.systemRequirements.recommended.os}
                       />
                       <RequirementItem
                         icon={<Cpu className="h-5 w-5" />}
                         label="Processor"
-                        value="Intel Core i7-8700K or AMD Ryzen 5 3600X"
+                        value={game.systemRequirements.recommended.processor}
                       />
                       <RequirementItem
                         icon={<Memory className="h-5 w-5" />}
                         label="Memory"
-                        value="16 GB RAM"
+                        value={game.systemRequirements.recommended.memory}
                       />
                     </ul>
                   </div>
@@ -117,9 +118,10 @@ const GameDetailsPage: React.FC = () => {
 
               <div className="bg-gaming-card rounded-xl p-6">
                 <h2 className="text-xl font-bold mb-4">Game Story</h2>
-                <p className="text-secondary-300">
-                  {game.story || "Embark on an epic journey in this thrilling adventure. Face challenging obstacles, meet intriguing characters, and uncover the mysteries that await you in this immersive gaming experience."}
-                </p>
+                <div 
+                  className="text-secondary-300 space-y-4"
+                  dangerouslySetInnerHTML={{ __html: game.story }}
+                />
               </div>
             </motion.div>
           </div>
@@ -129,19 +131,5 @@ const GameDetailsPage: React.FC = () => {
     </>
   );
 };
-
-interface RequirementItemProps {
-  icon: React.ReactNode;
-  label: string;
-  value: string;
-}
-
-const RequirementItem: React.FC<RequirementItemProps> = ({ icon, label, value }) => (
-  <li className="flex items-center text-secondary-300">
-    <span className="text-gaming-accent mr-2">{icon}</span>
-    <span className="font-medium mr-2">{label}:</span>
-    <span>{value}</span>
-  </li>
-);
 
 export default GameDetailsPage;

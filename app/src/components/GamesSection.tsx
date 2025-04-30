@@ -69,16 +69,16 @@ const GamesSection: React.FC = () => {
           {hasMoreGames && (
             <button
               onClick={handleShowMore}
-              className="px-6 py-3 bg-primary-500 hover:bg-primary-600 text-white rounded-lg transition-colors duration-200"
-            >
+              className="px-8 py-3 rounded-full bg-gaming-accent hover:bg-opacity-90 text-white font-bold text-lg transition-all duration-300 transform hover:scale-105"
+              >
               Show more
             </button>
           )}
           {hasShownMore && (
             <button
               onClick={handleShowLess}
-              className="px-6 py-3 bg-secondary-700 hover:bg-secondary-600 text-white rounded-lg transition-colors duration-200"
-            >
+              className="px-8 py-3 rounded-full bg-transparent border-2 border-gaming-accent hover:bg-gaming-accent hover:bg-opacity-10 text-white font-bold text-lg transition-all duration-300"
+              >
               Show less
             </button>
           )}

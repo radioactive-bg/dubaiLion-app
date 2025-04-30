@@ -30,7 +30,6 @@ const GameDetailsPage: React.FC = () => {
 
   return (
     <>
-      <Header />
       <main className="pt-20 pb-12 px-4 md:px-8">
         <div className="container mx-auto">
           <motion.button

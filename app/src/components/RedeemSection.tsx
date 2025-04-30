@@ -1,14 +1,22 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { useForm, SubmitHandler } from 'react-hook-form';
-import { RedeemFormData } from '../types';
-import { redeemCard, setCurrentTiktokUsername } from '../services/api';
-import { Loader } from 'lucide-react';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { useForm, SubmitHandler } from "react-hook-form";
+import { RedeemFormData } from "../types";
+import { redeemCard, setCurrentTiktokUsername } from "../services/api";
+import { Loader } from "lucide-react";
 
 const RedeemSection: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [redeemStatus, setRedeemStatus] = useState<{ success: boolean; message: string } | null>(null);
-  const { register, handleSubmit, reset, formState: { errors } } = useForm<RedeemFormData>();
+  const [redeemStatus, setRedeemStatus] = useState<{
+    success: boolean;
+    message: string;
+  } | null>(null);
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm<RedeemFormData>();
 
   const onSubmit: SubmitHandler<RedeemFormData> = async (data) => {
     setIsSubmitting(true);
@@ -17,16 +25,16 @@ const RedeemSection: React.FC = () => {
 
     try {
       const response = await redeemCard({
-        type: 'redeem_card',
+        type: "redeem_card",
         data: {
           number: data.cardSerialNumber,
-          cvv: data.cvv
-        }
+          cvv: data.cvv,
+        },
       });
-      
+
       setRedeemStatus({
         success: response.success,
-        message: response.message
+        message: response.message,
       });
 
       if (response.success) {
@@ -35,7 +43,7 @@ const RedeemSection: React.FC = () => {
     } catch (error) {
       setRedeemStatus({
         success: false,
-        message: 'An error occurred while redeeming the card'
+        message: "An error occurred while redeeming the card",
       });
     } finally {
       setIsSubmitting(false);
@@ -55,9 +63,10 @@ const RedeemSection: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
             <span className="text-gaming-accent">Redeem</span> Your Card
           </h2>
-          <p className="text-lg text-secondary-300 max-w-2xl mx-auto">
+
+          {/* <p className="text-lg text-secondary-300 max-w-2xl mx-auto">
             Enter your card details below to redeem your gaming gift card
-          </p>
+          </p> */}
         </motion.div>
 
         <motion.div
@@ -65,19 +74,31 @@ const RedeemSection: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="max-w-md mx-auto bg-gaming-card p-8 rounded-xl shadow-lg"
         >
           {redeemStatus && (
-            <div className={`mb-6 p-4 rounded-lg ${
-              redeemStatus.success 
-                ? 'bg-success-700/20 text-success-500' 
-                : 'bg-error-700/20 text-error-500'
-            }`}>
+            <div
+              className={`mb-6 p-4 rounded-lg ${
+                redeemStatus.success
+                  ? "bg-success-700/20 text-success-500"
+                  : "bg-error-700/20 text-error-500"
+              }`}
+            >
               {redeemStatus.message}
             </div>
           )}
+          <iframe
+            aria-label="Enter your card details below to redeem your gaming gift card"
+            style={{
+              height: "600px",
+              width: "448px",
+              borderRadius: "35px",
+              padding: "20px",
+              margin: "0px auto",
+            }}
+            src="https://forms.zohopublic.com/arpayhks/form/LionDubaitestform/formperma/NMUsXosjNcb_HilAO9GxScn-Aj2NqPQS4CNUPKdnSEI"
+          ></iframe>
 
-          <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+          {/* <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
             <div>
               <label htmlFor="tiktokUsername" className="block text-sm font-medium text-secondary-300 mb-1">
                 TikTok Username
@@ -158,7 +179,7 @@ const RedeemSection: React.FC = () => {
                 'Redeem Card'
               )}
             </button>
-          </form>
+          </form> */}
         </motion.div>
       </div>
     </section>

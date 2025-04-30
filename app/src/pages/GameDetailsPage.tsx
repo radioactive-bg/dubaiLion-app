@@ -3,14 +3,15 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Monitor, Cpu, MemoryStick as Memory } from 'lucide-react';
 import { games } from '../data/games';
-import Header from '../components/Header';
 import Footer from '../components/Footer';
 import RequirementItem from '../components/RequirementItem';
+import useScrollToTop from '../hooks/useScrollToTop';
 
 const GameDetailsPage: React.FC = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const game = games.find(g => g.id === Number(id));
+  useScrollToTop();
 
   if (!game) {
     return (

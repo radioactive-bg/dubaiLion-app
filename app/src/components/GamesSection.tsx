@@ -65,7 +65,7 @@ const GamesSection: React.FC = () => {
           ))}
         </div>
 
-        <div className="text-center mt-8 space-x-4">
+        <div className="text-center mt-16 space-x-4">
           {hasMoreGames && (
             <button
               onClick={handleShowMore}

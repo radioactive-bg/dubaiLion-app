@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const RedeemSection: React.FC = () => {
   return (
-    <section id="redeem" className="py-24 px-4 md:px-8">
+    <section id="redeem" className="py-44 px-4 md:px-8">
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

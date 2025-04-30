@@ -77,7 +77,7 @@ const ContactSection: React.FC = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
               whileHover={{ scale: 1.1 }}
-              className="flex flex-col items-center justify-center p-6 bg-gaming-card rounded-xl hover:bg-opacity-80 transition-all duration-300"
+              className="flex flex-col items-center justify-center p-6 bg-gaming-card rounded-xl hover:bg-opacity-80 transition-all duration-300 w-28"
             >
               <div className="text-gaming-accent mb-2">
                 {getSocialIcon(link.icon)}

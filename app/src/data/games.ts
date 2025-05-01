@@ -2,7 +2,7 @@ export const games = [
   {
     id: 1,
     title: 'Battle of Heroes: Stream, Compete, Conquer',
-    imageUrl: 'https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Battle of Heroes_ Stream, Compete, Conquer.jpg',
     description: 'A high-intensity PvP game built for gamers who live to compete, customize, and conquer',
     platform: 'PC',
     story: `<p><strong>Battle of the Heroes</strong> is a live-streaming PvP game inspired by the Three Kingdoms era, where viewers actively join the fight. With just a comment or like, fans choose sides, summon warriors, legendary generals and shape the outcome live.</p>
@@ -28,7 +28,7 @@ export const games = [
   {
     id: 2,
     title: 'Block Rush: Gift-Powered Strategy Showdown',
-    imageUrl: 'https://images.pexels.com/photos/1714341/pexels-photo-1714341.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Block Rush_ Gift-Powered Strategy Showdown.jpg',
     description: 'A strategic defense game where players summon and upgrade units through in-game gifts',
     platform: 'PC',
     story: `<p>In Block Rush, players engage in a strategic defense game where they summon and upgrade units using in-game gifts. The objective is to outlast opponents by strategically placing defensive and offensive units, utilizing various gifts to enhance their capabilities.</p>
@@ -50,7 +50,7 @@ export const games = [
   {
     id: 3,
     title: 'Brawl of the Westward Journey: Clash for the Golden Staff!',
-    imageUrl: 'https://images.pexels.com/photos/1714340/pexels-photo-1714340.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Brawl of the Westward Journey_ Clash for the Golden Staff!.jpg',
     description: 'A strategic tug-of-war for dominance, featuring the Monkey King and Heavenly Court factions',
     platform: 'Mobile',
     story: `<p>Brawl of the Westward Journey is a fast-paced mobile game where players join either the Monkey King or the Heavenly Court faction in a tug-of-war battle to control the legendary Golden Staff.</p>
@@ -72,7 +72,7 @@ export const games = [
   {
     id: 4,
     title: 'Call Me Champion: Shape the Faction War with Every Move',
-    imageUrl: 'https://images.pexels.com/photos/1714342/pexels-photo-1714342.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Call Me Champion_ Shape the Faction War with Every Move.jpg',
     description: 'Choose Your Side, Fight for Glory, and Earn Your Spot at the Top!',
     platform: 'PC',
     story: `<p>In Call Me Champion, it's not just about watching, it's about participating. This game throws you into a multi-camp battle where broadcasters and viewers join forces to push their camp to victory.</p>
@@ -96,7 +96,7 @@ export const games = [
   {
     id: 5,
     title: 'Call Me Da Sheng: Shape the Fate of the Monkey King',
-    imageUrl: 'https://images.pexels.com/photos/1714343/pexels-photo-1714343.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Call Me Da Sheng_ Shape the Fate of the Monkey King.jpg',
     description: 'Will you help the Monkey King escape, or stop him in his tracks?',
     platform: 'PC',
     story: `<p>In Call Me Da Sheng, your choice is your fate. Help or hinder the Monkey King's escape from Wuzhi Mountain in this intense tug-of-war PVP showdown.</p>
@@ -120,7 +120,7 @@ export const games = [
   {
     id: 6,
     title: 'Cheese Battle: The Ultimate Cat vs. Mouse Showdown',
-    imageUrl: 'https://images.pexels.com/photos/1714344/pexels-photo-1714344.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Cheese Battle_ The Ultimate Cat vs. Mouse Showdown.jpg',
     description: 'Join the whimsical world of Cheese Battle, where adorable mice defend their cheesy feast against cunning cats',
     platform: 'PC',
     story: `<p>Step into the delightful chaos of Cheese Battle, a fast-paced PvP game that brings the classic cat-and-mouse chase to life with a modern twist.</p>
@@ -144,7 +144,7 @@ export const games = [
   {
     id: 7,
     title: 'Chibi: Three Kingdoms — The Ultimate Battle for Glory!',
-    imageUrl: 'https://images.pexels.com/photos/1714345/pexels-photo-1714345.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Chibi the three kingdoms.jpg',
     description: 'Your Army, Your Strategy, Your Glory!',
     platform: 'PC',
     story: `<p>Step into the action-packed world of Chibi: Three Kingdoms, where you control the fate of the kingdom! Choose your faction, Shu or Wei, and lead your forces to victory. With legendary generals like Zhao Yun and Zhuge Liang, real-time combat lets you summon and upgrade your soldiers, using powerful digital cards to outsmart your opponents.</p>
@@ -168,7 +168,7 @@ export const games = [
   {
     id: 8,
     title: 'Civilization and Empire: Clash of the Factions',
-    imageUrl: 'https://images.pexels.com/photos/1714346/pexels-photo-1714346.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Civilization and Empire_ Clash of the Factions_.jpg',
     description: 'Join the battle, summon your troops, and claim victory!',
     platform: 'PC',
     story: `<p>Civilization and Empire brings a fresh twist to faction-based warfare. It's Red Heihe Valley versus Blue Dites, and the power to change the tide of battle is in your hands.</p>
@@ -192,7 +192,7 @@ export const games = [
   {
     id: 9,
     title: 'Color Wars: Master the Cards, Rule the Battlefield!',
-    imageUrl: 'https://images.pexels.com/photos/1714347/pexels-photo-1714347.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Color War.jpg',
     description: 'Play smart. Fight hard. Only one color reigns supreme!',
     platform: 'PC/Mac',
     story: `<p>Get ready to enter the explosive world of Color Wars. Pick your faction between Green, Blue, Yellow, or Red, and dive headfirst into the chaos.</p>
@@ -216,7 +216,7 @@ export const games = [
   {
     id: 10,
     title: 'Coloring Heroes: Paint. Power Up. Protect the World',
-    imageUrl: 'https://images.pexels.com/photos/1714348/pexels-photo-1714348.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Coloring Heroes_ Paint. Power Up. Protect the World.jpg',
     description: 'Unleash your creativity. Color your heroes. Save the world.',
     platform: 'PC',
     story: `<p>In a vibrant world where heroes are born from the power of imagination, it's up to you to bring them to life. Use your artistic skills to color your heroes, each with unique abilities, and prepare them to fight against dark forces threatening the world.</p>
@@ -238,7 +238,7 @@ export const games = [
   {
     id: 11,
     title: 'Dragon Ball Duel: A New Era of Dragon Ball Combat Awaits',
-    imageUrl: 'https://images.pexels.com/photos/1714349/pexels-photo-1714349.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Dragon Ball Duel_ A New Era of Dragon Ball Combat Awaits.jpg',
     description: 'Your power decides the winner. Choose your side, fight for glory!',
     platform: 'PC',
     story: `<p>In Dragon Ball Duel, two factions clash for control of the battlefield, and the stakes have never been higher. Join one of two factions and fight for dominance in real-time combat powered by you.</p>
@@ -262,7 +262,7 @@ export const games = [
   {
     id: 12,
     title: 'Elves Battle: Command the Battlefield, Control the Chaos',
-    imageUrl: 'https://images.pexels.com/photos/1714350/pexels-photo-1714350.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Elves Battle_ Command the Chaos of Your TikTok Live.jpg',
     description: 'Where your viewers become warriors—join the red or blue side and let the battle begin!',
     platform: 'PC',
     story: `<p>Elves Battle is a revolutionary PC game that seamlessly integrates with your TikTok Live sessions, turning passive viewers into active participants.</p>
@@ -288,7 +288,7 @@ export const games = [
   {
     id: 13,
     title: 'Farm Field: Grow Big. Harvest More. Build Your Legacy',
-    imageUrl: 'https://images.pexels.com/photos/1714351/pexels-photo-1714351.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Farm Field_ Grow Big. Harvest More. Build Your Legacy.jpg',
     description: 'Cultivate your farm and grow your crops in a thriving agricultural world',
     platform: 'PC',
     story: `<p>Step into the shoes of a skilled farmer as you manage your very own farm. Plant crops, raise animals, and expand your land to build the most successful farm in the region.</p>
@@ -310,7 +310,7 @@ export const games = [
   {
     id: 14,
     title: 'Fast Speed: Race, Boost, Conquer the Tracks!',
-    imageUrl: 'https://images.pexels.com/photos/1714352/pexels-photo-1714352.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Speed Racing.jpg',
     description: 'Fuel your need for speed with every card, every move',
     platform: 'PC',
     story: `<p>Fast Speed is the ultimate race to the finish, where every player's action fuels the action! Choose your car, race like a pro, and make your mark on the leaderboard as you zoom past the competition.</p>
@@ -334,7 +334,7 @@ export const games = [
   {
     id: 15,
     title: 'Firepower Clash: Real-Time Faction Battle Game',
-    imageUrl: 'https://images.pexels.com/photos/1714353/pexels-photo-1714353.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Firepower Clash_ Real-Time Faction Battle Game.jpg',
     description: 'Join the ultimate real-time battle to destroy your opponent\'s blocks using firepower and strategy',
     platform: 'PC',
     story: `<p>Firepower Clash is the ultimate TikTok live stream game that transforms viewer engagement into a fast-paced, strategic real-time battle.</p>
@@ -358,7 +358,7 @@ export const games = [
   {
     id: 16,
     title: 'Honor of Kings: Command Legends. Conquer the Arena',
-    imageUrl: 'https://images.pexels.com/photos/1714354/pexels-photo-1714354.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Honor of Kings_ Command Legends. Conquer the Arena.jpg',
     description: 'Epic battles in ancient China, where strategy meets mythology',
     platform: 'Mobile',
     story: `<p>In Honor of Kings, players engage in fast-paced 5v5 battles across mythical landscapes inspired by Chinese history. As a commander of powerful heroes, you lead your team through strategic combat to destroy the enemy's core.</p>
@@ -380,7 +380,7 @@ export const games = [
   {
     id: 17,
     title: 'Island Rush: Livestream Tower Defense Chaos',
-    imageUrl: 'https://images.pexels.com/photos/1714355/pexels-photo-1714355.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Island Rush_ Livestream Tower Defense Chaos.jpg',
     description: 'Faction-based tower defense with real-time viewer interaction and strategy',
     platform: 'PC',
     story: `<p>In Island Rush, viewers become active participants in a dynamic, faction-based tower defense war. Players join either the Human defenders or the Monster attackers by commenting in real-time on the livestream.</p>
@@ -404,7 +404,7 @@ export const games = [
   {
     id: 18,
     title: 'Jianghu Duel: The Battle for the Maiden and the Land',
-    imageUrl: 'https://images.pexels.com/photos/1714356/pexels-photo-1714356.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Jianghu Duel_ The Battle for the Maiden and the Land.jpg',
     description: 'Master the art of war, claim the beauty, conquer the Jianghu!',
     platform: 'PC',
     story: `<p>In Jianghu Duel, the world of martial arts is at your feet. Two factions battle for dominance, but this isn't your typical combat game; it's a live, interactive experience where your actions shape the outcome.</p>
@@ -428,7 +428,7 @@ export const games = [
   {
     id: 19,
     title: 'King of Soldiers: Who will rule the battlefield?',
-    imageUrl: 'https://images.pexels.com/photos/1714357/pexels-photo-1714357.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/King of Soldiers.jpg',
     description: 'King of Soldiers is live combat, powered by everyone watching',
     platform: 'PC',
     story: `<p>In King of Soldiers, your actions shape the battlefield in real time. Choose your side! Would you join the Yellow Order or the Green Syndicate?</p>
@@ -452,7 +452,7 @@ export const games = [
   {
     id: 20,
     title: 'King\'s Duel: Fantasy Clash in Real Time',
-    imageUrl: 'https://images.pexels.com/photos/1714358/pexels-photo-1714358.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/King’s Duel_ Fantasy Clash in Real Time.jpg',
     description: 'Lead your army, summon magical units, and conquer the battlefield in this fast-paced, real-time strategy game',
     platform: 'PC',
     story: `<p>Step into King's Duel, a revolutionary TikTok-integrated real-time battle game that merges epic fantasy combat with livestream interactivity. Designed for creators and gamers alike, this danmu-based strategy game transforms your comment section into a battlefield.</p>
@@ -476,7 +476,7 @@ export const games = [
   {
     id: 21,
     title: 'League of Monsters: Command. Conquer. Survive',
-    imageUrl: 'https://images.pexels.com/photos/1714359/pexels-photo-1714359.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/League of Monsters_ Command. Conquer. Survive.jpg',
     description: 'Epic battles against monstrous foes in a thrilling multiplayer experience',
     platform: 'PC',
     story: `<p>Enter a world where powerful monsters clash in epic battles for supremacy. As a leader of a monster army, you must strategize, recruit fierce warriors, and defeat your rivals to claim victory.</p>
@@ -498,7 +498,7 @@ export const games = [
   {
     id: 22,
     title: 'Legion Clash 2: Command, Conquer, Dominate in Real Time!',
-    imageUrl: 'https://images.pexels.com/photos/1714360/pexels-photo-1714360.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Legion Clash 2.jpg',
     description: 'Real-time faction warfare where viewers influence the battlefield in a high-stakes LIVE strategy showdown',
     platform: 'PC',
     story: `<p>In Legion Clash 2, you become part of a dynamic live-streamed battlefield where the audience commands the tide of war. Choose between the Blue or Orange faction and unleash units, summon powerful heroes, and activate devastating skills through real-time gifting.</p>
@@ -520,7 +520,7 @@ export const games = [
   {
     id: 23,
     title: 'Legion Clash: Summon, Strike, and Shatter the Frontline',
-    imageUrl: 'https://images.pexels.com/photos/1714361/pexels-photo-1714361.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Legion Clash.jpg',
     description: 'Pick a side, wreck the city, & rule the stream',
     platform: 'PC',
     story: `<p>Step into Legion Clash, a livestream warzone where viewers drop troops, heroes, and high-tier units in real time.</p>
@@ -550,7 +550,7 @@ export const games = [
   {
     id: 24,
     title: 'Little Cat Fishing: Pull, Compete, and Conquer!',
-    imageUrl: 'https://images.pexels.com/photos/1714362/pexels-photo-1714362.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Little Cat Fishing_ Pull, Compete, and Conquer!.jpg',
     description: 'Tug-of-war between a little cat and a big fish',
     platform: 'Mobile',
     story: `<p>In a peaceful village, a little cat accidentally starts a tug-of-war with a clever big fish. Players can choose to join either team and compete by increasing their team's strength through likes and gifts. The goal is to either pull the big fish to shore or pull the cat into the water.</p>`,
@@ -570,7 +570,7 @@ export const games = [
   {
     id: 25,
     title: 'Mars Colliding with Earth 2: Stream. Battle. Conquer Worlds',
-    imageUrl: 'https://images.pexels.com/photos/1714363/pexels-photo-1714363.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Mars Colliding with Earth 2_ Stream. Battle. Conquer Worlds.jpg',
     description: 'A competitive LIVE streaming game where hosts battle for dominance on Earth and Mars',
     platform: 'PC',
     story: `<p>In Mars Colliding with Earth 2, hosts challenge each other in a dynamic LIVE streaming environment, where viewers help influence the expansion of Mars or Earth through likes and gifts.</p>
@@ -592,7 +592,7 @@ export const games = [
   {
     id: 26,
     title: 'Martial Duel II: The King\'s Invasion',
-    imageUrl: 'https://images.pexels.com/photos/1714364/pexels-photo-1714364.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Martial Duel II_ The King_s Invasion.jpg',
     description: 'A Real-Time Clash of East vs. West in a Spectator-Powered Battlefield',
     platform: 'PC',
     story: `<p>This is the sequel to Martial Duel, titled The King's Invasion, featuring a creative crossover between Eastern martial arts and Western fantasy. Players witness a dramatic clash between the Eastern Divine Dragon and the Western Giant Dragon in an alternate world.</p>
@@ -620,7 +620,7 @@ export const games = [
   {
     id: 27,
     title: 'Minecraft Arena: Survive the Chaos, Rule the Arena',
-    imageUrl: 'https://images.pexels.com/photos/1714365/pexels-photo-1714365.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Minecraft Arena_ Survive the Chaos, Rule the Arena.jpg',
     description: 'A live-action survival battleground where streamers fight for glory and viewers control the chaos',
     platform: 'PC',
     story: `<p>Minecraft: Arena is an intense, viewer-driven survival game built inside the world of Minecraft. Designed specifically for live-streaming platforms, it delivers a brutal twist to traditional combat arenas.</p>
@@ -646,7 +646,7 @@ export const games = [
   {
     id: 28,
     title: 'Mole Manor Battle Royale',
-    imageUrl: 'https://images.pexels.com/photos/1714366/pexels-photo-1714366.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Mole World Battle Adventure.jpg',
     description: 'Livestream meets real-time strategy in the ultimate viewer-powered mini-game experience',
     platform: 'PC',
     story: `<p>Mole Manor Showdown is a high-energy, real-time team strategy game set in the vibrant and mischievous world of Mole Manor. Players split into two factions (Orange vs. Blue) and race to push a giant firecracker across a dynamic battlefield.</p>
@@ -674,7 +674,7 @@ export const games = [
   {
     id: 29,
     title: 'Mole Manor Battle: The Ultimate Showdown of Team Strategy!',
-    imageUrl: 'https://images.pexels.com/photos/1714367/pexels-photo-1714367.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Mole World Battle Adventure.jpg',
     description: 'Dig, fight, and rise. Control the manor, control the war!',
     platform: 'PC',
     story: `<p>Step into the chaotic world of Mole Manor Battle, where you control the outcome with your every move. Choose your side: will you join the Orange or the Blue camp?</p>
@@ -704,7 +704,7 @@ export const games = [
   {
     id: 30,
     title: 'Props Avalanche: Climb Fast, Dodge Chaos, Win Live!',
-    imageUrl: 'https://images.pexels.com/photos/1714368/pexels-photo-1714368.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Props Avalanche_ Climb Fast, Dodge Chaos, Win Live!.jpg',
     description: 'Climb the hill to victory while facing the challenge of falling props sent by your viewers',
     platform: 'PC',
     story: `<p>In Props Avalanche, you're racing to the top of the hill, but beware—the viewers can send props to slow down your progress!</p>
@@ -726,7 +726,7 @@ export const games = [
   {
     id: 31,
     title: 'Props Cleaner: Tidy Up Fast, Before Chaos Hits!',
-    imageUrl: 'https://images.pexels.com/photos/1714369/pexels-photo-1714369.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Props Cleaner_ Tidy Up Fast, Before Chaos Hits!.jpg',
     description: 'Real-time cleanup chaos with viewer-triggered challenges',
     platform: 'PC',
     story: `<p>Step into the role of the ultimate virtual janitor as you scrub, sweep, and wipe your way through cluttered digital stages. But there's a twist—your livestream audience can drop props in real time, turning a simple cleanup into a frantic battle against chaos.</p>
@@ -748,7 +748,7 @@ export const games = [
   {
     id: 32,
     title: 'Protect the Princess: The Crown Will Choose',
-    imageUrl: 'https://images.pexels.com/photos/1714370/pexels-photo-1714370.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Protect the Princess_ The Crown Will Choose.jpg',
     description: 'A fast-paced PvP tug-of-war where two factions fight to claim the crown and defend their princess',
     platform: 'PC',
     story: `<p>Protect the Princess is an interactive TikTok live game that transforms your livestream into a dynamic battleground. Viewers join one of two factions by commenting, liking, or sending gifts, each action pulling the central crown toward their side.</p>
@@ -780,7 +780,7 @@ export const games = [
   {
     id: 33,
     title: 'Ragnarok: Fight for the Final Victory!',
-    imageUrl: 'https://images.pexels.com/photos/1714371/pexels-photo-1714371.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Ragnarok_ Fight for the Final Victory!.jpg',
     description: 'Join the war, level up your hero, and claim your destiny!',
     platform: 'PC',
     story: `<p>In Ragnarok, the fate of the world rests in your hands. Born from the legendary chaos of Norse mythology, Ragnarok is a tug-of-war confrontation that pits two powerful factions, gods and demons, against each other in a race to the finish line.</p>
@@ -808,7 +808,7 @@ export const games = [
   {
     id: 34,
     title: 'Three Kingdoms Brawl: Real-Time Faction War',
-    imageUrl: 'https://images.pexels.com/photos/1714372/pexels-photo-1714372.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Three Kingdoms Brawl_ Real-Time Faction War.jpg',
     description: 'Join the livestream battlefield and push your side to victory in this high-stakes, strategy-packed faction showdown',
     platform: 'PC/Mobile',
     story: `<p>Step into Three Kingdoms Brawl, the ultimate real-time interactive livestream battle game where viewers become warriors and engagement shapes the battlefield.</p>
@@ -836,7 +836,7 @@ export const games = [
   {
     id: 35,
     title: 'Unify the Country: The Last Stand',
-    imageUrl: 'https://images.pexels.com/photos/1714373/pexels-photo-1714373.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Unified Kingdom.jpg',
     description: 'A fast-paced strategy game featuring epic battles, tactical depth, and real-time decision-making that shapes a dynamic battlefield',
     platform: 'PC',
     story: `<p>Brace yourself for an epic strategy adventure where grand cinematic battles meet viral meme-worthy action. In Unify the Country: The Last Stand, the kingdom is on the brink of chaos, and it's up to you to rally your army and seize victory. This game is a worthy strategy battle game that delivers epic conquest and casual fun, perfect for veterans and meme-loving newcomers alike.</p>
@@ -864,7 +864,7 @@ export const games = [
   {
     id: 36,
     title: 'Wulin Showdown: The Ultimate Interactive Martial Arts Livestream Battle Game',
-    imageUrl: 'https://images.pexels.com/photos/1714374/pexels-photo-1714374.jpeg?auto=compress&cs=tinysrgb&w=600',
+    imageUrl: '/assets/Wulin Showdown – The Ultimate Interactive Martial Arts Livestream Battle Game.jpg',
     description: 'Unleash your inner warrior in this real-time, interactive martial arts livestream battle',
     platform: 'PC',
     story: `<p>Wulin Showdown is a groundbreaking interactive livestream game that fuses traditional martial arts themes with real-time audience participation.</p>

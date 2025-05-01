@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 import { Globe } from 'lucide-react';
 
 const LanguageSelector: React.FC = () => {
-  const { i18n, t } = useTranslation();
-
+  const { i18n, t  } = useTranslation();
+  const lang = i18n.language;
   const languages = [
     { code: 'en', name: t('language.en') },
     { code: 'ar', name: t('language.ar') },
@@ -34,7 +34,7 @@ const LanguageSelector: React.FC = () => {
       <motion.div
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
-        className="absolute right-0 mt-2 w-48 py-2 bg-gaming-card rounded-lg shadow-xl hidden group-hover:block"
+        className={`absolute ${lang == 'ar' ? "left-0" : "right-0"}  mt-0 w-48 py-2 bg-gaming-card rounded-lg shadow-xl hidden group-hover:block`}
       >
         {languages.map((lang) => (
           <button

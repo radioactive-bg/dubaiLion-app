@@ -3,13 +3,15 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Monitor, Cpu, MemoryStick as Memory } from 'lucide-react';
 import { games } from '../data/games';
-import Header from '../components/Header';
 import Footer from '../components/Footer';
+import RequirementItem from '../components/RequirementItem';
+import useScrollToTop from '../hooks/useScrollToTop';
 
 const GameDetailsPage: React.FC = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const game = games.find(g => g.id === Number(id));
+  useScrollToTop();
 
   if (!game) {
     return (
@@ -17,10 +19,10 @@ const GameDetailsPage: React.FC = () => {
         <div className="text-center">
           <h1 className="text-2xl font-bold mb-4">Game not found</h1>
           <button
-            onClick={() => navigate('/')}
+            onClick={() => navigate(-1)}
             className="text-gaming-accent hover:text-gaming-accent/80"
           >
-            Return to home
+            Go back
           </button>
         </div>
       </div>
@@ -29,17 +31,16 @@ const GameDetailsPage: React.FC = () => {
 
   return (
     <>
-      <Header />
       <main className="pt-20 pb-12 px-4 md:px-8">
         <div className="container mx-auto">
           <motion.button
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            onClick={() => navigate('/')}
+            onClick={() => navigate(-1)}
             className="flex items-center text-gaming-accent hover:text-gaming-accent/80 mb-8"
           >
             <ArrowLeft className="h-5 w-5 mr-2" />
-            Back to Games
+            Back
           </motion.button>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -77,17 +78,17 @@ const GameDetailsPage: React.FC = () => {
                       <RequirementItem
                         icon={<Monitor className="h-5 w-5" />}
                         label="OS"
-                        value="Windows 10 64-bit"
+                        value={game.systemRequirements.minimum.os}
                       />
                       <RequirementItem
                         icon={<Cpu className="h-5 w-5" />}
                         label="Processor"
-                        value="Intel Core i5-4460 or AMD FX-6300"
+                        value={game.systemRequirements.minimum.processor}
                       />
                       <RequirementItem
                         icon={<Memory className="h-5 w-5" />}
                         label="Memory"
-                        value="8 GB RAM"
+                        value={game.systemRequirements.minimum.memory}
                       />
                     </ul>
                   </div>
@@ -98,17 +99,17 @@ const GameDetailsPage: React.FC = () => {
                       <RequirementItem
                         icon={<Monitor className="h-5 w-5" />}
                         label="OS"
-                        value="Windows 10/11 64-bit"
+                        value={game.systemRequirements.recommended.os}
                       />
                       <RequirementItem
                         icon={<Cpu className="h-5 w-5" />}
                         label="Processor"
-                        value="Intel Core i7-8700K or AMD Ryzen 5 3600X"
+                        value={game.systemRequirements.recommended.processor}
                       />
                       <RequirementItem
                         icon={<Memory className="h-5 w-5" />}
                         label="Memory"
-                        value="16 GB RAM"
+                        value={game.systemRequirements.recommended.memory}
                       />
                     </ul>
                   </div>
@@ -117,9 +118,10 @@ const GameDetailsPage: React.FC = () => {
 
               <div className="bg-gaming-card rounded-xl p-6">
                 <h2 className="text-xl font-bold mb-4">Game Story</h2>
-                <p className="text-secondary-300">
-                  {game.story || "Embark on an epic journey in this thrilling adventure. Face challenging obstacles, meet intriguing characters, and uncover the mysteries that await you in this immersive gaming experience."}
-                </p>
+                <div 
+                  className="text-secondary-300 space-y-4"
+                  dangerouslySetInnerHTML={{ __html: game.story }}
+                />
               </div>
             </motion.div>
           </div>
@@ -129,19 +131,5 @@ const GameDetailsPage: React.FC = () => {
     </>
   );
 };
-
-interface RequirementItemProps {
-  icon: React.ReactNode;
-  label: string;
-  value: string;
-}
-
-const RequirementItem: React.FC<RequirementItemProps> = ({ icon, label, value }) => (
-  <li className="flex items-center text-secondary-300">
-    <span className="text-gaming-accent mr-2">{icon}</span>
-    <span className="font-medium mr-2">{label}:</span>
-    <span>{value}</span>
-  </li>
-);
 
 export default GameDetailsPage;

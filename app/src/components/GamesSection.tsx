@@ -1,22 +1,54 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
-import { Game } from '../types';
-import { Stamp as Steam, Presentation as Playstation, Inbox as Xbox } from 'lucide-react';
 import { games } from '../data/games';
 import { useTranslation } from 'react-i18next';
+import GameCard from './GameCard';
+
+const STORAGE_KEY = 'visible_games_count';
+const INITIAL_VISIBLE_GAMES = 10;
 
 const GamesSection: React.FC = () => {
   const { t } = useTranslation();
+  const [visibleGames, setVisibleGames] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const stored = sessionStorage.getItem(STORAGE_KEY);
+      return stored ? parseInt(stored, 10) : INITIAL_VISIBLE_GAMES;
+    }
+    return INITIAL_VISIBLE_GAMES;
+  });
+
+  useEffect(() => {
+    sessionStorage.setItem(STORAGE_KEY, visibleGames.toString());
+  }, [visibleGames]);
+
+  const handleShowMore = () => {
+    setVisibleGames(visibleGames + 10);
+  };
+
+  const handleShowLess = () => {
+    const newCount = Math.max(INITIAL_VISIBLE_GAMES, visibleGames - 10);
+    setVisibleGames(newCount);
+    // Add a small delay before scrolling to allow cards to animate
+    setTimeout(() => {
+      const gamesSection = document.getElementById('games');
+      if (gamesSection) {
+        gamesSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 200); // 200ms delay to match the animation duration
+  };
+
+  const displayedGames = games.slice(0, visibleGames);
+  const hasMoreGames = visibleGames < games.length;
+  const hasShownMore = visibleGames > INITIAL_VISIBLE_GAMES;
 
   return (
     <section id="games" className="py-24 px-4 md:px-8 bg-gaming-dark">
       <div className="container mx-auto">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 5 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.2 }}
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
@@ -27,60 +59,32 @@ const GamesSection: React.FC = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {games.map((game, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+          {displayedGames.map((game, index) => (
             <GameCard key={game.id} game={game} index={index} />
           ))}
         </div>
-      </div>
-    </section>
-  );
-};
 
-interface GameCardProps {
-  game: Game;
-  index: number;
-}
-
-const GameCard: React.FC<GameCardProps> = ({ game, index }) => {
-  const navigate = useNavigate();
-  const { t } = useTranslation();
-
-  const getPlatformIcon = (platform: string) => {
-    if (platform.includes('PC')) return <Steam className="h-5 w-5" />;
-    if (platform.includes('PlayStation')) return <Playstation className="h-5 w-5" />;
-    if (platform.includes('Xbox')) return <Xbox className="h-5 w-5" />;
-    return null;
-  };
-
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.6, delay: index * 0.1 }}
-      whileHover={{ y: -10 }}
-      className="bg-gaming-card rounded-xl overflow-hidden shadow-xl transform transition-all duration-300 hover:shadow-[0_0_15px_rgba(99,102,241,0.3)] cursor-pointer"
-      onClick={() => navigate(`/game/${game.id}`)}
-    >
-      <div className="h-48 overflow-hidden">
-        <img
-          src={game.imageUrl}
-          alt={game.title}
-          className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-        />
-      </div>
-      <div className="p-6">
-        <h3 className="text-xl font-bold mb-2 font-display">{game.title}</h3>
-        <p className="text-secondary-300 mb-4">{game.description}</p>
-        <div className="flex items-center text-sm text-secondary-400">
-          <div className="flex items-center mr-2">
-            {getPlatformIcon(game.platform)}
-          </div>
-          <span>{game.platform}</span>
+        <div className="text-center mt-16 space-x-4">
+          {hasMoreGames && (
+            <button
+              onClick={handleShowMore}
+              className="px-8 py-3 rounded-full bg-gaming-accent hover:bg-opacity-90 text-white font-bold text-lg transition-all duration-300 transform hover:scale-105"
+              >
+              Show more
+            </button>
+          )}
+          {hasShownMore && (
+            <button
+              onClick={handleShowLess}
+              className="px-8 py-3 rounded-full bg-transparent border-2 border-gaming-accent hover:bg-gaming-accent hover:bg-opacity-10 text-white font-bold text-lg transition-all duration-300"
+              >
+              Show less
+            </button>
+          )}
         </div>
       </div>
-    </motion.div>
+    </section>
   );
 };
 

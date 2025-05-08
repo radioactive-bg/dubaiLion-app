@@ -4,6 +4,19 @@ export interface Game {
   imageUrl: string;
   description: string;
   platform: string;
+  story: string;
+  systemRequirements: {
+    minimum: {
+      os: string;
+      processor: string;
+      memory: string;
+    };
+    recommended: {
+      os: string;
+      processor: string;
+      memory: string;
+    };
+  };
 }
 
 export interface SocialLink {
@@ -26,8 +39,8 @@ export interface RedeemCardPayload {
   };
 }
 
-export interface ApiResponse {
+export interface ApiResponse<T = unknown> {
   success: boolean;
   message: string;
-  data?: any;
+  data?: T;
 }

@@ -4,7 +4,7 @@ import { Toaster } from 'react-hot-toast';
 import HomePage from './pages/HomePage';
 import GameDetailsPage from './pages/GameDetailsPage';
 
-function App() {
+const App: React.FC = () => {
   return (
     <Router>
       <div className="min-h-screen bg-gradient-to-b from-gaming-dark to-secondary-900 text-white">
@@ -26,6 +26,6 @@ function App() {
       </div>
     </Router>
   );
-}
+};
 
 export default App;

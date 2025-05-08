@@ -3,24 +3,59 @@ import bodyParser from "body-parser";
 import path from "path";
 import { fileURLToPath } from "url";
 import axios from "axios";
+import querystring from "querystring";
 
 // Get __dirname equivalent in ES modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Card redemption function adapted from api.ts
-const API_URL =
-  "https://proxy.duegate.com/staging/distributor-crm/v1/wallets/1/credit";
-const ACCESS_TOKEN =
-  "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0NiIsImp0aSI6IjZkZjFmMzAyNjhhNDYwMDVhZWY5MmNmNjExZTIxMTY4Yzk0YzI1ODYzN2Q5YTM0ZDEyMmRlZWUyZjEzMzdiMDUzYTgxMzZiNGJlNjgxYjdlIiwiaWF0IjoxNzQ1NTczMjcyLjUzODkxNSwibmJmIjoxNzQ1NTczMjcyLjUzODkxOSwiZXhwIjoxNzc3MTA5MjcyLjUyNTUsInN1YiI6IjgzOSIsInNjb3BlcyI6W119.1dtJ5eppMZAbcvBpT0LfT5VNEnAzq_J2yi3vZHbU6E9Z0iXMR-7edjb9e250X-fPL_BYRlfrvNd5C2FHPda6fpb9EPQb7oTufNhe9wrkjfJQLK_TxA6jJihSLCsFgzZg3leh0FHc9iQXjpMOL13pPNPhh50Qpw1rZ4WufimhqQ_8xwP1AanztqqE3HOCCpdW64b1vGjrCQgNz5x44bATTIoZHV9DAkPD4EtsLG-BpqOc2J6DELp75Ltft0tlhzdPS7ZeRj-E26zHYATnhgkJ--hviQ_EUO3AHUpnLeQ5Qkmv7m5b1dQhj4l5fdQhQqzNq9-hfkDH3TFYyrhFzDMgm0y4EUnasw2_t9lusQCCnePNKZteo0SerV65x745PQ0FtTS1VNrKmgzNxZ6OBBp2EiYap6mjGhXAL3eK4NvBHfTkAiRBnKLEtIGZJ478xO9PtQBbTzm2A4xCMGLyWUtCYIY-o4b2XfU2G7M6Zc2NIXiNIzkOpaA-Jf66KnN1UE-W6iTTYa_rA-iTmqG6kYaNWJChpckHm3naWVsRwnTmciYgIxiYEqZQ9dEuQnilO28lYcztOe-N5PKdeXZ2KL2DNzGeJEQTSHUbjLtMLrTOE1eJvOh5Nd8wsfrAjvE01-WIZqV6C7qJwVBd9l5a2XDE5r1TTlp1ELoIQ6XY-yHu72k";
+// API Configuration
+const BASE_URL = "https://proxy.duegate.com/staging";
+const AUTH_CREDENTIALS = {
+  username: "a.miladinov@radioactive.bg",
+  password: "0:y5g5NBv)$zy0<",
+};
+
+// Get authentication token
+const getAuthToken = async () => {
+  try {
+    const data = querystring.stringify({
+      grant_type: "password",
+      username: AUTH_CREDENTIALS.username,
+      password: AUTH_CREDENTIALS.password,
+    });
+
+    const response = await axios.post(`${BASE_URL}/oauth/token`, data, {
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+    });
+
+    const { token_type, access_token } = response.data;
+    if (!access_token) {
+      throw new Error("No access token received");
+    }
+
+    return `${token_type} ${access_token}`;
+  } catch (error) {
+    console.error(
+      "Authentication error:",
+      error.response?.data || error.message
+    );
+    throw new Error("Failed to authenticate");
+  }
+};
 
 // Redis or DB could be used here instead of in-memory store for production
 const redemptionEntries = [];
 
 const redeemCard = async (payload) => {
   try {
+    // Get fresh token before making the redemption request
+    const accessToken = await getAuthToken();
+
     const response = await axios.post(
-      API_URL,
+      `${BASE_URL}/distributor-crm/v1/wallets/1/credit`,
       {
         type: "redeem_card",
         data: {
@@ -30,7 +65,7 @@ const redeemCard = async (payload) => {
       },
       {
         headers: {
-          Authorization: `Bearer ${ACCESS_TOKEN}`,
+          Authorization: accessToken,
           "Content-Type": "application/json",
         },
       }

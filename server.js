@@ -50,7 +50,7 @@ const redeemCard = async (payload) => {
   try {
     // Get fresh token before making the redemption request
     const accessToken = await getAuthToken();
-    
+
     const response = await axios.post(
       `${BASE_URL}/distributor-crm/v1/wallets/1/credit`,
       {

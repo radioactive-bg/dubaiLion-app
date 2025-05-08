@@ -40,3 +40,4 @@ const RedeemSection: React.FC = () => {
 };
 
 export default RedeemSection;
+

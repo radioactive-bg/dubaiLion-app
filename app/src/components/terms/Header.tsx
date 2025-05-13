@@ -9,10 +9,10 @@ const Header = () => {
     return (
         <header className="border-b py-6">
             <div className="container mx-auto px-4 md:px-8">
-                <div className="flex justify-between items-center">
-                    <div className="flex items-center">
+                <div className="flex lg:justify-between items-center flex-wrap gap-y-4 justify-center">
+                    <div className="flex items-center mx-auto flex-wrap gap-4 justify-center">
                         <Logo />
-                        <div className="h-6 w-px bg-gray-300 mx-4"></div>
+                        <div className="h-6 w-px hidden sm:block bg-gray-300 mx-4"></div>
                         <motion.div
                             className="flex items-center space-x-2"
                             initial={{ opacity: 0, x: 20 }}
@@ -20,16 +20,16 @@ const Header = () => {
                             transition={{ duration: 0.5 }}
                         >
                             <Book className="text-primary mx-2" size={20} />
-                            <h1 className="text-lg font-medium">{t('terms.title')}</h1>
+                            <h1 className="md:text-lg text-sm font-medium ">{t('terms.title')}</h1>
                         </motion.div>
                     </div>
                     <motion.div
-                        className="flex items-center gap-x-6"
+                        className="flex mx-auto items-center gap-x-6"
                         initial={{ opacity: 0, x: 20 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.5 }}
                     >
-                        <p className="text-sm text-muted-foreground">{t('terms.lastUpdated')}</p>
+                        <p className="text-xs md:text-sm text-muted-foreground">{t('terms.lastUpdated')}</p>
                         <LanguageSelector />
 
 

@@ -10,20 +10,20 @@ const TermsAndConditionsPage = () => {
 
 
     return (
-        <div className="min-h-screen flex flex-col">
+        <div className="flex flex-col">
             <Header />
             <HeroSection />
 
-            <main className="flex-grow container mx-auto px-4 md:px-8 mb-12">
+            <main className="flex-grow container mx-auto px-4 lg:px-8 mb-12">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
                     <div className="lg:col-span-3 order-2 lg:order-1">
-                        <div className="lg:sticky lg:top-4">
+                        <div className="lg:sticky lg:top-4 hidden lg:block">
                             <TableOfContents />
                         </div>
                     </div>
 
                     <div className="lg:col-span-9 order-1 lg:order-2">
-                        <div className="prose max-w-none">
+                        <div className="prose">
                             <TermsContent />
                         </div>
                     </div>

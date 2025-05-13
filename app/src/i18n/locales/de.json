@@ -25,7 +25,9 @@
       "xbox": "Xbox",
       "nintendo": "Nintendo",
       "mobile": "Mobil"
-    }
+    },
+    "showMore": "Mehr anzeigen",
+    "showLess": "Mehr ausblenden"
   },
   "redeem": {
     "title": "Löse deine Karte ein",

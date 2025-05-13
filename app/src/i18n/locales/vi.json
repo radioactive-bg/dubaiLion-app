@@ -25,7 +25,9 @@
       "xbox": "Xbox",
       "nintendo": "Nintendo",
       "mobile": "Di động"
-    }
+    },
+    "showMore": "Xem thêm",
+    "showLess": "Xem ít hơn"
   },
   "redeem": {
     "title": "Đổi thẻ của bạn",

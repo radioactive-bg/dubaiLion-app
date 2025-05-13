@@ -25,7 +25,9 @@
       "xbox": "Xbox",
       "nintendo": "Nintendo",
       "mobile": "Mobile"
-    }
+    },
+    "showMore": "Show More",
+    "showLess": "Show Less"
   },
   "redeem": {
     "title": "Redeem Your Card",

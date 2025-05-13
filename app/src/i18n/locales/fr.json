@@ -25,7 +25,9 @@
       "xbox": "Xbox",
       "nintendo": "Nintendo",
       "mobile": "Mobile"
-    }
+    },
+    "showMore": "Afficher plus",
+    "showLess": "Afficher moins"
   },
   "redeem": {
     "title": "Échangez votre carte",

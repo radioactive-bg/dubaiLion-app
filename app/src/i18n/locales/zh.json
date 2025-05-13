@@ -25,7 +25,9 @@
       "xbox": "Xbox",
       "nintendo": "任天堂",
       "mobile": "手机"
-    }
+    },
+    "showMore": "显示更多",
+    "showLess": "显示更少"
   },
   "redeem": {
     "title": "兑换您的卡片",

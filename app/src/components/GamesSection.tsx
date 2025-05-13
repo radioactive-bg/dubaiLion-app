@@ -65,21 +65,21 @@ const GamesSection: React.FC = () => {
           ))}
         </div>
 
-        <div className="text-center mt-16 space-x-4">
+        <div className="text-center mt-16 flex justify-center gap-4">
           {hasMoreGames && (
             <button
               onClick={handleShowMore}
               className="px-8 py-3 rounded-full bg-gaming-accent hover:bg-opacity-90 text-white font-bold text-lg transition-all duration-300 transform hover:scale-105"
-              >
-              Show more
+            >
+              {t("games.showMore")}
             </button>
           )}
           {hasShownMore && (
             <button
               onClick={handleShowLess}
               className="px-8 py-3 rounded-full bg-transparent border-2 border-gaming-accent hover:bg-gaming-accent hover:bg-opacity-10 text-white font-bold text-lg transition-all duration-300"
-              >
-              Show less
+            >
+              {t("games.showLess")}
             </button>
           )}
         </div>

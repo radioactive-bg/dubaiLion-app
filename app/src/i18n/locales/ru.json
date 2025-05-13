@@ -25,7 +25,9 @@
       "xbox": "Xbox",
       "nintendo": "Nintendo",
       "mobile": "Мобильные"
-    }
+    },
+    "showMore": "Показать больше",
+    "showLess": "Показать меньше"
   },
   "redeem": {
     "title": "Активируйте вашу карту",

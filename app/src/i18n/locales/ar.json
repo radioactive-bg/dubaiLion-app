@@ -30,28 +30,9 @@
     "showLess": "عرض الأقل"
   },
   "redeem": {
-    "title": "استبدل بطاقتك",
-    "subtitle": "أدخل تفاصيل بطاقتك أدناه لاستبدال بطاقة الألعاب",
-    "form": {
-      "tiktokUsername": "اسم المستخدم في تيك توك",
-      "tiktokUsernamePlaceholder": "@اسم_المستخدم",
-      "cardNumber": "الرقم التسلسلي للبطاقة",
-      "cardNumberPlaceholder": "أدخل الرقم التسلسلي للبطاقة",
-      "cvv": "رمز CVV",
-      "cvvPlaceholder": "أدخل رمز CVV",
-      "submit": "استبدل البطاقة",
-      "processing": "جاري المعالجة..."
-    },
-    "validation": {
-      "tiktokRequired": "اسم المستخدم في تيك توك مطلوب",
-      "cardNumberRequired": "الرقم التسلسلي للبطاقة مطلوب",
-      "cardNumberInvalid": "الرجاء إدخال رقم بطاقة صالح (أرقام فقط)",
-      "cvvRequired": "رمز CVV مطلوب",
-      "cvvInvalid": "الرجاء إدخال رمز CVV صالح (أرقام فقط)"
-    },
-    "success": "تم استبدال البطاقة بنجاح!",
-    "error": "فشل استبدال البطاقة. يرجى المحاولة مرة أخرى.",
-    "generalError": "حدث خطأ. يرجى المحاولة مرة أخرى لاحقاً."
+    "redeem": "استبدل",
+    "yourCard": "بطاقتك",
+    "subtitle": "أدخل تفاصيل بطاقتك أدناه لاستبدال بطاقة الألعاب"
   },
   "contact": {
     "title": "تواصل",

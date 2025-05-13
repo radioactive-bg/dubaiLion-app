@@ -30,28 +30,9 @@
     "showLess": "显示更少"
   },
   "redeem": {
-    "title": "兑换您的卡片",
-    "subtitle": "在下方输入您的卡片详情以兑换游戏礼品卡",
-    "form": {
-      "tiktokUsername": "TikTok用户名",
-      "tiktokUsernamePlaceholder": "@您的用户名",
-      "cardNumber": "卡片序列号",
-      "cardNumberPlaceholder": "输入卡片序列号",
-      "cvv": "卡片CVV",
-      "cvvPlaceholder": "输入CVV",
-      "submit": "兑换卡片",
-      "processing": "处理中..."
-    },
-    "validation": {
-      "tiktokRequired": "需要TikTok用户名",
-      "cardNumberRequired": "需要卡片序列号",
-      "cardNumberInvalid": "请输入有效的卡号（仅限数字）",
-      "cvvRequired": "需要CVV",
-      "cvvInvalid": "请输入有效的CVV（仅限数字）"
-    },
-    "success": "卡片兑换成功！",
-    "error": "卡片兑换失败。请重试。",
-    "generalError": "发生错误。请稍后重试。"
+    "redeem": "兌換",
+    "yourCard": "您的卡片",
+    "subtitle": "在下方输入您的卡片详情以兑换游戏礼品卡"
   },
   "contact": {
     "title": "联系",

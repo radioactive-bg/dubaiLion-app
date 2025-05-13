@@ -30,28 +30,9 @@
     "showLess": "Mehr ausblenden"
   },
   "redeem": {
-    "title": "Löse deine Karte ein",
-    "subtitle": "Gib unten deine Kartendetails ein, um deine Gaming-Geschenkkarte einzulösen",
-    "form": {
-      "tiktokUsername": "TikTok Benutzername",
-      "tiktokUsernamePlaceholder": "@deinbenutzername",
-      "cardNumber": "Karten-Seriennummer",
-      "cardNumberPlaceholder": "Seriennummer eingeben",
-      "cvv": "Karten-CVV",
-      "cvvPlaceholder": "CVV eingeben",
-      "submit": "Karte einlösen",
-      "processing": "Verarbeitung..."
-    },
-    "validation": {
-      "tiktokRequired": "TikTok Benutzername ist erforderlich",
-      "cardNumberRequired": "Seriennummer ist erforderlich",
-      "cardNumberInvalid": "Bitte gib eine gültige Kartennummer ein (nur Zahlen)",
-      "cvvRequired": "CVV ist erforderlich",
-      "cvvInvalid": "Bitte gib einen gültigen CVV-Code ein (nur Zahlen)"
-    },
-    "success": "Karte erfolgreich eingelöst!",
-    "error": "Einlösen der Karte fehlgeschlagen. Bitte versuche es erneut.",
-    "generalError": "Ein Fehler ist aufgetreten. Bitte versuche es später erneut."
+    "redeem": "einlösen",
+    "yourCard": "deine Karte",
+    "subtitle": "Gib unten deine Kartendetails ein, um deine Gaming-Geschenkkarte einzulösen"
   },
   "contact": {
     "title": "Verbinde dich mit",

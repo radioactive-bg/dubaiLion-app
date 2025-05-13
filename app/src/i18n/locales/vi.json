@@ -30,28 +30,9 @@
     "showLess": "Xem ít hơn"
   },
   "redeem": {
-    "title": "Đổi thẻ của bạn",
-    "subtitle": "Nhập chi tiết thẻ của bạn bên dưới để đổi thẻ quà tặng game",
-    "form": {
-      "tiktokUsername": "Tên người dùng TikTok",
-      "tiktokUsernamePlaceholder": "@tênbạn",
-      "cardNumber": "Số seri thẻ",
-      "cardNumberPlaceholder": "Nhập số seri thẻ",
-      "cvv": "CVV thẻ",
-      "cvvPlaceholder": "Nhập CVV",
-      "submit": "Đổi thẻ",
-      "processing": "Đang xử lý..."
-    },
-    "validation": {
-      "tiktokRequired": "Cần tên người dùng TikTok",
-      "cardNumberRequired": "Cần số seri thẻ",
-      "cardNumberInvalid": "Vui lòng nhập số thẻ hợp lệ (chỉ số)",
-      "cvvRequired": "Cần CVV",
-      "cvvInvalid": "Vui lòng nhập CVV hợp lệ (chỉ số)"
-    },
-    "success": "Đổi thẻ thành công!",
-    "error": "Không thể đổi thẻ. Vui lòng thử lại.",
-    "generalError": "Đã xảy ra lỗi. Vui lòng thử lại sau."
+    "redeem": "Đổi",
+    "yourCard": "thẻ của bạn",
+    "subtitle": "Nhập chi tiết thẻ của bạn bên dưới để đổi thẻ quà tặng game"
   },
   "contact": {
     "title": "Kết nối với",

@@ -30,28 +30,9 @@
     "showLess": "Show Less"
   },
   "redeem": {
-    "title": "Redeem Your Card",
-    "subtitle": "Enter your card details below to redeem your gaming gift card",
-    "form": {
-      "tiktokUsername": "TikTok Username",
-      "tiktokUsernamePlaceholder": "@yourusername",
-      "cardNumber": "Card Serial Number",
-      "cardNumberPlaceholder": "Enter card serial number",
-      "cvv": "Card CVV",
-      "cvvPlaceholder": "Enter CVV",
-      "submit": "Redeem Card",
-      "processing": "Processing..."
-    },
-    "validation": {
-      "tiktokRequired": "TikTok username is required",
-      "cardNumberRequired": "Card serial number is required",
-      "cardNumberInvalid": "Please enter a valid card number (numbers only)",
-      "cvvRequired": "CVV is required",
-      "cvvInvalid": "Please enter a valid CVV (numbers only)"
-    },
-    "success": "Card redeemed successfully!",
-    "error": "Failed to redeem card. Please try again.",
-    "generalError": "An error occurred. Please try again later."
+    "redeem": "Redeem",
+    "yourCard": "Your Card",
+    "subtitle": "Enter your card details below to redeem your gaming gift card"
   },
   "contact": {
     "title": "Connect With",

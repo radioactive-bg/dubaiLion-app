@@ -30,28 +30,9 @@
     "showLess": "Afficher moins"
   },
   "redeem": {
-    "title": "Échangez votre carte",
-    "subtitle": "Entrez les détails de votre carte ci-dessous pour échanger votre carte cadeau de jeu",
-    "form": {
-      "tiktokUsername": "Nom d'utilisateur TikTok",
-      "tiktokUsernamePlaceholder": "@votrenom",
-      "cardNumber": "Numéro de série de la carte",
-      "cardNumberPlaceholder": "Entrez le numéro de série",
-      "cvv": "CVV de la carte",
-      "cvvPlaceholder": "Entrez le CVV",
-      "submit": "Échanger la carte",
-      "processing": "Traitement en cours..."
-    },
-    "validation": {
-      "tiktokRequired": "Le nom d'utilisateur TikTok est requis",
-      "cardNumberRequired": "Le numéro de série est requis",
-      "cardNumberInvalid": "Veuillez entrer un numéro de carte valide (chiffres uniquement)",
-      "cvvRequired": "Le CVV est requis",
-      "cvvInvalid": "Veuillez entrer un CVV valide (chiffres uniquement)"
-    },
-    "success": "Carte échangée avec succès !",
-    "error": "Échec de l'échange de la carte. Veuillez réessayer.",
-    "generalError": "Une erreur s'est produite. Veuillez réessayer plus tard."
+    "redeem": "Échanger",
+    "yourCard": "Votre Carte",
+    "subtitle": "Entrez les détails de votre carte ci-dessous pour échanger votre carte cadeau de jeu"
   },
   "contact": {
     "title": "Connectez-vous avec",

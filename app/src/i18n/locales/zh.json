@@ -3,10 +3,15 @@
     "home": "首页",
     "games": "游戏",
     "redeem": "兑换",
-    "contact": "联系我们"
+    "contact": "联系我们",
+    "terms": "条款与条件"
   },
   "hero": {
-    "title": "兑换您的游戏卡",
+    "title": {
+      "redeem": "兌換",
+      "yourGaming": "您的遊戲卡",
+      "cards": ""
+    },
     "subtitle": "使用我们的高级礼品卡解锁独家游戏和内容",
     "exploreGames": "探索游戏",
     "redeemCard": "兑换卡片"

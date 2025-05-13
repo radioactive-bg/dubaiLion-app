@@ -3,10 +3,15 @@
     "home": "Trang chủ",
     "games": "Trò chơi",
     "redeem": "Đổi thẻ",
-    "contact": "Liên hệ"
+    "contact": "Liên hệ",
+    "terms": "Điều khoản và điều kiện"
   },
   "hero": {
-    "title": "Đổi thẻ game của bạn",
+    "title": {
+      "redeem": "Đổi",
+      "yourGaming": "thẻ trò chơi của bạn",
+      "cards": ""
+    },
     "subtitle": "Mở khóa các trò chơi và nội dung độc quyền với thẻ quà tặng cao cấp của chúng tôi",
     "exploreGames": "Khám phá trò chơi",
     "redeemCard": "Đổi thẻ"

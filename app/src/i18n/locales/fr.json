@@ -3,10 +3,15 @@
     "home": "Accueil",
     "games": "Jeux",
     "redeem": "Échanger",
-    "contact": "Contact"
+    "contact": "Contact",
+    "terms": "Termes et conditions"
   },
   "hero": {
-    "title": "Échangez vos cartes de jeu",
+    "title": {
+      "redeem": "Échanger",
+      "yourGaming": "Vos Jeux",
+      "cards": "Cartes"
+    },
     "subtitle": "Débloquez des jeux et du contenu exclusifs avec nos cartes cadeaux premium",
     "exploreGames": "Explorer les jeux",
     "redeemCard": "Échanger une carte"

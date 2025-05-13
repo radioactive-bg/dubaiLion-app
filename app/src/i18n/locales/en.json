@@ -7,7 +7,11 @@
     "terms": "Terms and Conditions"
   },
   "hero": {
-    "title": "Redeem Your Gaming Cards",
+    "title": {
+      "redeem": "Redeem",
+      "yourGaming": "Your Gaming",
+      "cards": "Cards"
+    },
     "subtitle": "Unlock exclusive games and content with our premium gift cards",
     "exploreGames": "Explore Games",
     "redeemCard": "Redeem Card"

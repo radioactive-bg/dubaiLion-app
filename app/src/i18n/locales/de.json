@@ -3,10 +3,15 @@
     "home": "Startseite",
     "games": "Spiele",
     "redeem": "Einlösen",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "terms": "Geschäftsbedingungen"
   },
   "hero": {
-    "title": "Löse deine Gaming-Karten ein",
+    "title": {
+      "redeem": "Einlösen",
+      "yourGaming": "Deine Spiele",
+      "cards": "Karten"
+    },
     "subtitle": "Schalte exklusive Spiele und Inhalte mit unseren Premium-Geschenkkarten frei",
     "exploreGames": "Spiele entdecken",
     "redeemCard": "Karte einlösen"

@@ -52,7 +52,8 @@
     "generalError": "Đã xảy ra lỗi. Vui lòng thử lại sau."
   },
   "contact": {
-    "title": "Kết nối với chúng tôi",
+    "title": "Kết nối với",
+    "us": "chúng tôi",
     "subtitle": "Theo dõi chúng tôi trên mạng xã hội để cập nhật, khuyến mãi và tin tức game",
     "platforms": {
       "telegram": "Telegram",

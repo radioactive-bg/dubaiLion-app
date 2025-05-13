@@ -52,7 +52,8 @@
     "generalError": "An error occurred. Please try again later."
   },
   "contact": {
-    "title": "Connect With Us",
+    "title": "Connect With",
+    "us": "Us",
     "subtitle": "Follow us on social media for updates, promotions, and gaming news",
     "platforms": {
       "telegram": "Telegram",

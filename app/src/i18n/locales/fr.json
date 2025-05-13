@@ -52,7 +52,8 @@
     "generalError": "Une erreur s'est produite. Veuillez réessayer plus tard."
   },
   "contact": {
-    "title": "Connectez-vous avec nous",
+    "title": "Connectez-vous avec",
+    "us": "nous",
     "subtitle": "Suivez-nous sur les réseaux sociaux pour les mises à jour, promotions et actualités gaming",
     "platforms": {
       "telegram": "Telegram",

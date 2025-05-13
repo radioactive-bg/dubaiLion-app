@@ -7,31 +7,33 @@ import {
   PiTiktokLogoBold,
 } from "react-icons/pi";
 import { LiaDiscord } from "react-icons/lia";
+import { useTranslation } from "react-i18next";
 
-const socialLinks: SocialLink[] = [
-  {
-    platform: "Telegram",
-    url: "https://t.me/Lion_Dubai",
-    icon: "telegram",
-  },
-  {
-    platform: "Instagram",
-    url: "https://www.instagram.com/lion_dubai_?igsh=MW16a2lveGRhYjhiZA%3D%3D&utm_source=qr",
-    icon: "instagram",
-  },
-  {
-    platform: "Discord",
-    url: "https://discord.com/users/462748514519351298",
-    icon: "discord",
-  },
-  {
-    platform: "TikTok",
-    url: "https://www.tiktok.com/@lion_dubai_?_r=1&_d=eaacmmbgeejmfi&sec_uid=MS4wLjABAAAAQkG4ljVRmQHj9y7DjfO-qnwBU-BfGRu6TveWairOxjukCSv49oBR-rcFWk_L0joJ&share_author_id=7291222956894012448&sharer_language=ar&source=h5_m&u_code=eag7i3e2hf3a25&ug_btm=b8727,b0&social_share_type=4&utm_source=copy&sec_user_id=MS4wLjABAAAAQkG4ljVRmQHj9y7DjfO-qnwBU-BfGRu6TveWairOxjukCSv49oBR-rcFWk_L0joJ&tt_from=copy&utm_medium=ios&utm_campaign=client_share&enable_checksum=1&user_id=7291222956894012448&share_link_id=3035A6D3-A7AF-45A0-A3F8-1AD247F2440A&share_app_id=1233",
-    icon: "tiktok",
-  },
-];
 
 const ContactSection: React.FC = () => {
+  const { t } = useTranslation();
+  const socialLinks: SocialLink[] = [
+    {
+      platform: t("contact.platforms.telegram"),
+      url: "https://t.me/Lion_Dubai",
+      icon: "telegram",
+    },
+    {
+      platform: t("contact.platforms.instagram"),
+      url: "https://www.instagram.com/lion_dubai_?igsh=MW16a2lveGRhYjhiZA%3D%3D&utm_source=qr",
+      icon: "instagram",
+    },
+    {
+      platform: t("contact.platforms.discord"),
+      url: "https://discord.com/users/462748514519351298",
+      icon: "discord",
+    },
+    {
+      platform: t("contact.platforms.tiktok"),
+      url: "https://www.tiktok.com/@lion_dubai_?_r=1&_d=eaacmmbgeejmfi&sec_uid=MS4wLjABAAAAQkG4ljVRmQHj9y7DjfO-qnwBU-BfGRu6TveWairOxjukCSv49oBR-rcFWk_L0joJ&share_author_id=7291222956894012448&sharer_language=ar&source=h5_m&u_code=eag7i3e2hf3a25&ug_btm=b8727,b0&social_share_type=4&utm_source=copy&sec_user_id=MS4wLjABAAAAQkG4ljVRmQHj9y7DjfO-qnwBU-BfGRu6TveWairOxjukCSv49oBR-rcFWk_L0joJ&tt_from=copy&utm_medium=ios&utm_campaign=client_share&enable_checksum=1&user_id=7291222956894012448&share_link_id=3035A6D3-A7AF-45A0-A3F8-1AD247F2440A&share_app_id=1233",
+      icon: "tiktok",
+    },
+  ];
   const getSocialIcon = (icon: string) => {
     switch (icon) {
       case "telegram":
@@ -58,11 +60,10 @@ const ContactSection: React.FC = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-            Connect With <span className="text-gaming-accent">Us</span>
+            {t("contact.title")} <span className="text-gaming-accent">{t("contact.us")}</span>
           </h2>
           <p className="text-lg text-secondary-300 max-w-2xl mx-auto">
-            Follow us on social media for updates, promotions, and gaming news.
-          </p>
+            {t("contact.subtitle")}          </p>
         </motion.div>
 
         <div className="flex flex-wrap justify-center gap-6 md:gap-10">

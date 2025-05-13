@@ -52,7 +52,8 @@
     "generalError": "发生错误。请稍后重试。"
   },
   "contact": {
-    "title": "与我们联系",
+    "title": "联系",
+    "us": "我们",
     "subtitle": "在社交媒体上关注我们以获取更新、促销和游戏新闻",
     "platforms": {
       "telegram": "Telegram",

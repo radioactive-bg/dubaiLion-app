@@ -4,7 +4,8 @@ const HeroSection = () => {
     const { t } = useTranslation();
     return (
         <motion.div
-            className="bg-gradient-to-r from-primary-50 to-accent-50 py-10 mb-8 relative overflow-hidden"
+            // className="bg-gradient-to-r from-primary-50 to-accent-50 py-10 mb-8 relative overflow-hidden"
+            className="bg-white/5 py-20 mb-14 relative overflow-hidden"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.7 }}
@@ -19,7 +20,8 @@ const HeroSection = () => {
                     <h1 className="text-3xl text-gaming-accent md:text-4xl font-display font-bold  mb-4">
                         {t("terms.termsTitle")}
                     </h1>
-                    <p className="text-secondary-700 text-lg">
+                    {/* <p className="text-secondary-700 text-lg"> */}
+                    <p className="text-white text-lg">
                         {t("terms.subtitle")}
 
                     </p>

@@ -68,5 +68,97 @@
     "fr": "Français",
     "zh": "中文",
     "vi": "Tiếng Việt"
+  },
+  "terms": {
+    "title": "Điều Khoản & Điều Kiện của Nền Tảng Thẻ Quà Tặng LionDubai",
+    "termsTitle": "Điều Khoản & Điều Kiện",
+    "lastUpdated": "Cập Nhật Cuối Cùng: Ngày 13 tháng 5, 2025",
+    "subtitle": "Vui lòng đọc kỹ các điều khoản này trước khi mua hoặc sử dụng Thẻ Quà Tặng của chúng tôi. Bằng cách sử dụng dịch vụ của chúng tôi, bạn đồng ý bị ràng buộc bởi các Điều Khoản & Điều Kiện này.",
+    "tableOfContents": "Mục Lục",
+    "Introduction": {
+      "title": "Giới Thiệu",
+      "content": "Các Điều Khoản & Điều Kiện này (Điều Khoản) điều chỉnh việc mua, sử dụng và đổi Thẻ Quà Tặng được phát hành bởi HKS (Ar‑pay) để sử dụng trên nền tảng liondubai.net, và tạo thành một thỏa thuận có hiệu lực pháp lý giữa bạn, HKS (Chúng tôi hoặc HKS), và Lion Dubai (Đối tác). Bằng việc mua hoặc đổi Thẻ Quà Tặng, bạn đồng ý với các Điều Khoản này. Nếu bạn không đồng ý, vui lòng không tiếp tục mua hoặc đổi."
+    },
+    "Definitions": {
+      "title": "Định Nghĩa",
+      "content": {
+        "Gift Card": "Thẻ Quà Tặng : Một mã voucher điện tử do HKS phát hành và bán thông qua cổng thương mại điện tử Ar‑pay, chứa một mã duy nhất để đổi tại liondubai.net.",
+        "Purchaser": "Người Mua : Cá nhân hoặc tổ chức mua Thẻ Quà Tặng.",
+        "User": "Người Dùng : Người đổi Thẻ Quà Tặng tại liondubai.net. Có thể là người Mua.",
+        "Platform": "Nền Tảng : Trang web liondubai.net, do Lion Dubai vận hành, nơi Thẻ Quà Tặng được đổi lấy tiền ảo hoặc dịch vụ trong nền tảng.",
+        "Redemption": "Đổi : Việc nhập mã Thẻ Quà Tặng hợp lệ trên Nền Tảng, kích hoạt việc ghi có vào tài khoản người dùng trong nền tảng.",
+        "HKS": "HKS : Hệ thống backend được sử dụng để ghi chép và thanh toán các Thẻ Quà Tặng đã được đổi.",
+        "Zoho Forms": "Zoho Forms : Hệ thống backend được Lion Dubai sử dụng để duyệt hoặc xem xét các giao dịch đổi Thẻ Quà Tặng."
+      }
+    },
+    "IssuanceSaleAndMerchantOfRecord": {
+      "title": "Phát Hành, Bán và Người Thương Mại Ghi Nhận",
+      "content": {
+        "Issuance & Sale": "Phát Hành & Bán: HKS phát hành và bán Thẻ Quà Tặng chỉ dành cho việc sử dụng trên Nền Tảng. Bạn mua Thẻ Quà Tặng thông qua cổng thương mại điện tử Ar‑pay.",
+        "Payment Collection": "Thu Thập Thanh Toán: HKS/Ar‑pay thu tất cả các khoản thanh toán cho Thẻ Quà Tặng. Khi tiền được xác nhận, HKS sẽ chuyển phần chia sẻ của Lion Dubai theo thỏa thuận thương mại của chúng tôi.",
+        "Merchant of Record": "Người Thương Mại Ghi Nhận: HKS là người thương mại ghi nhận cho tất cả các giao dịch Thẻ Quà Tặng và chịu trách nhiệm về việc hoàn tiền, xử lý các trường hợp chargeback (nếu có), thanh toán thuế và tuân thủ các quy định của mạng thẻ."
+      }
+    },
+    "RedemptionProcess": {
+      "title": "Quy Trình Đổi Thẻ",
+      "content": {
+        "How to Redeem": "Cách Đổi: Truy cập liondubai.net, nhập mã Thẻ Quà Tặng và nhấn Đổi. Số dư trong nền tảng của bạn sẽ tự động cập nhật sau khi xác nhận thành công.",
+        "Approval": "Duyệt: Dữ liệu đổi thẻ được gửi đến Zoho Forms để phê duyệt thủ công, và đến HKS để theo dõi và thanh toán. Hiện tại, các giao dịch đổi thẻ được tự động phê duyệt và ghi có ngay lập tức.",
+        "Rejection": "Từ Chối: Nếu mã của bạn bị từ chối, vui lòng liên hệ với bộ phận hỗ trợ Ar‑pay để được trợ giúp."
+      }
+    },
+    "ValidityExpirationAndCancellation": {
+      "title": "Hiệu Lực, Hết Hạn & Hủy Bỏ",
+      "content": {
+        "Validity": "Hiệu Lực: Thẻ Quà Tặng có hiệu lực cho đến khi hết số dư.",
+        "Expiration": "Hết Hạn: Thẻ Quà Tặng không có ngày hết hạn.",
+        "Cancellation & Refunds": "Hủy Bỏ & Hoàn Tiền: Sau khi đổi, Thẻ Quà Tặng không thể hủy bỏ hoặc hoàn tiền. Các Thẻ Quà Tặng chưa được đổi sẽ không hoàn tiền trừ khi yêu cầu theo pháp luật hiện hành."
+      }
+    },
+    "LiabilityWarranties": {
+      "title": "Trách Nhiệm & Bảo Đảm",
+      "content": {
+        "Liability": "Trách Nhiệm: HKS và Lion Dubai không chịu trách nhiệm về việc sử dụng trái phép mã Thẻ Quà Tặng. Trong trường hợp hệ thống gặp sự cố hoặc có lỗi trong quá trình đổi thẻ, trách nhiệm thuộc về Lion Dubai.",
+        "Warranties": "Bảo Đảm: Thẻ Quà Tặng được cung cấp 'như hiện trạng'. Nếu mã Thẻ Quà Tặng hợp lệ được trình bày, bạn sẽ nhận được tiền ảo hoặc dịch vụ đúng như yêu cầu trong nền tảng.",
+        "Indemnities": "Bồi Thường: Bạn đồng ý bồi thường cho HKS và Lion Dubai đối với bất kỳ yêu cầu nào phát sinh từ việc sử dụng sai mục đích của Thẻ Quà Tặng."
+      }
+    },
+    "DataCollectionPrivacy": {
+      "title": "Thu Thập Dữ Liệu & Quyền Riêng Tư",
+      "content": {
+        "DataAtPurchase": "Dữ Liệu Khi Mua: Chúng tôi thu thập thông tin tối thiểu của người dùng (ví dụ: tên người dùng TikTok tùy chọn) để thực hiện việc giao hàng Thẻ Quà Tặng.",
+        "DataAtRedemption": "Dữ Liệu Khi Đổi: Chúng tôi ghi lại mã Thẻ Quà Tặng, số seri, CVV, tên người dùng trong nền tảng, và chi tiết trò chơi.",
+        "ThirdPartyProcessors": "Các Xử Lý Bên Thứ Ba: Dữ liệu của bạn được xử lý và lưu trữ bởi Zoho và HKS. Cả hai đều tuân thủ các điều khoản bảo vệ dữ liệu.",
+        "Consent & DPAs": "Sự Đồng Ý & Thỏa Thuận Xử Lý Dữ Liệu (DPAs): Chúng tôi thu thập sự đồng ý của bạn đối với việc thu thập và chia sẻ dữ liệu như mô tả trong Chính Sách Bảo Mật của chúng tôi. Các Thỏa Thuận Xử Lý Dữ Liệu (DPAs) với Zoho và DueGate sẽ được triển khai trước khi ra mắt."
+      }
+    },
+    "Support&ServiceLevels": {
+      "title": "Hỗ Trợ & Mức Dịch Vụ",
+      "content": {
+        "Customer Support": "Hỗ Trợ Khách Hàng: Lion Dubai sẽ xử lý tất cả các hỗ trợ, khiếu nại và giải quyết tranh chấp liên quan đến việc đổi Thẻ Quà Tặng.",
+        "Service Levels": "Mức Dịch Vụ: Các SLA giữa HKS và Lion Dubai đang được phát triển và sẽ được chia sẻ khi onboarding."
+      }
+    },
+    "GoverningLawJurisdiction": {
+      "title": "Luật Điều Chỉnh & Thẩm Quyền",
+      "content": {
+        "header": "Các Điều Khoản này tuân theo pháp luật của Khu Vực Hành Chính Đặc Biệt Hồng Kông. Mọi tranh chấp phát sinh từ các Điều Khoản này sẽ thuộc thẩm quyền độc quyền của các tòa án tại Hồng Kông."
+      }
+    },
+    "ChangesToTerms": {
+      "title": "Thay Đổi Điều Khoản",
+      "content": {
+        "header": "Chúng tôi có thể thay đổi các Điều Khoản này theo thời gian. Các Điều Khoản sửa đổi sẽ được đăng trên liondubai.net với ngày 'Cập Nhật Cuối Cùng' mới. Việc tiếp tục sử dụng Thẻ Quà Tặng sau khi thay đổi đồng nghĩa với việc bạn chấp nhận các Điều Khoản mới."
+      }
+    },
+    "ContactInformation": {
+      "title": "Thông Tin Liên Hệ",
+      "content": {
+        "header": "Nếu có bất kỳ câu hỏi nào về các Điều Khoản này, hỗ trợ, hoặc yêu cầu liên quan đến dữ liệu, vui lòng liên hệ:",
+        "HKS (Ar‑pay) Support": "support@ar‑pay.com",
+        "Lion Dubai Support": "support@liondubai.net",
+        "thankYou": "Cảm ơn bạn đã chọn Lion Dubai."
+      }
+    }
   }
 }

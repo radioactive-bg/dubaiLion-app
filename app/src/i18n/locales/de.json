@@ -68,5 +68,97 @@
     "fr": "Français",
     "zh": "中文",
     "vi": "Tiếng Việt"
+  },
+  "terms": {
+    "title": "Nutzungsbedingungen der LionDubai Geschenkkartenplattform",
+    "termsTitle": "Nutzungsbedingungen",
+    "lastUpdated": "Letzte Aktualisierung: 13. Mai 2025",
+    "subtitle": "Bitte lesen Sie diese Bedingungen sorgfältig durch, bevor Sie unsere Geschenkkarten kaufen oder verwenden. Durch die Nutzung unserer Dienste erklären Sie sich mit diesen Bedingungen einverstanden.",
+    "tableOfContents": "Inhaltsverzeichnis",
+    "Introduction": {
+      "title": "Einleitung",
+      "content": "Diese Nutzungsbedingungen (Bedingungen) regeln den Kauf, die Nutzung und die Einlösung von Geschenkkarten, die von HKS (Ar‑pay) für die Nutzung auf der Plattform liondubai.net ausgestellt werden, und stellen eine rechtlich bindende Vereinbarung zwischen Ihnen, HKS (wir oder HKS), und Lion Dubai (Partner) dar. Durch den Kauf oder die Einlösung einer Geschenkkarte stimmen Sie diesen Bedingungen zu. Wenn Sie nicht einverstanden sind, führen Sie den Kauf oder die Einlösung nicht durch."
+    },
+    "Definitions": {
+      "title": "Begriffsbestimmungen",
+      "content": {
+        "Gift Card": "Geschenkkarte: Ein digitaler Gutschein, der von HKS über das Ar‑pay E-Commerce-Portal ausgestellt und verkauft wird und einen eindeutigen Code zur Einlösung auf liondubai.net enthält.",
+        "Purchaser": "Käufer: Die Person oder Organisation, die eine Geschenkkarte erwirbt.",
+        "User": "Nutzer: Die Person, die eine Geschenkkarte auf liondubai.net einlöst. Kann identisch mit dem Käufer sein.",
+        "Platform": "Plattform: Die Website liondubai.net, betrieben von Lion Dubai, auf der Geschenkkarten gegen In-Platform-Währung oder Dienstleistungen eingelöst werden.",
+        "Redemption": "Einlösung: Eingabe eines gültigen Geschenkkartencodes auf der Plattform, wodurch dem Nutzerkonto Guthaben gutgeschrieben wird.",
+        "HKS": "HKS: Das Backend-System für Aufzeichnung und Abrechnung eingelöster Geschenkkarten.",
+        "Zoho Forms": "Zoho Forms: Das Backend-System, das von Lion Dubai zur Genehmigung oder Prüfung von Geschenkkarteneinlösungen verwendet wird."
+      }
+    },
+    "IssuanceSaleAndMerchantOfRecord": {
+      "title": "Ausstellung, Verkauf und Vertragshändler",
+      "content": {
+        "Issuance & Sale": "Ausstellung & Verkauf: HKS stellt Geschenkkarten ausschließlich zur Nutzung auf der Plattform aus und verkauft sie. Der Kauf erfolgt über das Ar‑pay E-Commerce-Portal.",
+        "Payment Collection": "Zahlungserfassung: HKS/Ar‑pay erhebt alle Zahlungen für Geschenkkarten. Nach Zahlungseingang leitet HKS den Anteil von Lion Dubai gemäß der Geschäftsvereinbarung weiter.",
+        "Merchant of Record": "Vertragshändler: HKS agiert als Vertragshändler für alle Geschenkkartentransaktionen und ist verantwortlich für Rückbelastungen, Rückerstattungen (falls zutreffend), Steuerabführung und Einhaltung der Regelungen der Kartennetzwerke."
+      }
+    },
+    "RedemptionProcess": {
+      "title": "Einlösungsprozess",
+      "content": {
+        "How to Redeem": "So lösen Sie ein: Besuchen Sie liondubai.net, geben Sie Ihren Geschenkkartencode ein und klicken Sie auf Einlösen. Ihr Guthaben auf der Plattform wird nach erfolgreicher Validierung automatisch aktualisiert.",
+        "Approval": "Genehmigung: Die Einlösedaten werden zur manuellen Genehmigung an Zoho Forms sowie zur Nachverfolgung und Abrechnung an HKS übermittelt. Derzeit werden Einlösungen automatisch genehmigt und sofort gutgeschrieben.",
+        "Rejection": "Ablehnung: Wenn Ihr Code abgelehnt wird, wenden Sie sich bitte an den Ar‑pay E-Commerce-Support für Unterstützung."
+      }
+    },
+    "ValidityExpirationAndCancellation": {
+      "title": "Gültigkeit, Ablauf & Stornierung",
+      "content": {
+        "Validity": "Gültigkeit: Geschenkkarten bleiben gültig, bis das Guthaben vollständig aufgebraucht ist.",
+        "Expiration": "Ablauf: Geschenkkarten verfallen nicht.",
+        "Cancellation & Refunds": "Stornierung & Rückerstattungen: Nach der Einlösung sind Geschenkkarten nicht stornierbar oder rückerstattbar. Nicht eingelöste Karten sind nur dann erstattungsfähig, wenn dies gesetzlich vorgeschrieben ist."
+      }
+    },
+    "LiabilityWarranties": {
+      "title": "Haftung & Gewährleistungen",
+      "content": {
+        "Liability": "Haftung: HKS und Lion Dubai haften nicht für unbefugte Nutzung von Geschenkkartencodes. Bei Systemausfällen oder Einlösungsfehlern liegt die Haftung bei Lion Dubai.",
+        "Warranties": "Gewährleistungen: Geschenkkarten werden 'wie besehen' bereitgestellt. Wenn ein gültiger Code vorgelegt wird, erhalten Sie die entsprechende In-Platform-Währung oder Dienstleistung.",
+        "Indemnities": "Freistellung: Sie verpflichten sich, HKS und Lion Dubai von Ansprüchen freizustellen, die durch den Missbrauch von Geschenkkarten entstehen."
+      }
+    },
+    "DataCollectionPrivacy": {
+      "title": "Datenerhebung & Datenschutz",
+      "content": {
+        "DataAtPurchase": "Daten beim Kauf: Wir erfassen minimale Benutzerdaten (z. B. optionalen TikTok-Benutzernamen), um die Lieferung der Geschenkkarte zu ermöglichen.",
+        "DataAtRedemption": "Daten bei der Einlösung: Wir erfassen den Geschenkkartencode, die Seriennummer, CVV, den In-Platform-Benutzernamen sowie Spieldetails.",
+        "ThirdPartyProcessors": "Drittanbieter: Ihre Daten werden von Zoho und HKS verarbeitet und gespeichert. Beide unterliegen Datenschutzvereinbarungen.",
+        "Consent & DPAs": "Einwilligung & DPAs: Wir holen Ihre Einwilligung zur Datenerhebung und -weitergabe gemäß unserer Datenschutzrichtlinie ein. Datenverarbeitungsverträge (DPAs) mit Zoho und DueGate werden vor dem Start umgesetzt."
+      }
+    },
+    "Support&ServiceLevels": {
+      "title": "Support & Servicelevel",
+      "content": {
+        "Customer Support": "Kundensupport: Lion Dubai ist für den gesamten Support, Beschwerden und die Lösung von Streitigkeiten im Zusammenhang mit der Einlösung von Geschenkkarten verantwortlich.",
+        "Service Levels": "Servicelevel: SLA-Vereinbarungen zwischen HKS und Lion Dubai sind in Vorbereitung und werden beim Onboarding zur Verfügung gestellt."
+      }
+    },
+    "GoverningLawJurisdiction": {
+      "title": "Anwendbares Recht & Gerichtsstand",
+      "content": {
+        "header": "Diese Bedingungen unterliegen dem Recht der Sonderverwaltungsregion Hongkong. Alle daraus entstehenden Streitigkeiten unterliegen der ausschließlichen Zuständigkeit der Gerichte in Hongkong."
+      }
+    },
+    "ChangesToTerms": {
+      "title": "Änderungen der Bedingungen",
+      "content": {
+        "header": "Wir behalten uns das Recht vor, diese Bedingungen gelegentlich zu ändern. Überarbeitete Bedingungen werden auf liondubai.net mit einem aktualisierten 'Letzte Aktualisierung'-Datum veröffentlicht. Die weitere Nutzung der Geschenkkarten gilt als Zustimmung zu den neuen Bedingungen."
+      }
+    },
+    "ContactInformation": {
+      "title": "Kontaktinformationen",
+      "content": {
+        "header": "Bei Fragen zu diesen Bedingungen, Support oder Datenschutz wenden Sie sich bitte an:",
+        "HKS (Ar‑pay) Support": "support@ar‑pay.com",
+        "Lion Dubai Support": "support@liondubai.net",
+        "thankYou": "Vielen Dank, dass Sie sich für Lion Dubai entschieden haben."
+      }
+    }
   }
 }

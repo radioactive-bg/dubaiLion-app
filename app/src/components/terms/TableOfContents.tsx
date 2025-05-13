@@ -41,7 +41,7 @@ const TableOfContents = () => {
 
     return (
         <motion.div
-            className="bg-white shadow-lg border border-primary-100 rounded-lg p-6 mb-6 sticky top-4"
+            className="bg-game-card shadow-lg border border-gaming-accent rounded-lg p-6 mb-6 sticky top-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -63,7 +63,7 @@ const TableOfContents = () => {
                             className="text-sm hover:text-gaming-accent transition-colors flex gap-2 items-center"
                         >
                             <span className="text-gaming-accent font-medium">{section.number}.</span>
-                            <span className="text-secondary-700">{section.title}</span>
+                            <span className="text-white">{section.title}</span>
                         </a>
                     </motion.li>
                 ))}

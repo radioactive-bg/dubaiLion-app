@@ -68,5 +68,97 @@
     "fr": "Français",
     "zh": "中文",
     "vi": "Tiếng Việt"
+  },
+  "terms": {
+    "title": "LionDubai 礼品卡平台条款与条件",
+    "termsTitle": "条款与条件",
+    "lastUpdated": "最后更新：2025年5月13日",
+    "subtitle": "在购买或使用我们的礼品卡之前，请仔细阅读这些条款。通过使用我们的服务，您同意遵守这些条款与条件。",
+    "tableOfContents": "目录",
+    "Introduction": {
+      "title": "介绍",
+      "content": "这些条款与条件（“条款”）适用于您购买、使用和兑换由HKS（Ar‑pay）发行的礼品卡，以便在liondubai.net平台上使用，并构成您与HKS（我们或HKS）以及Lion Dubai（合作伙伴）之间的具有法律效力的协议。购买或兑换礼品卡即表示您同意这些条款。如果您不同意，请不要继续购买或兑换。"
+    },
+    "Definitions": {
+      "title": "定义",
+      "content": {
+        "Gift Card": "礼品卡：由HKS通过Ar‑pay电子商务门户发行和销售的数字代金券，包含一个唯一的兑换码，用于在liondubai.net平台上兑换。",
+        "Purchaser": "购买者：购买礼品卡的个人或实体。",
+        "User": "用户：在liondubai.net兑换礼品卡的人，可能与购买者相同。",
+        "Platform": "平台：由Lion Dubai运营的liondubai.net网站，礼品卡可以兑换为平台内货币或服务。",
+        "Redemption": "兑换：在平台上输入有效的礼品卡代码，触发对用户平台账户的充值。",
+        "HKS": "HKS：用于记录和结算已兑换礼品卡的后台系统。",
+        "Zoho Forms": "Zoho Forms：Lion Dubai用于批准或审核礼品卡兑换的后台系统。"
+      }
+    },
+    "IssuanceSaleAndMerchantOfRecord": {
+      "title": "发行、销售和记录商",
+      "content": {
+        "Issuance & Sale": "发行与销售：HKS专门为平台发行和销售礼品卡。您通过Ar‑pay电子商务门户购买礼品卡。",
+        "Payment Collection": "付款收集：HKS/Ar‑pay收取所有礼品卡的付款。款项到账后，HKS将根据商业协议将Lion Dubai的份额汇款。",
+        "Merchant of Record": "记录商：HKS作为所有礼品卡交易的记录商，负责处理退款（如有）、税务支付和遵守卡网络规定。"
+      }
+    },
+    "RedemptionProcess": {
+      "title": "兑换过程",
+      "content": {
+        "How to Redeem": "如何兑换：访问liondubai.net，输入您的礼品卡代码并点击兑换。验证成功后，您的平台余额将自动更新。",
+        "Approval": "批准：兑换数据提交给Zoho Forms进行人工批准，并提交给HKS进行跟踪和结算。目前，兑换会自动批准并立即充值。",
+        "Rejection": "拒绝：如果您的代码被拒绝，请联系Ar‑pay电子商务支持获取帮助。"
+      }
+    },
+    "ValidityExpirationAndCancellation": {
+      "title": "有效性、到期与取消",
+      "content": {
+        "Validity": "有效性：礼品卡在余额用尽之前保持有效。",
+        "Expiration": "到期：礼品卡没有到期日。",
+        "Cancellation & Refunds": "取消与退款：一旦兑换，礼品卡不可取消或退款。未兑换的礼品卡在适用法律要求下才可退款。"
+      }
+    },
+    "LiabilityWarranties": {
+      "title": "责任与担保",
+      "content": {
+        "Liability": "责任：HKS和Lion Dubai不对礼品卡代码的未经授权使用负责。如果发生系统故障或兑换错误，责任由Lion Dubai承担。",
+        "Warranties": "担保：礼品卡按“现状”提供。如果提供有效的礼品卡代码，您将获得相应的内部平台货币或服务。",
+        "Indemnities": "赔偿：您同意对因滥用礼品卡而导致的任何索赔进行赔偿HKS和Lion Dubai。"
+      }
+    },
+    "DataCollectionPrivacy": {
+      "title": "数据收集与隐私",
+      "content": {
+        "DataAtPurchase": "购买时的数据：我们收集最少的用户信息（例如，TikTok用户名）以完成礼品卡交付。",
+        "DataAtRedemption": "兑换时的数据：我们记录礼品卡代码、序列号、CVV、关联的内部平台用户名以及游戏详情。",
+        "ThirdPartyProcessors": "第三方处理器：您的数据由Zoho和HKS处理和存储，二者都受数据保护条款的约束。",
+        "Consent & DPAs": "同意与DPAs：我们会根据隐私政策获得您的数据收集和共享的同意。在启动之前，会与Zoho和DueGate签署数据处理协议（DPA）。"
+      }
+    },
+    "Support&ServiceLevels": {
+      "title": "支持与服务水平",
+      "content": {
+        "Customer Support": "客户支持：Lion Dubai负责处理所有与礼品卡兑换相关的支持、投诉和争议解决。",
+        "Service Levels": "服务水平：HKS和Lion Dubai之间的SLA正在开发中，加入后将共享。"
+      }
+    },
+    "GoverningLawJurisdiction": {
+      "title": "适用法律与管辖权",
+      "content": {
+        "header": "这些条款受香港特别行政区法律的管辖。由此产生的任何争议将提交香港法院专属管辖。"
+      }
+    },
+    "ChangesToTerms": {
+      "title": "条款变更",
+      "content": {
+        "header": "我们可能会不时修改这些条款。修订后的条款将在liondubai.net上发布，并更新“最后更新”日期。变更后继续使用礼品卡即视为接受新条款。"
+      }
+    },
+    "ContactInformation": {
+      "title": "联系方式",
+      "content": {
+        "header": "有关这些条款、支持或数据问题，请联系：",
+        "HKS (Ar‑pay) Support": "support@ar‑pay.com",
+        "Lion Dubai Support": "support@liondubai.net",
+        "thankYou": "感谢您选择Lion Dubai。"
+      }
+    }
   }
 }

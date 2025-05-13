@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { Globe } from 'lucide-react';
 
 const LanguageSelector: React.FC = () => {
-  const { i18n, t  } = useTranslation();
+  const { i18n, t } = useTranslation();
   const lang = i18n.language;
   const languages = [
     { code: 'en', name: t('language.en') },
@@ -24,7 +24,7 @@ const LanguageSelector: React.FC = () => {
   return (
     <div className="relative group">
       <button
-        className="flex items-center space-x-2 text-white hover:text-gaming-accent transition-colors duration-200"
+        className="flex items-center gap-x-2 text-white hover:text-gaming-accent transition-colors duration-200"
         aria-label={t('language.select')}
       >
         <Globe className="h-5 w-5" />
@@ -34,15 +34,14 @@ const LanguageSelector: React.FC = () => {
       <motion.div
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
-        className={`absolute ${lang == 'ar' ? "left-0" : "right-0"}  mt-0 w-48 py-2 bg-gaming-card rounded-lg shadow-xl hidden group-hover:block`}
+        className={`absolute ${lang == 'ar' ? "left-0" : "right-0"} z-50  mt-0 w-48 py-2 bg-gaming-card rounded-lg shadow-xl hidden group-hover:block`}
       >
         {languages.map((lang) => (
           <button
             key={lang.code}
             onClick={() => changeLanguage(lang.code)}
-            className={`w-full text-left px-4 py-2 text-sm hover:bg-gaming-dark transition-colors duration-200 ${
-              i18n.language === lang.code ? 'text-gaming-accent' : 'text-white'
-            }`}
+            className={`w-full text-left px-4 py-2 text-sm hover:bg-gaming-dark transition-colors duration-200 ${i18n.language === lang.code ? 'text-gaming-accent' : 'text-white'
+              }`}
           >
             {lang.name}
           </button>

@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
-
+import { useTranslation } from 'react-i18next';
 const HeroSection = () => {
+    const { t } = useTranslation();
     return (
         <motion.div
             className="bg-gradient-to-r from-primary-50 to-accent-50 py-10 mb-8 relative overflow-hidden"
@@ -16,11 +17,11 @@ const HeroSection = () => {
                     transition={{ delay: 0.3, duration: 0.5 }}
                 >
                     <h1 className="text-3xl text-gaming-accent md:text-4xl font-display font-bold  mb-4">
-                        Terms and Conditions
+                        {t("terms.termsTitle")}
                     </h1>
                     <p className="text-secondary-700 text-lg">
-                        Please read these terms carefully before purchasing or using our Gift Cards.
-                        By using our services, you agree to be bound by these Terms and Conditions.
+                        {t("terms.subtitle")}
+
                     </p>
                 </motion.div>
             </div>

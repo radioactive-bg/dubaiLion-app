@@ -58,7 +58,7 @@ const Hero: React.FC = () => {
           className="mb-6"
         >
           <h1 className="text-4xl md:text-6xl font-display font-bold mb-4 text-white leading-tight">
-            <span className="text-gaming-accent">Redeem</span> Your Gaming{" "}
+            <span className="text-gaming-accent">Redeem</span> Your Gaming
             <span className="text-gaming-accent">Cards</span>
           </h1>
           <p className="text-xl md:text-2xl text-secondary-300 max-w-3xl mx-auto">

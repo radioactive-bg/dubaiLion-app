@@ -1,5 +1,6 @@
 import { Link } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 type SectionProps = {
     number: number;
@@ -7,19 +8,19 @@ type SectionProps = {
 };
 
 const TableOfContents = () => {
+    const { t } = useTranslation();
     const sections: SectionProps[] = [
-        { number: 1, title: "Introduction" },
-        { number: 2, title: "Definitions" },
-        { number: 3, title: "Issuance, Purchase & Payment" },
-        { number: 4, title: "Redemption" },
-        { number: 5, title: "Gift Card Validity & Expiration" },
-        { number: 6, title: "Refunds & Exchanges" },
-        { number: 7, title: "Data Protection & Privacy" },
-        { number: 8, title: "Intellectual Property" },
-        { number: 9, title: "Limitation of Liability" },
-        { number: 10, title: "Compliance & Governing Law" },
-        { number: 11, title: "Amendments" },
-        { number: 12, title: "Contact Information" }
+        { number: 1, title: t("terms.Introduction.title") },
+        { number: 2, title: t("terms.Definitions.title") },
+        { number: 3, title: t("terms.IssuanceSaleAndMerchantOfRecord.title") },
+        { number: 4, title: t("terms.RedemptionProcess.title") },
+        { number: 5, title: t("terms.ValidityExpirationAndCancellation.title") },
+        { number: 6, title: t("terms.LiabilityWarranties.title") },
+        { number: 7, title: t("terms.DataCollectionPrivacy.title") },
+        { number: 8, title: t("terms.Support&ServiceLevels.title") },
+        { number: 9, title: t("terms.GoverningLawJurisdiction.title") },
+        { number: 10, title: t("terms.ChangesToTerms.title") },
+        { number: 11, title: t("terms.ContactInformation.title") }
     ];
 
     const container = {
@@ -47,7 +48,7 @@ const TableOfContents = () => {
         >
             <div className="flex items-center gap-2 mb-4">
                 <Link className="text-gaming-accent" size={18} />
-                <h3 className="font-display font-medium text-gaming-accent">Table of Contents</h3>
+                <h3 className="font-display font-medium text-gaming-accent">{t("terms.tableOfContents")}</h3>
             </div>
             <motion.ul
                 className="space-y-2"
@@ -62,7 +63,7 @@ const TableOfContents = () => {
                             className="text-sm hover:text-gaming-accent transition-colors flex items-center"
                         >
                             <span className="text-gaming-accent font-medium mr-2">{section.number}.</span>
-                            <span className="text-secondary-700 hover:text-gaming-accent">{section.title}</span>
+                            <span className="text-secondary-700">{section.title}</span>
                         </a>
                     </motion.li>
                 ))}

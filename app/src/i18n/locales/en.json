@@ -69,5 +69,97 @@
     "fr": "Français",
     "zh": "中文",
     "vi": "Tiếng Việt"
+  },
+  "terms": {
+    "title": "LionDubai Gift Card Platform Terms & Conditions",
+    "termsTitle": "Terms & Conditions",
+    "lastUpdated": "Last Updated: May 13, 2025",
+    "subtitle": "Please read these terms carefully before purchasing or using our Gift Cards. By using our services, you agree to be bound by these Terms and Conditions.",
+    "tableOfContents": "Table of Contents",
+    "Introduction": {
+      "title": "Introduction",
+      "content": "These Terms & Conditions (Terms) govern your purchase, use, and redemption of Gift Cards issued by HKS (Ar‑pay) for use on the liondubai.net platform, and form a legally binding agreement between you, HKS (We or HKS), and Lion Dubai (Partner). By purchasing or redeeming a Gift Card, you agree to these Terms. If you do not agree, do not proceed with purchase or redemption."
+    },
+    "Definitions": {
+      "title": "Definitions",
+      "content": {
+        "Gift Card": "Gift Card : A digital voucher issued and sold by HKS through the Ar‑pay e‑commerce portal, containing a unique code for redemption on liondubai.net.",
+        "Purchaser": "Purchaser : The individual or entity that buys a Gift Card.",
+        "User": "User : The person who redeems a Gift Card on liondubai.net. May be same as Purchaser.",
+        "Platform": "Platform : The liondubai.net website, operated by Lion Dubai, where Gift Cards are redeemed for in‑platform currency or services.",
+        "Redemption": "Redemption : Submission of a valid Gift Card code on the Platform, triggering credit to the User's in‑platform account.",
+        "HKS": "HKS : The backend system used for record‑keeping and settlement of redeemed Gift Cards.",
+        "Zoho Forms": "Zoho Forms : The backend system used by Lion Dubai to approve or review Gift Card redemptions."
+      }
+    },
+    "IssuanceSaleAndMerchantOfRecord": {
+      "title": "Issuance, Sale, and Merchant of Record",
+      "content": {
+        "Issuance & Sale": "Issuance & Sale: HKS issues and sells Gift Cards exclusively for use on the Platform. You purchase Gift Cards via the Ar‑pay e‑commerce portal.",
+        "Payment Collection": "Payment Collection: HKS/Ar‑pay collects all payments for Gift Cards. Once funds clear, HKS will remit Lion Dubai's share per our commercial agreement.",
+        "Merchant of Record": "Merchant of Record: HKS acts as the Merchant of Record for all Gift Card transactions and is responsible for chargebacks, refunds (if any), tax remittance, and compliance with card network regulations."
+      }
+    },
+    "RedemptionProcess": {
+      "title": "Redemption Process",
+      "content": {
+        "How to Redeem": "How to Redeem: Visit liondubai.net, enter your Gift Card code, and click Redeem. Your in‑platform balance will automatically update upon successful validation.",
+        "Approval": "Approval: Redemption data is submitted to Zoho Forms for manual approval, and to HKS for tracking and settlement. Currently, redemptions are auto‑approved and credited immediately.",
+        "Rejection": "Rejection: If your code is rejected, please contact Ar‑pay e‑commerce support for assistance."
+      }
+    },
+    "ValidityExpirationAndCancellation": {
+      "title": "Validity, Expiration & Cancellation",
+      "content": {
+        "Validity": "Validity: Gift Cards remain valid until the balance is exhausted.",
+        "Expiration": "Expiration: Gift Cards do not expire.",
+        "Cancellation & Refunds": "Cancellation & Refunds: Once redeemed, Gift Cards cannot be cancelled or refunded. Gift Cards not yet redeemed are non‑refundable unless required by applicable law."
+      }
+    },
+    "LiabilityWarranties": {
+      "title": "Liability & Warranties",
+      "content": {
+        "Liability": "Liability: HKS and Lion Dubai are not liable for unauthorized use of Gift Card codes. In the event of system failures or errors in redemption, liability rests with Lion Dubai.",
+        "Warranties": "Warranties: Gift Cards are provided 'as‑is.' If a valid Gift Card code is presented, you will receive the correct in‑platform currency or service.",
+        "Indemnities": "Indemnities: You agree to indemnify HKS and Lion Dubai against any claims arising from misuse of Gift Cards."
+      }
+    },
+    "DataCollectionPrivacy": {
+      "title": "Data Collection & Privacy",
+      "content": {
+        "DataAtPurchase": "Data at Purchase: We collect minimal user information (e.g., optional TikTok username) to fulfill Gift Card delivery.",
+        "DataAtRedemption": "Data at Redemption: We capture Gift Card code, serial number, CVV, associated in‑platform username, and game details.",
+        "ThirdPartyProcessors": "Third‑Party Processors: Your data is processed and stored by Zoho and HKS. Both are bound by data‑protection terms.",
+        "Consent & DPAs": "Consent & DPAs: We obtain your consent for data collection and sharing as described in our Privacy Policy. Data Processing Agreements (DPAs) with Zoho and DueGate will be implemented prior to launch."
+      }
+    },
+    "Support&ServiceLevels": {
+      "title": "Support & Service Levels",
+      "content": {
+        "Customer Support": "Customer Support: Lion Dubai handles all support, complaints, and dispute resolution related to Gift Card redemption.",
+        "Service Levels": "Service Levels: SLAs between HKS and Lion Dubai are under development and will be shared upon onboarding."
+      }
+    },
+    "GoverningLawJurisdiction": {
+      "title": "Governing Law & Jurisdiction",
+      "content": {
+        "header": "These Terms are governed by the laws of the Hong Kong Special Administrative Region. Any dispute arising hereunder will be subject to the exclusive jurisdiction of the courts of Hong Kong."
+      }
+    },
+    "ChangesToTerms": {
+      "title": "Changes to Terms",
+      "content": {
+        "header": "We may modify these Terms from time to time. Revised Terms will be posted at liondubai.net with an updated 'Last Updated' date. Continued use of Gift Cards after changes constitutes acceptance of the new Terms."
+      }
+    },
+    "ContactInformation": {
+      "title": "Contact Information",
+      "content": {
+        "header": "For questions about these Terms, support, or data‑related inquiries, please contact:",
+        "HKS (Ar‑pay) Support": "support@ar‑pay.com",
+        "Lion Dubai Support": "support@liondubai.net",
+        "thankYou": "Thank you for choosing Lion Dubai."
+      }
+    }
   }
 }

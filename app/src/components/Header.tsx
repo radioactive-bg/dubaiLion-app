@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Menu, X,  Gamepad2 } from 'lucide-react';
+import { Menu, X, Gamepad2 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import LanguageSelector from './LanguageSelector';
+import { useNavigate } from 'react-router-dom';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { t } = useTranslation();
-
+  const navigate = useNavigate();
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -35,13 +36,12 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-gaming-dark bg-opacity-95 shadow-lg' : 'bg-transparent'
-      }`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-gaming-dark bg-opacity-95 shadow-lg' : 'bg-transparent'
+        }`}
     >
       <div className="container mx-auto px-4 md:px-6 py-4">
         <div className="flex items-center justify-between">
-          <motion.div 
+          <motion.div
             className="flex items-center space-x-2"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -52,7 +52,7 @@ const Header: React.FC = () => {
           </motion.div>
 
           {/* Desktop Navigation */}
-          <motion.nav 
+          <motion.nav
             className="hidden md:flex items-center space-x-8"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -62,6 +62,7 @@ const Header: React.FC = () => {
             <NavItem label={t('header.games')} onClick={() => scrollToSection('games')} />
             <NavItem label={t('header.redeem')} onClick={() => scrollToSection('redeem')} />
             <NavItem label={t('header.contact')} onClick={() => scrollToSection('contact')} />
+            <NavItem label={t('header.terms')} onClick={() => navigate('/terms')} />
             <LanguageSelector />
           </motion.nav>
 
@@ -92,6 +93,7 @@ const Header: React.FC = () => {
             <MobileNavItem label={t('header.games')} onClick={() => scrollToSection('games')} />
             <MobileNavItem label={t('header.redeem')} onClick={() => scrollToSection('redeem')} />
             <MobileNavItem label={t('header.contact')} onClick={() => scrollToSection('contact')} />
+            <MobileNavItem label={t('header.terms')} onClick={() => scrollToSection('terms')} />
           </div>
         </motion.div>
       )}

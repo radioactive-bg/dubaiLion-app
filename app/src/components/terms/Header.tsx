@@ -19,7 +19,7 @@ const Header = () => {
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.5 }}
                         >
-                            <Book className="text-primary mr-2" size={20} />
+                            <Book className="text-primary mx-2" size={20} />
                             <h1 className="text-lg font-medium">{t('terms.title')}</h1>
                         </motion.div>
                     </div>

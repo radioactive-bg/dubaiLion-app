@@ -60,9 +60,9 @@ const TableOfContents = () => {
                     <motion.li key={section.number} variants={item}>
                         <a
                             href={`#section-${section.number}`}
-                            className="text-sm hover:text-gaming-accent transition-colors flex items-center"
+                            className="text-sm hover:text-gaming-accent transition-colors flex gap-2 items-center"
                         >
-                            <span className="text-gaming-accent font-medium mr-2">{section.number}.</span>
+                            <span className="text-gaming-accent font-medium">{section.number}.</span>
                             <span className="text-secondary-700">{section.title}</span>
                         </a>
                     </motion.li>

@@ -93,7 +93,7 @@ const Header: React.FC = () => {
             <MobileNavItem label={t('header.games')} onClick={() => scrollToSection('games')} />
             <MobileNavItem label={t('header.redeem')} onClick={() => scrollToSection('redeem')} />
             <MobileNavItem label={t('header.contact')} onClick={() => scrollToSection('contact')} />
-            <MobileNavItem label={t('header.terms')} onClick={() => scrollToSection('terms')} />
+            <MobileNavItem label={t('header.terms')} onClick={() => navigate('/terms')} />
           </div>
         </motion.div>
       )}

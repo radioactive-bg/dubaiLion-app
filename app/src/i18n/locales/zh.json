@@ -160,6 +160,9 @@
     "requirements": "要求",
     "play": "玩",
     "back": "返回",
-    "notFound": "游戏不存在"
+    "notFound": "游戏不存在",
+    "os": "操作系统",
+    "processor": "处理器",
+    "memory": "内存"
   }
 }

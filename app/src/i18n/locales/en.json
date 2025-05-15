@@ -160,6 +160,9 @@
     "requirements": "Requirements",
     "play": "Play",
     "back": "Back",
-    "notFound": "Game not found"
+    "notFound": "Game not found",
+    "os": "Operating System",
+    "processor": "Processor",
+    "memory": "Memory"
   }
 }

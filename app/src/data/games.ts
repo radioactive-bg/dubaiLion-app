@@ -381,7 +381,7 @@ export const games: Game[] = [
   },
   {
     id: 8,
-    imageUrl: "/assets/King's Duel_ Fantasy Clash in Real Time.jpg",
+    imageUrl: "/assets/King’s Duel_ Fantasy Clash in Real Time.jpg",
     platform: "PC",
     translations: {
       en: {
@@ -1551,8 +1551,8 @@ export const games: Game[] = [
       },
       vi: {
         title: "Vương Quốc Thống Nhất",
-        description: "Xây dựng và quản lý vương quốc trung cổ của bạn trong mô phỏng chiến lược quy mô lớn này",
-        story: `<p>Nắm quyền kiểm soát một vương quốc trung cổ đang phát triển và dẫn dắt nó đến sự vĩ đại. Cân bằng tài nguyên, tạo dựng liên minh và bảo vệ vương quốc của bạn trong khi mở rộng ảnh hưởng trên khắp lục địa.</p>`
+        description: "Thống nhất các vùng đất chia rẽ thông qua ngoại giao và chiến tranh trong trò chơi chiến lược quy mô lớn này",
+        story: `<p>Lãnh đạo phe phái của bạn để thống nhất các vương quốc bị chia rẽ thông qua kết hợp các liên minh ngoại giao và chiến tranh chiến lược. Mỗi quyết định đều định hình tương lai của vương quốc.</p>`
       }
     },
     systemRequirements: {

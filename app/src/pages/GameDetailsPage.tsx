@@ -2,18 +2,21 @@ import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Monitor, Cpu, MemoryStick as Memory, Gamepad2 } from 'lucide-react';
-import { games } from '../data/games';
 import Footer from '../components/Footer';
 import RequirementItem from '../components/RequirementItem';
 import useScrollToTop from '../hooks/useScrollToTop';
 import { useTranslation } from 'react-i18next';
 import LanguageSelector from '../components/LanguageSelector';
+import { games } from '../data/games';
+import { Game } from '../types';
 
 const GameDetailsPage: React.FC = () => {
+  const { i18n } = useTranslation();
+  const locale = i18n.language;
   const { id } = useParams();
   const navigate = useNavigate();
   const { t } = useTranslation();
-  const game = games.find(g => g.id === Number(id));
+  const game: Game | undefined = games.find(g => g.id === Number(id));
   useScrollToTop();
 
   if (!game) {
@@ -39,8 +42,6 @@ const GameDetailsPage: React.FC = () => {
         <div className="container mx-auto">
 
           <header className="mb-16  py-8 bg-gaming-card px-8 rounded-full flex justify-between items-center">
-
-
             <motion.button
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -78,7 +79,7 @@ const GameDetailsPage: React.FC = () => {
             >
               <img
                 src={game.imageUrl}
-                alt={game.title}
+                alt={game.translations[locale].title}
                 className="w-full h-full object-cover"
               />
             </motion.div>
@@ -89,10 +90,10 @@ const GameDetailsPage: React.FC = () => {
               transition={{ delay: 0.2 }}
             >
               <h1 className="text-3xl md:text-4xl font-display font-bold mb-4">
-                {game.title}
+                {game.translations[locale].title}
               </h1>
               <p className="text-secondary-300 mb-6">
-                {game.description}
+                {game.translations[locale].description}
               </p>
 
               <div className="bg-gaming-card rounded-xl p-6 mb-6">
@@ -125,17 +126,17 @@ const GameDetailsPage: React.FC = () => {
                     <ul className="space-y-2">
                       <RequirementItem
                         icon={<Monitor className="h-5 w-5" />}
-                        label="OS"
+                        label={t('gameDetails.os')}
                         value={game.systemRequirements.recommended.os}
                       />
                       <RequirementItem
                         icon={<Cpu className="h-5 w-5" />}
-                        label="Processor"
+                        label={t('gameDetails.processor')}
                         value={game.systemRequirements.recommended.processor}
                       />
                       <RequirementItem
                         icon={<Memory className="h-5 w-5" />}
-                        label="Memory"
+                        label={t('gameDetails.memory')}
                         value={game.systemRequirements.recommended.memory}
                       />
                     </ul>
@@ -147,8 +148,10 @@ const GameDetailsPage: React.FC = () => {
                 <h2 className="text-xl font-bold mb-4">{t('gameDetails.story')}</h2>
                 <div
                   className="text-secondary-300 space-y-4"
-                  dangerouslySetInnerHTML={{ __html: game.story }}
-                />
+                  dangerouslySetInnerHTML={{ __html: game.translations[locale].story }}
+                >
+
+                </div>
               </div>
             </motion.div>
           </div>

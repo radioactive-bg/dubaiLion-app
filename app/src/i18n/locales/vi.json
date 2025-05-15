@@ -160,6 +160,9 @@
     "requirements": "Điều kiện",
     "play": "Chơi",
     "back": "Trở lại",
-    "notFound": "Trò chơi không tồn tại"
+    "notFound": "Trò chơi không tồn tại",
+    "os": "Hệ điều hành",
+    "processor": "Bộ xử lý",
+    "memory": "Bộ nhớ"
   }
 }

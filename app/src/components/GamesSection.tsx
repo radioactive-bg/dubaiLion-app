@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { games } from '../data/games';
 import { useTranslation } from 'react-i18next';
 import GameCard from './GameCard';
+import { Game } from '../types';
 
 const STORAGE_KEY = 'visible_games_count';
 const INITIAL_VISIBLE_GAMES = 10;
@@ -60,7 +61,7 @@ const GamesSection: React.FC = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-          {displayedGames.map((game, index) => (
+          {displayedGames.map((game: Game, index: number) => (
             <GameCard key={game.id} game={game} index={index} />
           ))}
         </div>

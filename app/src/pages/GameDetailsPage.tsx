@@ -1,15 +1,18 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Monitor, Cpu, MemoryStick as Memory } from 'lucide-react';
+import { ArrowLeft, Monitor, Cpu, MemoryStick as Memory, Gamepad2 } from 'lucide-react';
 import { games } from '../data/games';
 import Footer from '../components/Footer';
 import RequirementItem from '../components/RequirementItem';
 import useScrollToTop from '../hooks/useScrollToTop';
+import { useTranslation } from 'react-i18next';
+import LanguageSelector from '../components/LanguageSelector';
 
 const GameDetailsPage: React.FC = () => {
   const { id } = useParams();
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const game = games.find(g => g.id === Number(id));
   useScrollToTop();
 
@@ -17,12 +20,12 @@ const GameDetailsPage: React.FC = () => {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-2xl font-bold mb-4">Game not found</h1>
+          <h1 className="text-2xl font-bold mb-4">{t('gameDetails.notFound')}</h1>
           <button
             onClick={() => navigate(-1)}
             className="text-gaming-accent hover:text-gaming-accent/80"
           >
-            Go back
+            {t('gameDetails.back')}
           </button>
         </div>
       </div>
@@ -31,18 +34,42 @@ const GameDetailsPage: React.FC = () => {
 
   return (
     <>
-      <main className="pt-20 pb-12 px-4 md:px-8">
-        <div className="container mx-auto">
-          <motion.button
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            onClick={() => navigate(-1)}
-            className="flex items-center text-gaming-accent hover:text-gaming-accent/80 mb-8"
-          >
-            <ArrowLeft className="h-5 w-5 mr-2" />
-            Back
-          </motion.button>
 
+      <main className="pb-14 px-4 md:px-8">
+        <div className="container mx-auto">
+
+          <header className="mb-16  py-8 bg-gaming-card px-8 rounded-full flex justify-between items-center">
+
+
+            <motion.button
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              onClick={() => navigate(-1)}
+              className="flex items-center text-gaming-accent hover:text-gaming-accent/80"
+            >
+              <ArrowLeft className="h-5 w-5 mr-2" />
+              {t('gameDetails.back')}
+            </motion.button>
+
+
+            <motion.div
+              className="flex items-center space-x-2 "
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <Gamepad2 className="h-8 w-8 text-gaming-accent" />
+              <span className="text-xl font-display font-bold tracking-wide">LION DUBAI</span>
+            </motion.div>
+
+            <motion.div
+              className="flex items-center space-x-2 "
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <LanguageSelector /></motion.div>
+          </header>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -69,11 +96,11 @@ const GameDetailsPage: React.FC = () => {
               </p>
 
               <div className="bg-gaming-card rounded-xl p-6 mb-6">
-                <h2 className="text-xl font-bold mb-4">System Requirements</h2>
-                
+                <h2 className="text-xl font-bold mb-4">{t('gameDetails.requirements')}</h2>
+
                 <div className="space-y-4">
                   <div>
-                    <h3 className="font-semibold text-gaming-accent mb-2">Minimum</h3>
+                    <h3 className="font-semibold text-gaming-accent mb-2">{t('gameDetails.minimum')}</h3>
                     <ul className="space-y-2">
                       <RequirementItem
                         icon={<Monitor className="h-5 w-5" />}
@@ -94,7 +121,7 @@ const GameDetailsPage: React.FC = () => {
                   </div>
 
                   <div>
-                    <h3 className="font-semibold text-gaming-accent mb-2">Recommended</h3>
+                    <h3 className="font-semibold text-gaming-accent mb-2">{t('gameDetails.recommended')}</h3>
                     <ul className="space-y-2">
                       <RequirementItem
                         icon={<Monitor className="h-5 w-5" />}
@@ -117,8 +144,8 @@ const GameDetailsPage: React.FC = () => {
               </div>
 
               <div className="bg-gaming-card rounded-xl p-6">
-                <h2 className="text-xl font-bold mb-4">Game Story</h2>
-                <div 
+                <h2 className="text-xl font-bold mb-4">{t('gameDetails.story')}</h2>
+                <div
                   className="text-secondary-300 space-y-4"
                   dangerouslySetInnerHTML={{ __html: game.story }}
                 />

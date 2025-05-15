@@ -149,5 +149,17 @@
         "thankYou": "Merci d’avoir choisi Lion Dubai."
       }
     }
+  },
+  "gameDetails": {
+    "title": "Détails du jeu",
+    "platform": "Plateforme",
+    "minimum": "Minimum",
+    "recommended": "Recommandé",
+    "description": "Description",
+    "story": "Histoire",
+    "requirements": "Conditions",
+    "play": "Jouer",
+    "back": "Retour",
+    "notFound": "Jeu non trouvé"
   }
 }

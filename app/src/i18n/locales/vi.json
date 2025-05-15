@@ -149,5 +149,17 @@
         "thankYou": "Cảm ơn bạn đã chọn Lion Dubai."
       }
     }
+  },
+  "gameDetails": {
+    "title": "Thông tin trò chơi",
+    "platform": "Nền tảng",
+    "minimum": "Hệ thống yêu cầu tối thiểu",
+    "recommended": "Hệ thống yêu cầu đề xuất",
+    "description": "Mô tả",
+    "story": "Câu chuyện",
+    "requirements": "Điều kiện",
+    "play": "Chơi",
+    "back": "Trở lại",
+    "notFound": "Trò chơi không tồn tại"
   }
 }

@@ -149,5 +149,17 @@
         "thankYou": "Спасибо, что выбрали Lion Dubai."
       }
     }
+  },
+  "gameDetails": {
+    "title": "Детали игры",
+    "platform": "Платформа",
+    "minimum": "Минимальные",
+    "recommended": "Рекомендуемые",
+    "description": "Описание",
+    "story": "История",
+    "requirements": "Условия",
+    "play": "Играть",
+    "back": "Назад",
+    "notFound": "Игра не найдена"
   }
 }

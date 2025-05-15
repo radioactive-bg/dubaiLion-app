@@ -149,5 +149,17 @@
         "thankYou": "شكرًا لاختيارك Lion Dubai."
       }
     }
+  },
+  "gameDetails": {
+    "title": "تفاصيل اللعبة",
+    "platform": "المنصة",
+    "minimum": "المتطلبات الأدنى للعب",
+    "recommended": "المتطلبات الموصى بها للعب",
+    "description": "وصف اللعبة",
+    "story": "القصة",
+    "requirements": "المتطلبات",
+    "play": "اللعب",
+    "back": "رجوع",
+    "notFound": "اللعبة غير موجودة"
   }
 }

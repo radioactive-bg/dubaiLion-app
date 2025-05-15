@@ -149,5 +149,17 @@
         "thankYou": "感谢您选择Lion Dubai。"
       }
     }
+  },
+  "gameDetails": {
+    "title": "游戏详情",
+    "platform": "平台",
+    "minimum": "最低要求",
+    "recommended": "推荐要求",
+    "description": "描述",
+    "story": "故事",
+    "requirements": "要求",
+    "play": "玩",
+    "back": "返回",
+    "notFound": "游戏不存在"
   }
 }

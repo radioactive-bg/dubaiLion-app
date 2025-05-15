@@ -26,10 +26,10 @@ jobs:
         run: |
           if [ "${GITHUB_REF##*/}" = "main" ]; then
             echo "IMAGE_TAG=main" >> $GITHUB_ENV
-            echo "WEBHOOK_URL=https://154.16.166.20:9443/api/stacks/webhooks/5a4dad6b-08f8-48f9-8982-70829262d9c9" >> $GITHUB_ENV
+            echo "WEBHOOK_URL=https://5.181.83.200:9443/api/stacks/webhooks/5a4dad6b-08f8-48f9-8982-70829262d9c9" >> $GITHUB_ENV
           elif [ "${GITHUB_REF##*/}" = "staging" ]; then
             echo "IMAGE_TAG=staging" >> $GITHUB_ENV
-            echo "WEBHOOK_URL=https://154.16.166.20:9443/api/stacks/webhooks/cdcc2fbf-9505-4411-92a7-1243a5da5f63" >> $GITHUB_ENV
+            echo "WEBHOOK_URL=https://5.181.83.200:9443/api/stacks/webhooks/cdcc2fbf-9505-4411-92a7-1243a5da5f63" >> $GITHUB_ENV
           fi
 
       - name: Build and Push Docker Image

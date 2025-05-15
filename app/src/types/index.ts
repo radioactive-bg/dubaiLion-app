@@ -1,10 +1,45 @@
 export interface Game {
   id: number;
-  title: string;
   imageUrl: string;
-  description: string;
+
+  translations: {
+    en: {
+      title: string;
+      description: string;
+      story: string;
+    };
+    de: {
+      title: string;
+      description: string;
+      story: string;
+    };
+    vi: {
+      title: string;
+      description: string;
+      story: string;
+    };
+    fr: {
+      title: string;
+      description: string;
+      story: string;
+    };
+    ru: {
+      title: string;
+      description: string;
+      story: string;
+    };
+    zh: {
+      title: string;
+      description: string;
+      story: string;
+    };
+    ar: {
+      title: string;
+      description: string;
+      story: string;
+    };
+  }
   platform: string;
-  story: string;
   systemRequirements: {
     minimum: {
       os: string;
@@ -17,6 +52,7 @@ export interface Game {
       memory: string;
     };
   };
+
 }
 
 export interface SocialLink {

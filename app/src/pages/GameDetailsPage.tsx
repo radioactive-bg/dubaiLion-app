@@ -154,9 +154,8 @@ const GameDetailsPage: React.FC = () => {
                 <h2 className="text-xl font-bold mb-4">{t('gameDetails.story')}</h2>
                 <div
                   className="text-secondary-300 space-y-4"
-                  dangerouslySetInnerHTML={{ __html: game.translations[locale].story }}
                 >
-
+                  {game.translations[locale].story}
                 </div>
               </div>
             </motion.div>

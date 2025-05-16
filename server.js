@@ -4,10 +4,59 @@ import path from "path";
 import { fileURLToPath } from "url";
 import axios from "axios";
 import querystring from "querystring";
+import winston from "winston";
+import fs from "fs";
+import basicAuth from "basic-auth";
 
-// Get __dirname equivalent in ES modules
+// Paths
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+const logDir = path.join(__dirname, "logs");
+
+// Ensure log directory exists
+if (!fs.existsSync(logDir)) fs.mkdirSync(logDir);
+
+// Winston Logger Setup (rotate after 50MB)
+const logger = winston.createLogger({
+  level: "info",
+  format: winston.format.combine(
+    winston.format.timestamp(),
+    winston.format.printf(
+      ({ timestamp, level, message }) =>
+        `[${timestamp}] ${level.toUpperCase()}: ${message}`
+    )
+  ),
+  transports: [
+    new winston.transports.File({
+      filename: path.join(logDir, "activity.log"),
+      maxsize: 50 * 1024 * 1024, // 50MB
+      maxFiles: 5,
+      tailable: true,
+    }),
+    new winston.transports.Console(),
+  ],
+});
+
+// Basic Auth Credentials for /api/logs
+const LOG_AUTH = {
+  username: "admin",
+  password: "Zxc!23", // Change this to a secure password
+};
+
+const authenticate = (req, res, next) => {
+  const user = basicAuth(req);
+
+  if (
+    !user ||
+    user.name !== LOG_AUTH.username ||
+    user.pass !== LOG_AUTH.password
+  ) {
+    res.set("WWW-Authenticate", 'Basic realm="Logs Area"');
+    return res.status(401).send("Authentication required.");
+  }
+
+  next();
+};
 
 // API Configuration
 const BASE_URL = "https://proxy.duegate.com/staging";
@@ -16,7 +65,6 @@ const AUTH_CREDENTIALS = {
   password: "0:y5g5NBv)$zy0<",
 };
 
-// Get authentication token
 const getAuthToken = async () => {
   try {
     const data = querystring.stringify({
@@ -38,20 +86,17 @@ const getAuthToken = async () => {
 
     return `${token_type} ${access_token}`;
   } catch (error) {
-    console.error(
-      "Authentication error:",
-      error.response?.data || error.message
+    logger.error(
+      "Authentication error: " + (error.response?.data?.error || error.message)
     );
     throw new Error("Failed to authenticate");
   }
 };
 
-// Redis or DB could be used here instead of in-memory store for production
 const redemptionEntries = [];
 
 const redeemCard = async (payload) => {
   try {
-    // Get fresh token before making the redemption request
     const accessToken = await getAuthToken();
 
     const response = await axios.post(
@@ -94,6 +139,8 @@ const redeemCard = async (payload) => {
       error: error.message || "Unknown error",
     });
 
+    logger.error("Redemption failed: " + (error.message || "Unknown error"));
+
     return {
       success: false,
       message: error instanceof Error ? error.message : "Failed to redeem card",
@@ -107,25 +154,25 @@ const storeRedemptionData = async (data) => {
       id: Date.now().toString(36) + Math.random().toString(36).substring(2),
       ...data,
     });
-    console.log("Stored redemption data:", data);
+    logger.info("Stored redemption data: " + JSON.stringify(data));
   } catch (error) {
-    console.error("Error storing redemption data:", error);
+    logger.error("Error storing redemption data: " + error.message);
   }
 };
 
 // Initialize Express app
 const app = express();
 
-// Configure middleware
+// Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, "dist")));
 
-// Define routes directly without using app.route()
+// Webhook route
 app.post("/api/webhooks/zoho-forms", function (req, res) {
   try {
     const { tiktokUsername, cardSerialNumber, cvv } = req.body;
-    console.log("Received webhook request:", req.body);
+    logger.info("Received webhook request: " + JSON.stringify(req.body));
 
     redeemCard({
       tiktokUsername,
@@ -135,24 +182,38 @@ app.post("/api/webhooks/zoho-forms", function (req, res) {
       },
     })
       .then((result) => {
-        console.log("Redeem result:", result);
+        logger.info("Redeem result: " + JSON.stringify(result));
         res.status(200).json({ success: true });
       })
       .catch((err) => {
-        console.error("Webhook handler error:", err);
+        logger.error("Webhook handler error: " + err.message);
         res.status(200).json({ success: false, error: err.message });
       });
   } catch (err) {
-    console.error("Request processing error:", err);
+    logger.error("Request processing error: " + err.message);
     res.status(200).json({ success: false, error: err.message });
   }
 });
 
+// Endpoint to view redemption history in memory
 app.get("/api/redemptions", function (req, res) {
   res.json(redemptionEntries);
 });
 
-// Single route for all frontend routes - placed last
+// Serve logs (protected)
+app.get("/api/logs", authenticate, (req, res) => {
+  const logPath = path.join(logDir, "activity.log");
+  fs.readFile(logPath, "utf8", (err, data) => {
+    if (err) {
+      logger.error("Failed to read log file: " + err.message);
+      return res.status(500).send("Error reading logs.");
+    }
+    res.setHeader("Content-Type", "text/plain");
+    res.send(data);
+  });
+});
+
+// Catch-all route
 app.get("/*", function (req, res) {
   res.sendFile(path.join(__dirname, "dist/index.html"));
 });
@@ -160,5 +221,5 @@ app.get("/*", function (req, res) {
 // Start server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, function () {
-  console.log(`⚡️ Server listening on port ${PORT}`);
+  logger.info(`⚡️ Server listening on port ${PORT}`);
 });

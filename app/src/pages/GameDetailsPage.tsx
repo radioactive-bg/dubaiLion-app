@@ -10,14 +10,20 @@ import LanguageSelector from '../components/LanguageSelector';
 import { games } from '../data/games';
 import { Game } from '../types';
 
+type ValidLocale = "en" | "de" | "vi" | "fr" | "ru" | "zh" | "ar";
+
 const GameDetailsPage: React.FC = () => {
-  const { i18n } = useTranslation();
-  const locale = i18n.language;
   const { id } = useParams();
-  const navigate = useNavigate();
-  const { t } = useTranslation();
   const game: Game | undefined = games.find(g => g.id === Number(id));
   useScrollToTop();
+  const { i18n } = useTranslation();
+  const currentLocale = i18n.language;
+  const locale = (
+    game?.translations[currentLocale as ValidLocale] ? currentLocale : "en"
+  ) as ValidLocale;
+  const navigate = useNavigate();
+  const { t } = useTranslation();
+
 
   if (!game) {
     return (
@@ -105,17 +111,17 @@ const GameDetailsPage: React.FC = () => {
                     <ul className="space-y-2">
                       <RequirementItem
                         icon={<Monitor className="h-5 w-5" />}
-                        label={t('gameDetails.os')}
+                        label="OS"
                         value={game.systemRequirements.minimum.os}
                       />
                       <RequirementItem
                         icon={<Cpu className="h-5 w-5" />}
-                        label={t('gameDetails.processor')}
+                        label="Processor"
                         value={game.systemRequirements.minimum.processor}
                       />
                       <RequirementItem
                         icon={<Memory className="h-5 w-5" />}
-                        label={t('gameDetails.memory')}
+                        label="Memory"
                         value={game.systemRequirements.minimum.memory}
                       />
                     </ul>

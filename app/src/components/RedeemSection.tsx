@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 const RedeemSection: React.FC = () => {
   const { t } = useTranslation();
   return (
-    <section id="redeem" className="py-20 px-4 md:px-8">
+    <section id="redeem" className="py-20 md:px-8">
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -28,7 +28,7 @@ const RedeemSection: React.FC = () => {
             aria-label="Enter your card details below to redeem your gaming gift card"
             style={{
               height: "710px",
-              width: "448px",
+              width: "430px",
               borderRadius: "35px",
               padding: "20px",
               margin: "0px auto",

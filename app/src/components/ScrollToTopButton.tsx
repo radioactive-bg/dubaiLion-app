@@ -21,7 +21,7 @@ export const ScrollToTopButton = () => {
         {showScrollTop && (
             <button
                 onClick={scrollToTop}
-                className="fixed bottom-6 right-6 bg-gaming-accent text-white p-3 rounded-full shadow-lg hover:bg-gaming-accent/90 transition-colors"
+                className="fixed bottom-6 right-6 z-50 bg-gaming-accent text-white p-3 rounded-full shadow-lg hover:bg-gaming-accent/90 transition-colors"
                 aria-label="Scroll to top"
             >
                 <ArrowUp size={20} />

@@ -152,17 +152,36 @@ const redemptionEntries = [];
 
 const redeemCard = async (payload) => {
   try {
+    logger.info(
+      `[REDEEM REQUEST] Starting card redemption for TikTok user: ${
+        payload.tiktokUsername || "unknown"
+      }`
+    );
+    logger.info(
+      `[REDEEM REQUEST] Card details - Number: ${payload.data.number}, CVV: ${payload.data.cvv}`
+    );
+
     const accessToken = await getAuthToken();
+    logger.info("[REDEEM REQUEST] Successfully obtained access token");
+
+    const requestBody = {
+      type: "redeem_card",
+      data: {
+        number: payload.data.number,
+        cvv: payload.data.cvv,
+      },
+    };
+
+    logger.info(
+      `[REDEEM REQUEST] Making API call to ${BASE_URL}/distributor-crm/v1/wallets/1/credit`
+    );
+    logger.info(
+      `[REDEEM REQUEST] Request body: ${JSON.stringify(requestBody, null, 2)}`
+    );
 
     const response = await axios.post(
       `${BASE_URL}/distributor-crm/v1/wallets/1/credit`,
-      {
-        type: "redeem_card",
-        data: {
-          number: payload.data.number,
-          cvv: payload.data.cvv,
-        },
-      },
+      requestBody,
       {
         headers: {
           Authorization: accessToken,
@@ -171,13 +190,28 @@ const redeemCard = async (payload) => {
       }
     );
 
+    logger.info(`[REDEEM RESPONSE] Status: ${response.status}`);
+    logger.info(
+      `[REDEEM RESPONSE] Headers: ${JSON.stringify(response.headers, null, 2)}`
+    );
+    logger.info(
+      `[REDEEM RESPONSE] Body: ${JSON.stringify(response.data, null, 2)}`
+    );
+
     await storeRedemptionData({
       tiktokUsername: payload.tiktokUsername || "unknown",
       cardNumber: payload.data.number,
       cvv: payload.data.cvv,
       timestamp: new Date().toISOString(),
       status: "success",
+      responseData: response.data,
     });
+
+    logger.info(
+      `[REDEEM SUCCESS] Card redemption completed successfully for TikTok user: ${
+        payload.tiktokUsername || "unknown"
+      }`
+    );
 
     return {
       success: true,
@@ -185,20 +219,47 @@ const redeemCard = async (payload) => {
       data: response.data,
     };
   } catch (error) {
+    const errorDetails = {
+      message: error.message,
+      response: error.response
+        ? {
+            status: error.response.status,
+            statusText: error.response.statusText,
+            data: error.response.data,
+            headers: error.response.headers,
+          }
+        : null,
+      request: error.request
+        ? {
+            method: error.request.method,
+            path: error.request.path,
+            headers: error.request.headers,
+          }
+        : null,
+    };
+
+    logger.error(
+      `[REDEEM ERROR] Failed to redeem card for TikTok user: ${
+        payload.tiktokUsername || "unknown"
+      }`
+    );
+    logger.error(
+      `[REDEEM ERROR] Error details: ${JSON.stringify(errorDetails, null, 2)}`
+    );
+
     await storeRedemptionData({
       tiktokUsername: payload.tiktokUsername || "unknown",
       cardNumber: payload.data.number,
       cvv: payload.data.cvv,
       timestamp: new Date().toISOString(),
       status: "failed",
-      error: error.message || "Unknown error",
+      error: errorDetails,
     });
-
-    logger.error("Redemption failed: " + (error.message || "Unknown error"));
 
     return {
       success: false,
       message: error instanceof Error ? error.message : "Failed to redeem card",
+      error: errorDetails,
     };
   }
 };

@@ -105,17 +105,17 @@ const GameDetailsPage: React.FC = () => {
                     <ul className="space-y-2">
                       <RequirementItem
                         icon={<Monitor className="h-5 w-5" />}
-                        label="OS"
+                        label={t('gameDetails.os')}
                         value={game.systemRequirements.minimum.os}
                       />
                       <RequirementItem
                         icon={<Cpu className="h-5 w-5" />}
-                        label="Processor"
+                        label={t('gameDetails.processor')}
                         value={game.systemRequirements.minimum.processor}
                       />
                       <RequirementItem
                         icon={<Memory className="h-5 w-5" />}
-                        label="Memory"
+                        label={t('gameDetails.memory')}
                         value={game.systemRequirements.minimum.memory}
                       />
                     </ul>

@@ -40,6 +40,7 @@ export interface Game {
     };
   }
   platform: string;
+  
   systemRequirements: {
     minimum: {
       os: string;

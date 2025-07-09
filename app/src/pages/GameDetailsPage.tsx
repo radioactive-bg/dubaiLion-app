@@ -12,6 +12,7 @@ import { Game } from '../types';
 
 type ValidLocale = "en" | "de" | "vi" | "fr" | "ru" | "zh" | "ar";
 
+
 const GameDetailsPage: React.FC = () => {
   const { id } = useParams();
   const game: Game | undefined = games.find(g => g.id === Number(id));
@@ -25,6 +26,7 @@ const GameDetailsPage: React.FC = () => {
   const { t } = useTranslation();
 
 
+
   if (!game) {
     return (
       <div className="min-h-screen flex items-center justify-center">
@@ -35,6 +37,7 @@ const GameDetailsPage: React.FC = () => {
             className="text-gaming-accent hover:text-gaming-accent/80"
           >
             {t('gameDetails.back')}
+
           </button>
         </div>
       </div>
@@ -46,6 +49,7 @@ const GameDetailsPage: React.FC = () => {
 
       <main className="pb-14 px-4 md:px-8">
         <div className="container mx-auto">
+
 
           <header className="mb-16  py-8 bg-gaming-card px-8 rounded-full flex justify-between items-center">
             <motion.button
@@ -133,16 +137,19 @@ const GameDetailsPage: React.FC = () => {
                       <RequirementItem
                         icon={<Monitor className="h-5 w-5" />}
                         label={t('gameDetails.os')}
+
                         value={game.systemRequirements.recommended.os}
                       />
                       <RequirementItem
                         icon={<Cpu className="h-5 w-5" />}
                         label={t('gameDetails.processor')}
+
                         value={game.systemRequirements.recommended.processor}
                       />
                       <RequirementItem
                         icon={<Memory className="h-5 w-5" />}
                         label={t('gameDetails.memory')}
+
                         value={game.systemRequirements.recommended.memory}
                       />
                     </ul>
@@ -157,6 +164,7 @@ const GameDetailsPage: React.FC = () => {
                 >
                   {game.translations[locale].story}
                 </div>
+
               </div>
             </motion.div>
           </div>

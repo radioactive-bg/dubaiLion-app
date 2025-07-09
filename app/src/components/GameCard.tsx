@@ -12,6 +12,7 @@ import { useTranslation } from "react-i18next";
 
 type ValidLocale = "en" | "de" | "vi" | "fr" | "ru" | "zh" | "ar";
 
+
 interface GameCardProps {
   game: Game;
   index: number;
@@ -33,6 +34,7 @@ const GameCard: React.FC<GameCardProps> = ({ game, index }: GameCardProps) => {
       return <Playstation className="h-5 w-5" />;
     if (platform.includes("Xbox")) return <Xbox className="h-5 w-5" />;
     if (platform.includes("Mobile")) return <Smartphone className="h-5 w-5" />;
+
     return null;
   };
 
@@ -55,6 +57,7 @@ const GameCard: React.FC<GameCardProps> = ({ game, index }: GameCardProps) => {
         <img
           src={game.imageUrl}
           alt={game.translations[locale].title}
+
           className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
         />
       </div>
@@ -65,6 +68,7 @@ const GameCard: React.FC<GameCardProps> = ({ game, index }: GameCardProps) => {
         <p className="text-secondary-300 mb-4">
           {truncateDescription(game.translations[locale].description)}
         </p>
+
         <div className="mt-auto">
           <div className="flex items-center text-sm text-secondary-400">
             <div className="flex items-center mr-2">
@@ -79,3 +83,4 @@ const GameCard: React.FC<GameCardProps> = ({ game, index }: GameCardProps) => {
 };
 
 export default GameCard;
+

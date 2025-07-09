@@ -52,6 +52,7 @@ export const games: Game[] = [
         os: 'Windows 10 (64-bit)',
         processor: 'Intel Core i7-7700K or AMD Ryzen 5 1600',
         memory: '16 GB RAM'
+
       }
     }
   },
@@ -96,6 +97,7 @@ export const games: Game[] = [
         story: `Trong Block Rush, người chơi tham gia vào trò chơi phòng thủ chiến lược nơi họ triệu hồi và nâng cấp đơn vị bằng quà tặng trong game. Mục tiêu là tồn tại lâu hơn đối thủ bằng cách đặt các đơn vị phòng thủ và tấn công một cách chiến lược.`
       }
     },
+
     systemRequirements: {
       minimum: {
         os: 'Windows 10 (64-bit)',
@@ -150,6 +152,7 @@ export const games: Game[] = [
         story: `Đại Chiến Tây Du là một trò chơi di động nhịp độ nhanh, nơi người chơi tham gia vào phe Tôn Ngộ Không hoặc Thiên Đình trong trận chiến kéo co để giành quyền kiểm soát Gậy Như Ý huyền thoại.`
       }
     },
+
     systemRequirements: {
       minimum: {
         os: 'Android 5.0 or iOS 10.0',
@@ -204,6 +207,7 @@ export const games: Game[] = [
         story: `Trong Gọi Tôi Là Nhà Vô Địch, không chỉ là xem mà còn là tham gia. Trò chơi này đưa bạn vào trận chiến đa trại, nơi người phát sóng và người xem hợp lực để đưa trại của họ đến chiến thắng.`
       }
     },
+
     systemRequirements: {
       minimum: {
         os: 'Windows 10 64-bit',
@@ -322,6 +326,7 @@ export const games: Game[] = [
         os: 'Windows 10',
         processor: 'Intel Core i5-6600 or AMD Ryzen 3 1300X',
         memory: '8 GB RAM'
+
       }
     }
   },
@@ -366,6 +371,7 @@ export const games: Game[] = [
         story: `Bước vào thế giới đầy hành động của Chibi: Tam Quốc, nơi bạn kiểm soát vận mệnh của vương quốc!`
       }
     },
+
     systemRequirements: {
       minimum: {
         os: 'Windows 7 64-bit or higher',
@@ -462,6 +468,7 @@ export const games: Game[] = [
   Bạn có đủ khả năng trở thành người hùng của phe mình không? Hãy chọn phe, hiệu triệu quân đội và bắt đầu cuộc chiến trong Civilization and Empire. Trận chiến giành quyền kiểm soát sắp bắt đầu!`
       }
     },
+
     systemRequirements: {
       minimum: {
         os: 'Windows 10 64-bit',

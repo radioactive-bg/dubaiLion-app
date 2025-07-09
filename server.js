@@ -8,6 +8,7 @@ import winston from "winston";
 import fs from "fs";
 import basicAuth from "basic-auth";
 
+
 // Paths
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -113,12 +114,14 @@ const authenticate = (req, res, next) => {
   next();
 };
 
+
 // API Configuration
 const BASE_URL = "https://proxy.duegate.com/staging";
 const AUTH_CREDENTIALS = {
   username: "a.miladinov@radioactive.bg",
   password: "0:y5g5NBv)$zy0<",
 };
+
 
 const getAuthToken = async () => {
   try {
@@ -143,6 +146,7 @@ const getAuthToken = async () => {
   } catch (error) {
     logger.error(
       "Authentication error: " + (error.response?.data?.error || error.message)
+
     );
     throw new Error("Failed to authenticate");
   }
@@ -156,6 +160,7 @@ const redeemCard = async (payload) => {
 
     const response = await axios.post(
       `${BASE_URL}/distributor-crm/v1/wallets/67/credit`,
+
       {
         type: "redeem_card",
         data: {

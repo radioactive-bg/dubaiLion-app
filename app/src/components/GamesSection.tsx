@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import GameCard from './GameCard';
 import { Game } from '../types';
 
+
 const STORAGE_KEY = 'visible_games_count';
 const INITIAL_VISIBLE_GAMES = 10;
 
@@ -62,17 +63,20 @@ const GamesSection: React.FC = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
           {displayedGames.map((game: Game, index: number) => (
+
             <GameCard key={game.id} game={game} index={index} />
           ))}
         </div>
 
         <div className="text-center mt-16 flex justify-center gap-4">
+
           {hasMoreGames && (
             <button
               onClick={handleShowMore}
               className="px-8 py-3 rounded-full bg-gaming-accent hover:bg-opacity-90 text-white font-bold text-lg transition-all duration-300 transform hover:scale-105"
             >
               {t("games.showMore")}
+
             </button>
           )}
           {hasShownMore && (
@@ -81,6 +85,7 @@ const GamesSection: React.FC = () => {
               className="px-8 py-3 rounded-full bg-transparent border-2 border-gaming-accent hover:bg-gaming-accent hover:bg-opacity-10 text-white font-bold text-lg transition-all duration-300"
             >
               {t("games.showLess")}
+
             </button>
           )}
         </div>

@@ -1,8 +1,17 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
-import { Game } from '../types';
-import { Stamp as Steam, Presentation as Playstation, Inbox as Xbox, Smartphone } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+import { Game } from "../types";
+import {
+  Stamp as Steam,
+  Presentation as Playstation,
+  Inbox as Xbox,
+  Smartphone,
+} from "lucide-react";
+import { useTranslation } from "react-i18next";
+
+type ValidLocale = "en" | "de" | "vi" | "fr" | "ru" | "zh" | "ar";
+
 
 interface GameCardProps {
   game: Game;
@@ -11,20 +20,27 @@ interface GameCardProps {
 
 const MAX_DESCRIPTION_LENGTH = 85; // Length of the example text
 
-const GameCard: React.FC<GameCardProps> = ({ game, index }) => {
+const GameCard: React.FC<GameCardProps> = ({ game, index }: GameCardProps) => {
   const navigate = useNavigate();
+  const { i18n } = useTranslation(); // Destructure i18n from useTranslation
+  const currentLocale = i18n.language;
+  const locale = (
+    game.translations[currentLocale as ValidLocale] ? currentLocale : "en"
+  ) as ValidLocale;
 
   const getPlatformIcon = (platform: string) => {
-    if (platform.includes('PC')) return <Steam className="h-5 w-5" />;
-    if (platform.includes('PlayStation')) return <Playstation className="h-5 w-5" />;
-    if (platform.includes('Xbox')) return <Xbox className="h-5 w-5" />;
-    if (platform.includes('Mobile')) return <Smartphone className="h-5 w-5" />;
+    if (platform.includes("PC")) return <Steam className="h-5 w-5" />;
+    if (platform.includes("PlayStation"))
+      return <Playstation className="h-5 w-5" />;
+    if (platform.includes("Xbox")) return <Xbox className="h-5 w-5" />;
+    if (platform.includes("Mobile")) return <Smartphone className="h-5 w-5" />;
+
     return null;
   };
 
   const truncateDescription = (text: string) => {
     if (text.length <= MAX_DESCRIPTION_LENGTH) return text;
-    return text.slice(0, MAX_DESCRIPTION_LENGTH).trim() + '...';
+    return text.slice(0, MAX_DESCRIPTION_LENGTH).trim() + "...";
   };
 
   return (
@@ -40,13 +56,19 @@ const GameCard: React.FC<GameCardProps> = ({ game, index }) => {
       <div className="h-48 overflow-hidden">
         <img
           src={game.imageUrl}
-          alt={game.title}
+          alt={game.translations[locale].title}
+
           className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
         />
       </div>
       <div className="p-4 flex flex-col flex-grow">
-        <h3 className="text-xl font-bold mb-2 font-display">{game.title}</h3>
-        <p className="text-secondary-300 mb-4">{truncateDescription(game.description)}</p>
+        <h3 className="text-xl font-bold mb-2 font-display">
+          {game.translations[locale].title}
+        </h3>
+        <p className="text-secondary-300 mb-4">
+          {truncateDescription(game.translations[locale].description)}
+        </p>
+
         <div className="mt-auto">
           <div className="flex items-center text-sm text-secondary-400">
             <div className="flex items-center mr-2">
@@ -60,4 +82,5 @@ const GameCard: React.FC<GameCardProps> = ({ game, index }) => {
   );
 };
 
-export default GameCard; 
+export default GameCard;
+

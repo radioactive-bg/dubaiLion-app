@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const RedeemSection: React.FC = () => {
+  const { t } = useTranslation();
   return (
-    <section id="redeem" className="py-44 px-4 md:px-8">
+    <section id="redeem" className="py-20 md:px-8">
+
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -12,7 +15,7 @@ const RedeemSection: React.FC = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-            <span className="text-gaming-accent">Redeem</span> Your Card
+            <span className="text-gaming-accent">{t("redeem.redeem")}</span> {t("redeem.yourCard")}
           </h2>
         </motion.div>
 
@@ -25,8 +28,8 @@ const RedeemSection: React.FC = () => {
           <iframe
             aria-label="Enter your card details below to redeem your gaming gift card"
             style={{
-              height: "600px",
-              width: "448px",
+              height: "710px",
+              width: "430px",
               borderRadius: "35px",
               padding: "20px",
               margin: "0px auto",

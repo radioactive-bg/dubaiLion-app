@@ -1,8 +1,9 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const Hero: React.FC = () => {
+  const { t } = useTranslation();
   const scrollToGames = () => {
     const gamesSection = document.getElementById("games");
     if (gamesSection) {
@@ -57,26 +58,32 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="mb-6"
         >
-          <h1 className="text-4xl md:text-6xl font-display font-bold mb-4 text-white leading-tight">
-            <span className="text-gaming-accent">Redeem</span> Your Gaming{" "}
-            <span className="text-gaming-accent">Cards</span>
+          <h1 className="text-2xl sm:text-4xl  flex items-center gap-x-2 justify-center  lg:text-6xl font-display font-bold mb-4 text-white leading-tight">
+            <span className="text-gaming-accent">
+              {t("hero.title.redeem")}
+            </span>
+            <span >
+              {t("hero.title.yourGaming")}
+            </span>
+            <span className="text-gaming-accent">
+              {t("hero.title.cards")}
+            </span>
           </h1>
-          <p className="text-xl md:text-2xl text-secondary-300 max-w-3xl mx-auto">
-            Unlock exclusive games and content with our premium gift cards
-          </p>
+          <p className="sm:text-xl  text-secondary-300 md:max-w-3xl mx-auto">
+            {t("hero.subtitle")}          </p>
         </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8"
+          className="flex items-center justify-center gap-4 mt-8"
         >
           <button
             onClick={scrollToGames}
-            className="px-8 py-3 rounded-full bg-gaming-accent hover:bg-opacity-90 text-white font-bold text-lg transition-all duration-300 transform hover:scale-105"
+            className="px-6 sm:px-8 py-3 rounded-full bg-gaming-accent hover:bg-opacity-90 text-white font-bold text-sm sm:text-lg transition-all duration-300 transform hover:scale-105"
           >
-            Explore Games
+            {t("hero.exploreGames")}
           </button>
           <button
             onClick={() => {
@@ -84,9 +91,9 @@ const Hero: React.FC = () => {
                 .getElementById("redeem")
                 ?.scrollIntoView({ behavior: "smooth" });
             }}
-            className="px-8 py-3 rounded-full bg-transparent border-2 border-gaming-accent hover:bg-gaming-accent hover:bg-opacity-10 text-white font-bold text-lg transition-all duration-300"
+            className="px-6 sm:px-8 py-3 rounded-full bg-transparent border-2 border-gaming-accent hover:bg-gaming-accent hover:bg-opacity-10 text-white font-bold text-sm sm:text-lg transition-all duration-300"
           >
-            Redeem Card
+            {t("hero.redeemCard")}
           </button>
         </motion.div>
       </div>

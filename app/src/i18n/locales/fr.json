@@ -3,10 +3,15 @@
     "home": "Accueil",
     "games": "Jeux",
     "redeem": "Échanger",
-    "contact": "Contact"
+    "contact": "Contact",
+    "terms": "Termes et conditions"
   },
   "hero": {
-    "title": "Échangez vos cartes de jeu",
+    "title": {
+      "redeem": "Échanger",
+      "yourGaming": "Vos Jeux",
+      "cards": "Cartes"
+    },
     "subtitle": "Débloquez des jeux et du contenu exclusifs avec nos cartes cadeaux premium",
     "exploreGames": "Explorer les jeux",
     "redeemCard": "Échanger une carte"
@@ -20,34 +25,18 @@
       "xbox": "Xbox",
       "nintendo": "Nintendo",
       "mobile": "Mobile"
-    }
+    },
+    "showMore": "Afficher plus",
+    "showLess": "Afficher moins"
   },
   "redeem": {
-    "title": "Échangez votre carte",
-    "subtitle": "Entrez les détails de votre carte ci-dessous pour échanger votre carte cadeau de jeu",
-    "form": {
-      "tiktokUsername": "Nom d'utilisateur TikTok",
-      "tiktokUsernamePlaceholder": "@votrenom",
-      "cardNumber": "Numéro de série de la carte",
-      "cardNumberPlaceholder": "Entrez le numéro de série",
-      "cvv": "CVV de la carte",
-      "cvvPlaceholder": "Entrez le CVV",
-      "submit": "Échanger la carte",
-      "processing": "Traitement en cours..."
-    },
-    "validation": {
-      "tiktokRequired": "Le nom d'utilisateur TikTok est requis",
-      "cardNumberRequired": "Le numéro de série est requis",
-      "cardNumberInvalid": "Veuillez entrer un numéro de carte valide (chiffres uniquement)",
-      "cvvRequired": "Le CVV est requis",
-      "cvvInvalid": "Veuillez entrer un CVV valide (chiffres uniquement)"
-    },
-    "success": "Carte échangée avec succès !",
-    "error": "Échec de l'échange de la carte. Veuillez réessayer.",
-    "generalError": "Une erreur s'est produite. Veuillez réessayer plus tard."
+    "redeem": "Échanger",
+    "yourCard": "Votre Carte",
+    "subtitle": "Entrez les détails de votre carte ci-dessous pour échanger votre carte cadeau de jeu"
   },
   "contact": {
-    "title": "Connectez-vous avec nous",
+    "title": "Connectez-vous avec",
+    "us": "nous",
     "subtitle": "Suivez-nous sur les réseaux sociaux pour les mises à jour, promotions et actualités gaming",
     "platforms": {
       "telegram": "Telegram",
@@ -68,5 +57,112 @@
     "fr": "Français",
     "zh": "中文",
     "vi": "Tiếng Việt"
+  },
+  "terms": {
+    "title": "Conditions générales de la plateforme de cartes-cadeaux LionDubai",
+    "termsTitle": "Conditions générales",
+    "lastUpdated": "Dernière mise à jour : 13 mai 2025",
+    "subtitle": "Veuillez lire attentivement ces conditions avant d’acheter ou d’utiliser nos cartes-cadeaux. En utilisant nos services, vous acceptez ces conditions générales.",
+    "tableOfContents": "Table des matières",
+    "Introduction": {
+      "title": "Introduction",
+      "content": "Ces conditions générales (les « Conditions ») régissent l'achat, l'utilisation et l'échange de cartes-cadeaux émises par HKS (Ar‑pay) pour la plateforme liondubai.net, et constituent un accord juridiquement contraignant entre vous, HKS (nous ou HKS), et Lion Dubai (partenaire). En achetant ou en utilisant une carte-cadeau, vous acceptez ces Conditions. Si vous n’êtes pas d’accord, n’effectuez pas l’achat ou l’échange."
+    },
+    "Definitions": {
+      "title": "Définitions",
+      "content": {
+        "Gift Card": "Carte-cadeau : Bon numérique émis et vendu par HKS via le portail e‑commerce Ar‑pay, contenant un code unique à échanger sur liondubai.net.",
+        "Purchaser": "Acheteur : La personne ou entité qui achète une carte-cadeau.",
+        "User": "Utilisateur : La personne qui échange une carte-cadeau sur liondubai.net. Peut être identique à l’Acheteur.",
+        "Platform": "Plateforme : Le site liondubai.net, exploité par Lion Dubai, où les cartes-cadeaux sont échangées contre des crédits ou services.",
+        "Redemption": "Échange : Saisie d’un code valide sur la plateforme, créditant automatiquement le compte utilisateur.",
+        "HKS": "HKS : Système backend utilisé pour la gestion et le règlement des cartes-cadeaux échangées.",
+        "Zoho Forms": "Zoho Forms : Système backend utilisé par Lion Dubai pour approuver ou examiner les échanges de cartes-cadeaux."
+      }
+    },
+    "IssuanceSaleAndMerchantOfRecord": {
+      "title": "Émission, Vente et Marchand de référence",
+      "content": {
+        "Issuance & Sale": "Émission & Vente : HKS émet et vend exclusivement les cartes-cadeaux pour la plateforme. Vous les achetez via Ar‑pay.",
+        "Payment Collection": "Collecte de paiement : HKS/Ar‑pay perçoit les paiements. Une fois le paiement confirmé, HKS reverse la part de Lion Dubai selon l’accord commercial.",
+        "Merchant of Record": "Marchand de référence : HKS est le marchand officiel pour toutes les transactions et assume les responsabilités liées aux remboursements, litiges, taxes, et conformité."
+      }
+    },
+    "RedemptionProcess": {
+      "title": "Processus d’échange",
+      "content": {
+        "How to Redeem": "Comment échanger : Rendez-vous sur liondubai.net, entrez votre code, et cliquez sur « Échanger ». Le solde sera crédité automatiquement.",
+        "Approval": "Approbation : Les données d’échange sont soumises à Zoho Forms pour approbation manuelle, et à HKS pour suivi et règlement. Actuellement, les échanges sont approuvés automatiquement.",
+        "Rejection": "Rejet : Si votre code est refusé, contactez le support Ar‑pay."
+      }
+    },
+    "ValidityExpirationAndCancellation": {
+      "title": "Validité, Expiration & Annulation",
+      "content": {
+        "Validity": "Validité : Les cartes-cadeaux restent valides jusqu’à épuisement du solde.",
+        "Expiration": "Expiration : Les cartes-cadeaux n’expirent pas.",
+        "Cancellation & Refunds": "Annulation & Remboursements : Une fois échangées, les cartes-cadeaux ne peuvent être annulées ni remboursées, sauf obligation légale."
+      }
+    },
+    "LiabilityWarranties": {
+      "title": "Responsabilité & Garanties",
+      "content": {
+        "Liability": "Responsabilité : HKS et Lion Dubai ne sont pas responsables de l’utilisation non autorisée des cartes. En cas d’erreur système, la responsabilité incombe à Lion Dubai.",
+        "Warranties": "Garanties : Les cartes-cadeaux sont fournies « en l’état ». Un code valide donnera droit aux crédits ou services correspondants.",
+        "Indemnities": "Indemnisation : Vous acceptez d’indemniser HKS et Lion Dubai pour toute mauvaise utilisation des cartes-cadeaux."
+      }
+    },
+    "DataCollectionPrivacy": {
+      "title": "Collecte de données & Confidentialité",
+      "content": {
+        "DataAtPurchase": "Données à l’achat : Nous collectons des informations minimales (par ex. pseudo TikTok) pour la livraison.",
+        "DataAtRedemption": "Données à l’échange : Code, numéro de série, CVV, nom d’utilisateur et jeu associé sont enregistrés.",
+        "ThirdPartyProcessors": "Sous-traitants : Vos données sont traitées par Zoho et HKS, soumis à des clauses de protection des données.",
+        "Consent & DPAs": "Consentement & DPAs : Votre consentement est requis. Des accords (DPAs) avec Zoho et DueGate seront en place avant le lancement."
+      }
+    },
+    "Support&ServiceLevels": {
+      "title": "Support & Niveaux de service",
+      "content": {
+        "Customer Support": "Support client : Lion Dubai gère tout support, réclamation et litige lié aux échanges.",
+        "Service Levels": "Niveaux de service : Les SLA entre HKS et Lion Dubai sont en cours de finalisation."
+      }
+    },
+    "GoverningLawJurisdiction": {
+      "title": "Droit applicable & Juridiction",
+      "content": {
+        "header": "Ces conditions sont régies par la loi de la région administrative spéciale de Hong Kong. Tout litige relève de la juridiction exclusive des tribunaux de Hong Kong."
+      }
+    },
+    "ChangesToTerms": {
+      "title": "Modifications des Conditions",
+      "content": {
+        "header": "Nous pouvons modifier ces conditions. Les versions mises à jour seront publiées sur liondubai.net. L'utilisation continue vaut acceptation."
+      }
+    },
+    "ContactInformation": {
+      "title": "Informations de contact",
+      "content": {
+        "header": "Pour toute question concernant ces Conditions, le support ou les données :",
+        "HKS (Ar‑pay) Support": "support@ar‑pay.com",
+        "Lion Dubai Support": "support@liondubai.net",
+        "thankYou": "Merci d’avoir choisi Lion Dubai."
+      }
+    }
+  },
+  "gameDetails": {
+    "title": "Détails du jeu",
+    "platform": "Plateforme",
+    "minimum": "Minimum",
+    "recommended": "Recommandé",
+    "description": "Description",
+    "story": "Histoire",
+    "requirements": "Conditions",
+    "play": "Jouer",
+    "back": "Retour",
+    "notFound": "Jeu non trouvé",
+    "os": "Système d'exploitation",
+    "processor": "Processeur",
+    "memory": "Mémoire"
   }
 }
